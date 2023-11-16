@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat</title>
+    <!-- Reference the CSS file directly inside the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Reference the image file directly inside the static folder -->
+        <button id="microphone-btn" onclick="toggleMicrophone()">
+            <img src="{{ url_for('static', filename='microphone-icon.png') }}" alt="Microphone"/>
+        </button>
+    </div>
+
+    <!-- Reference the JS file directly inside the static folder -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

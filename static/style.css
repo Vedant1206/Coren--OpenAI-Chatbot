@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+#microphone-btn {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+#microphone-btn img {
+    width: 30px;
+    height: 30px;
+}
