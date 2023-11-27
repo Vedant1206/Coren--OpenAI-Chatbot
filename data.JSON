@@ -1,0 +1,18 @@
+{
+    "Cardio": {
+      "Running": {
+        "description": "A basic running exercise...",
+        "benefits": "Improves cardiovascular health..."
+      },
+      "Cycling": {
+        "description": "Cycling is...",
+        "benefits": "Boosts leg strength..."
+      }
+    },
+    "Strength Training": {
+      "Push-ups": {
+        "description": "Push-ups are a basic exercise...",
+        "benefits": "Strengthens the upper body..."
+      }
+     }
+  }
