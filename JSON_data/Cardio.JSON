@@ -1,0 +1,40 @@
+{
+    "Cardio": {
+        "Running": {
+            "description": "Running is a versatile cardio exercise that improves cardiovascular health and endurance. It can be done almost anywhere and requires no equipment.",
+            "benefits": "Improves cardiovascular health, aids in weight loss, strengthens legs, and improves mental health.",
+            "frequency": "3-5 times a week",
+            "training_styles": ["Interval Training", "Long Distance Running", "Sprints"]
+        },
+        "Cycling": {
+            "description": "Cycling, whether on a stationary bike or outdoors, is an effective way to improve cardiovascular fitness and leg strength.",
+            "benefits": "Boosts leg strength, improves joint mobility, decreases stress levels.",
+            "frequency": "2-4 times a week",
+            "training_styles": ["Stationary Bike", "Outdoor Cycling", "Mountain Biking"]
+        },
+        "Swimming": {
+            "description": "Swimming is a full-body workout that enhances cardiovascular fitness and builds muscle strength.",
+            "benefits": "Provides a low-impact workout, improves endurance and flexibility, good for all fitness levels.",
+            "frequency": "2-4 times a week",
+            "training_styles": ["Freestyle", "Breaststroke", "Butterfly Stroke"]
+        },
+        "Jump Rope": {
+            "description": "Jump rope is a high-intensity cardiovascular workout that can be done virtually anywhere.",
+            "benefits": "Improves coordination, burns significant calories, increases bone density.",
+            "frequency": "3-5 times a week",
+            "training_styles": ["Speed Rope", "Freestyle", "Double Unders"]
+        },
+        "Rowing": {
+            "description": "Rowing is an effective cardio workout that also targets various muscle groups.",
+            "benefits": "Enhances cardiovascular fitness, strengthens the back, arms, and legs, low impact on joints.",
+            "frequency": "2-4 times a week",
+            "training_styles": ["Indoor Rowing", "Outdoor Rowing", "Interval Training"]
+        },
+        "HIIT": {
+            "description": "High-Intensity Interval Training (HIIT) involves short bursts of intense exercise followed by recovery periods.",
+            "benefits": "Burns a high number of calories, improves metabolic rate, suitable for time-efficient workouts.",
+            "frequency": "2-4 times a week",
+            "training_styles": ["Tabata", "Circuit Training", "Sprint Intervals"]
+        }
+    }
+}

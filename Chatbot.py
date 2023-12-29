@@ -27,7 +27,7 @@ def main():
         processed_input = process_input(user_input)
 
         # Determine the relevant JSON file
-        json_file = "data.JSON"
+        json_file = "JSON_data/data.JSON"
 
         # Load data from the selected JSON file
         data = load_data(json_file)
@@ -43,16 +43,30 @@ def process_input(user_input):
     return filtered_words
 
 def generate_response(words, data):
-    # Iterate over the keys in the data
+    response = ""
+
     for key in data.keys():
-        # Check if any of the user's words match the key
+        # Check if the user's words match the category key
         if any(word in key.lower() for word in words):
-            # Return the information associated with the matched key
-            return "Here's some information about {}: {}".format(key, data[key])
+            category_data = load_json_file_if_needed(data[key])
+            if isinstance(category_data, dict):
+                response += f"{key} Exercises:\n"
+                for exercise, details in category_data.items():
+                    response += f"  {exercise}:\n"
+                    for detail_key, detail_value in details.items():
+                        if isinstance(detail_value, list):  # For list items, such as 'variations'
+                            detail_value = ', '.join(detail_value)
+                        response += f"    {detail_key.capitalize()}: {detail_value}\n"
+            else:
+                response += "Data not available for this category.\n"
+            response += "\n"  # Add an extra line for spacing between categories
 
-    # If no match is found, provide a default response
-    return "I couldn't find specific information related to your query. Could you please specify more?"
+    return response.strip() if response else "I couldn't find specific information related to your query. Could you please specify more?"
 
+def load_json_file_if_needed(file_path_or_data):
+    if isinstance(file_path_or_data, str):
+        return load_data(file_path_or_data)
+    return file_path_or_data
 
 if __name__ == "__main__":
     main()

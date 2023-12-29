@@ -1,0 +1,194 @@
+{
+    "Back": {
+        "Pull-Ups": {
+            "description": "Pull-ups are a challenging upper body workout that primarily target the back and bicep muscles.",
+            "benefits": "Strengthens the back and arms, improves grip strength, enhances shoulder stability.",
+            "frequency": "2-4 times a week",
+            "variations": ["Standard Grip", "Chin-Up", "Wide Grip", "Neutral Grip"]
+        },
+        "Rows": {
+            "description": "Rows are essential for developing back strength and posture, targeting the muscles of the upper back and the latissimus dorsi.",
+            "benefits": "Strengthens the back, improves posture, helps in muscle symmetry.",
+            "frequency": "2-4 times a week",
+            "variations": ["Barbell Row", "Dumbbell Row", "Cable Row", "T-Bar Row"]
+        },
+        "Lat Pulldowns": {
+            "description": "Lat pulldowns are a strength training exercise that targets the latissimus dorsi muscles in the back.",
+            "benefits": "Strengthens the upper back, enhances lat muscle size and width, improves posture.",
+            "frequency": "2-3 times a week",
+            "variations": ["Wide Grip", "Close Grip", "Reverse Grip"]
+        },
+        "Deadlifts": {
+            "description": "Deadlifts are a compound strength exercise targeting multiple muscle groups, essential for building overall strength.",
+            "benefits": "Targets multiple muscle groups, improves posture, increases core strength.",
+            "frequency": "2-3 times a week",
+            "variations": ["Conventional", "Sumo", "Hex Bar", "Deficit"]
+        },
+        "T-Bar Row": {
+            "description": "The T-Bar Row is a compound exercise targeting the muscles in the back, particularly the lats and rhomboids.",
+            "benefits": "Strengthens the back, enhances muscle thickness, improves pulling strength.",
+            "frequency": "2-3 times a week",
+            "variations": ["Wide Grip", "Close Grip", "Underhand Grip"]
+        }
+    },
+    "Chest": {
+        "Bench Press": {
+            "description": "The bench press is a key upper body strength exercise, targeting the chest, shoulders, and triceps.",
+            "benefits": "Builds upper body strength, improves muscular endurance, enhances push performance.",
+            "frequency": "2-3 times a week",
+            "variations": ["Flat Bench", "Incline Bench", "Decline Bench", "Close Grip"]
+        },
+        "Incline Dumbbell Press": {
+            "description": "This exercise focuses on the upper chest, shoulders, and triceps, performed on an incline bench.",
+            "benefits": "Targets the upper chest, improves overall chest development, enhances shoulder strength.",
+            "frequency": "2-3 times a week",
+            "variations": ["Neutral Grip", "Twisting Press", "Alternating Press"]
+        },
+        "Push-Ups": {
+            "description": "Push-ups are a basic bodyweight exercise that effectively strengthens the upper body and core.",
+            "benefits": "Strengthens the upper body, improves muscle mass, enhances core strength.",
+            "frequency": "4-6 times a week",
+            "variations": ["Standard", "Diamond", "Wide Grip", "Incline"]
+        },
+        "Chest Flyes": {
+            "description": "Chest flyes target the chest muscles, particularly focusing on the outer and inner pectoral muscles.",
+            "benefits": "Enhances chest definition, improves range of motion, aids in muscle symmetry.",
+            "frequency": "2-3 times a week",
+            "variations": ["Dumbbell Flyes", "Cable Flyes", "Pec Deck Machine"]
+        },
+        "Dips": {
+            "description": "Dips are an effective exercise for targeting the lower chest and triceps, strengthening the upper body.",
+            "benefits": "Targets lower chest, strengthens triceps, improves upper body endurance.",
+            "frequency": "2-3 times a week",
+            "variations": ["Straight Bar Dip", "Bench Dip", "Ring Dip"]
+        }
+    },
+    "Legs": {
+        "Squats": {
+            "description": "Squats are a fundamental exercise targeting the lower body, primarily the thighs, hips, and buttocks.",
+            "benefits": "Improves lower body strength, enhances core stability, supports joint health.",
+            "frequency": "2-4 times a week",
+            "variations": ["Back Squat", "Front Squat", "Overhead Squat", "Goblet Squat"]
+        },
+        "Lunges": {
+            "description": "Lunges are a popular lower body exercise, targeting the thighs, hips, and buttocks.",
+            "benefits": "Improves lower body strength, aids in balance, enhances hip flexibility.",
+            "frequency": "2-4 times a week",
+            "variations": ["Forward Lunge", "Reverse Lunge", "Walking Lunge", "Side Lunge"]
+        },
+        "Leg Press": {
+            "description": "The leg press is a weight training exercise in which the individual pushes a weight away from them using their legs.",
+            "benefits": "Targets quads, hamstrings, and glutes, reduces strain on the back, allows for heavy lifting with safety.",
+            "frequency": "2-3 times a week",
+            "variations": ["High Stance", "Low Stance", "Single Leg Press"]
+        },
+        "Calf Raises": {
+            "description": "Calf raises are a simple yet effective exercise that primarily works the calf muscles.",
+            "benefits": "Strengthens calf muscles, improves ankle stability, aids in lower leg toning.",
+            "frequency": "2-4 times a week",
+            "variations": ["Standing Calf Raise", "Seated Calf Raise", "Leg Press Calf Raise"]
+        },
+        "Leg Curls": {
+            "description": "Leg curls primarily target the hamstrings, typically performed on a leg curl machine.",
+            "benefits": "Strengthens hamstrings, improves lower body flexibility, aids in knee stability.",
+            "frequency": "2-3 times a week",
+            "variations": ["Lying Leg Curl", "Seated Leg Curl", "Standing Leg Curl"]
+        }
+    },
+    "Arms": {
+        "Bicep Curls": {
+            "description": "Bicep curls primarily target the biceps, and are a fundamental exercise for arm muscle development.",
+            "benefits": "Strengthens the biceps, enhances arm muscle definition, aids in upper body functional strength.",
+            "frequency": "2-3 times a week",
+            "variations": ["Dumbbell Curl", "Barbell Curl", "Hammer Curl", "Preacher Curl"]
+        },
+        "Tricep Dips": {
+            "description": "Tricep dips are an effective bodyweight exercise that targets the triceps and the lower chest.",
+            "benefits": "Improves upper arm strength, enhances tricep muscle definition, beneficial for overall arm toning.",
+            "frequency": "2-3 times a week",
+            "variations": ["Bench Dip", "Parallel Bar Dip", "Ring Dip"]
+        },
+        "Barbell Shrugs": {
+            "description": "Barbell shrugs primarily target the trapezius muscles in the upper back and neck area.",
+            "benefits": "Strengthens the traps and upper back, improves neck muscle development, aids in shoulder stability.",
+            "frequency": "2-3 times a week",
+            "variations": ["Dumbbell Shrug", "Behind-the-Back Shrug", "Overhead Shrug"]
+        },
+        "Forearm Curls": {
+            "description": "Forearm curls focus on strengthening the forearm muscles, essential for grip strength.",
+            "benefits": "Enhances grip strength, improves forearm muscle definition, supports overall arm development.",
+            "frequency": "2-3 times a week",
+            "variations": ["Barbell Wrist Curl", "Dumbbell Wrist Curl", "Reverse Curl"]
+        },
+        "Skull Crushers": {
+            "description": "Skull crushers are a triceps-focused exercise, typically performed with a barbell or dumbbells.",
+            "benefits": "Targets the triceps, improves arm definition, enhances upper body strength.",
+            "frequency": "2-3 times a week",
+            "variations": ["EZ Bar Skull Crusher", "Dumbbell Skull Crusher", "Incline Skull Crusher"]
+        }
+    },
+    "Core": {
+        "Planks": {
+            "description": "Planks are a core strength exercise that also engages multiple muscle groups for overall stability.",
+            "benefits": "Strengthens core muscles, improves posture, enhances balance and stability.",
+            "frequency": "Daily or as part of a workout routine",
+            "variations": ["Standard Plank", "Forearm Plank", "Side Plank", "Plank with Leg Lift"]
+        },
+        "Russian Twists": {
+            "description": "Russian twists are a popular core exercise that targets the abdominal muscles, especially the obliques.",
+            "benefits": "Improves core strength, enhances oblique muscle definition, aids in rotational movement ability.",
+            "frequency": "2-4 times a week",
+            "variations": ["Weighted Russian Twist", "Medicine Ball Russian Twist", "Feet Elevated Russian Twist"]
+        },
+        "Ab Rollouts": {
+            "description": "Ab rollouts are an intense core exercise, using an ab wheel to roll forward and back.",
+            "benefits": "Strengthens the entire core, enhances stability, improves spinal health.",
+            "frequency": "2-3 times a week",
+            "variations": ["Kneeling Rollout", "Standing Rollout", "Oblique Rollout"]
+        },
+        "Hanging Leg Raises": {
+            "description": "Hanging leg raises are performed by lifting the legs up while hanging from a bar, targeting the lower abs.",
+            "benefits": "Strengthens lower abs, improves grip strength, enhances hip flexor strength.",
+            "frequency": "2-3 times a week",
+            "variations": ["Knee Raises", "Straight Leg Raises", "Twisting Leg Raises"]
+        },
+        "Mountain Climbers": {
+            "description": "Mountain climbers are a dynamic exercise combining core strengthening with a cardio element.",
+            "benefits": "Improves core strength, enhances cardiovascular fitness, aids in weight loss.",
+            "frequency": "3-4 times a week",
+            "variations": ["Standard Mountain Climber", "Cross-Body Mountain Climber", "Sliding Mountain Climber"]
+        }
+    },
+    "Shoulders": {
+        "Military Press": {
+            "description": "The military press is a fundamental shoulder exercise performed with a barbell or dumbbells.",
+            "benefits": "Strengthens the entire shoulder, enhances upper body power, improves posture.",
+            "frequency": "2-3 times a week",
+            "variations": ["Standing Military Press", "Seated Dumbbell Press", "Push Press"]
+        },
+        "Lateral Raises": {
+            "description": "Lateral raises primarily target the lateral part of the deltoid muscles.",
+            "benefits": "Enhances shoulder width, improves shoulder stability, aids in muscle balance.",
+            "frequency": "2-3 times a week",
+            "variations": ["Dumbbell Lateral Raise", "Cable Lateral Raise", "Kettlebell Lateral Raise"]
+        },
+        "Face Pulls": {
+            "description": "Face pulls are a shoulder exercise focusing on the rear deltoids and upper back muscles.",
+            "benefits": "Strengthens rear delts, improves shoulder health, enhances posture.",
+            "frequency": "2-3 times a week",
+            "variations": ["Cable Face Pull", "Resistance Band Face Pull", "Rope Face Pull"]
+        },
+        "Arnold Press": {
+            "description": "The Arnold press is a variation of the dumbbell shoulder press, involving a rotation movement.",
+            "benefits": "Targets all shoulder muscles, improves rotational strength, enhances shoulder stability.",
+            "frequency": "2-3 times a week",
+            "variations": ["Seated Arnold Press", "Standing Arnold Press", "Single-Arm Arnold Press"]
+        },
+        "Shrugs": {
+            "description": "Shrugs are a simple exercise targeting the trapezius muscles in the upper back and neck.",
+            "benefits": "Strengthens the traps, enhances neck muscle development, aids in upper body posture.",
+            "frequency": "2-3 times a week",
+            "variations": ["Barbell Shrug", "Dumbbell Shrug", "Cable Shrug"]
+        }
+    }
+}
