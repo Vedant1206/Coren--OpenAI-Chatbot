@@ -1,0 +1,29 @@
+{
+    "Bulking": {
+        "description": "Bulking focuses on muscle gain through a calorie surplus and high protein intake. This phase involves consuming more calories than your body burns, which, combined with resistance training, leads to muscle growth. It's not just about eating more, but eating smartly to provide your body with the nutrients it needs to grow.",
+        "tips": [
+            "High protein intake to support muscle growth",
+            "Increased calorie consumption, focusing on nutrient-rich foods",
+            "Frequent meals to continuously fuel muscle growth",
+            "Balanced macros, ensuring adequate intake of carbs and fats along with protein"
+        ]
+    },
+    "Cutting": {
+        "description": "Cutting aims at reducing body fat while maintaining muscle mass through a calorie deficit and balanced diet. This phase involves eating fewer calories than you burn, leading to fat loss. It's essential to maintain a high protein intake to preserve muscle mass while losing fat. Cutting should be done gradually to ensure that muscle loss is minimized.",
+        "tips": [
+            "Calorie deficit, eating fewer calories than your body burns",
+            "Maintaining protein intake to preserve muscle mass",
+            "Hydration, which is crucial for metabolism and appetite control",
+            "Reduced carb intake, focusing on complex carbohydrates for sustained energy"
+        ]
+    },
+    "Maintenance": {
+        "description": "Maintenance is the phase where you aim to sustain your current weight and muscle mass after a period of bulking or cutting. This involves adjusting your calorie intake to match your daily energy expenditure, ensuring that you neither gain nor lose weight significantly. The focus is on a balanced diet that supports your fitness level and body composition goals.",
+        "tips": [
+            "Balanced calorie intake to match daily energy expenditure",
+            "Consistent protein intake to support muscle maintenance",
+            "Regular physical activity to maintain fitness and muscle tone",
+            "Monitoring body composition and adjusting diet as needed to maintain current weight"
+        ]
+    }
+}

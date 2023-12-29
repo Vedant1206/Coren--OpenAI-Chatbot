@@ -1,0 +1,42 @@
+{
+    "Cardio": "JSON_data/Cardio.JSON",
+    "Strength Training": "JSON_data/Strength.JSON",
+    "Diet": "JSON_data/Diet.JSON",
+    "User Suggestions": {
+      "Beginner": {
+        "exercises": ["Bodyweight Squats", "Jogging", "Planks"],
+        "frequency": "3 times a week"
+      },
+      "Intermediate": {
+        "exercises": ["Bench Press", "Cycling", "Pull-Ups"],
+        "frequency": "4 times a week"
+      },
+      "Advanced": {
+        "exercises": ["Deadlifts", "HIIT", "Olympic Weightlifting"],
+        "frequency": "5-6 times a week"
+      }
+
+    },
+    "Keywords": {
+      "strength_keywords": ["strong", "strength", "muscle", "power", "lift"],
+      "cardio_keywords": ["cardio", "running", "cycling", "endurance", "stamina"],
+      "bulking_keywords": ["bulk", "gain", "muscle gain", "weight gain", "calories"],
+      "cutting_keywords": ["cut", "lose", "fat loss", "weight loss", "diet"],
+      "beginner_keywords": ["start", "newbie", "beginner", "entry", "novice"],
+      "intermediate_keywords": ["intermediate", "average", "moderate", "regular"],
+      "advanced_keywords": ["advanced", "experienced", "intense", "serious", "pro"]
+    },
+    "Responses": {
+      "strength": "Strength training is crucial for building muscle mass and improving overall power. It involves exercises like weightlifting, push-ups, and squats.",
+      "cardio": "Cardio exercises like running, cycling, and swimming are great for improving heart health, endurance, and aiding in weight loss.",
+      "bulking": "Bulking up involves a high-calorie, high-protein diet paired with strength training to gain muscle mass.",
+      "cutting": "Cutting is about losing excess body fat while maintaining muscle, often achieved through a calorie deficit and regular cardio.",
+      "beginner": "For beginners, it's important to start with basic exercises and gradually increase intensity to build strength and endurance.",
+      "intermediate": "Intermediate routines involve a mix of moderate-intensity strength and cardio exercises. It's important to focus on proper form and steady progression to avoid injury and improve performance.",
+      "advanced": "Advanced training requires a high level of intensity and discipline, often incorporating complex exercises, heavier weights, and specialized training techniques.",
+      "flexibility": "Flexibility exercises, such as stretching and yoga, are vital for a well-rounded fitness regimen. They improve range of motion, reduce the risk of injury, and aid in muscle recovery.",
+      "nutrition": "Proper nutrition is key to fitness success. It involves balanced intake of proteins, carbs, and fats, along with sufficient vitamins and minerals to support your workout goals.",
+      "hydration": "Staying hydrated is crucial for overall health and optimal performance during workouts. It helps regulate body temperature, lubricate joints, and transport nutrients."
+    }
+  
+}
