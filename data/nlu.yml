@@ -54,57 +54,105 @@ nlu:
 
 - intent: ask_about_bulking
   examples: |
-    - Whats Bulking?
-    - Explain bulking.
-    - Whats a bulk diet?
-    - Can you tell me about bulking diets?
-    - What does bulking focus on?
-    - What's the deal with bulking up?
-    - I've heard about bulking, what's it all about?
-    - Share some bulking diet secrets with me.
-    - Explain how to eat for muscle growth.
-    - I'm interested in bulking, give me the scoop.
-    - Can you break down the bulking phase for me?
-    - What's the secret sauce for bulking?
-    - I'd like to know more about bulking.
-    - What's involved in a bulking diet?
+    - Can you explain what bulking is?
+    - What exactly is bulking in fitness?
+    - I'm curious, what does bulking mean?
+    - Could you tell me what is meant by bulking?
+    - What is the concept of bulking?
+    - I've heard of bulking, but what is it?
+    - Can you define bulking for me?
+    - What's involved in bulking?
+    - What does the term bulking refer to?
+    - I'm not sure what bulking is, can you explain?
+    - What is the process of bulking?
+    - Explain the idea of bulking to me.
+    - What do people mean by bulking?
+    - I don't understand bulking, can you help?
+    - What's the principle behind bulking?
+    - How would you describe bulking?
+    - What's the main idea of bulking?
+    - Can you give me a brief overview of bulking?
+    - What are the basics of bulking?
+    - How do you define bulking in bodybuilding?
+    - What should I know about bulking?
+    - I'm new to this, what is bulking?
+    - In simple terms, what is bulking?
+    - Can you summarize what bulking is?
+    - What's the goal of bulking?
+    - I keep hearing about bulking, what is it?
+    - Can you clarify what bulking involves?
+    - What's the general concept of bulking?
+    - I'm a beginner, can you explain bulking?
+    - What's the primary focus of bulking?
+
 
 - intent: ask_about_cutting
   examples: |
-    - Whats cutting?
-    - Explain cutting.
-    - Whats a cut diet?
-    - What can you tell me about cutting diets?
-    - Explain the cutting phase to me.
-    - How do I go about cutting body fat?
-    - How do I start cutting body fat with my diet?
-    - Explain the concept of a cutting diet.
-    - Tell me the basics of cutting weight.
-    - I want to learn about cutting, where should I start?
-    - How can I lose fat through dieting?
-    - What's the best diet for losing body fat?
-    - Can you guide me through a cutting diet?
-    - Share some cutting diet tips, please.
-    - Tips for a cutting diet?
-    - What should I eat when I'm cutting?
+    - What exactly is cutting in fitness?
+    - Can you explain what cutting means in dieting?
+    - What's involved in a cutting diet?
+    - I've heard of cutting, but what does it entail?
+    - How does the cutting phase work for losing fat?
+    - What's the principle behind a cutting diet?
+    - Can you define the cutting process in bodybuilding?
+    - What does cutting focus on in terms of diet?
+    - Explain the concept of cutting for weight loss.
+    - What are the basics of a cutting phase?
+    - How do I approach cutting for body fat reduction?
+    - What are the key aspects of a cutting diet?
+    - How do I effectively start a cutting diet?
+    - What is the goal of a cutting phase?
+    - What are some essential tips for cutting?
+    - Could you give a brief overview of cutting?
+    - What's the best approach to cutting body fat?
+    - How is cutting different from bulking?
+    - What should I prioritize in a cutting diet?
+    - How long does a typical cutting phase last?
+    - What foods are recommended for cutting?
+    - Can cutting help in muscle definition?
+    - What are common mistakes in cutting diets?
+    - How to balance cutting with muscle preservation?
+    - Are there any specific exercises for cutting?
+    - How do I know if I'm cutting effectively?
+    - What's the difference between cutting and just losing weight?
+    - Can you suggest a simple cutting plan?
+    - How to stay healthy while on a cutting diet?
+    - What are the signs of successful cutting?
+
 
 - intent: ask_about_maintenance
   examples: |
-    - Whats maintenance?
-    - Explain maintenance.
-    - What is a maintenance diet?
-    - What's the maintenance phase in fitness?
-    - Tell me about maintaining my physique through diet.
-    - Explain how to keep my current weight and muscle.
-    - Share some diet tips for maintenance.
-    - How do I sustain my current physique?
-    - Can you provide a diet plan for weight maintenance?
-    - I want to learn about maintaining my body shape.
-    - Tell me about diet maintenance.
-    - How do I maintain my current weight and muscle mass?
-    - Tell me about diet maintenance.
-    - What does a maintenance phase involve?
-    - What should my diet look like for maintenance?
+    - What does maintenance mean in fitness terms?
+    - Can you explain the concept of a maintenance diet?
+    - What's involved in maintaining current body weight?
+    - How do I maintain my muscle mass?
+    - What are the key principles of dietary maintenance?
+    - Explain how to sustain my physique through diet.
+    - What does a maintenance phase in fitness involve?
+    - How do I keep my current weight consistent?
+    - What should I focus on in a maintenance diet?
+    - Can you give me some tips for maintaining my body shape?
+    - How is a maintenance diet different from bulking or cutting?
+    - What kind of foods are best for maintenance?
+    - How do I balance my diet for weight maintenance?
+    - What's the goal of a maintenance diet?
+    - How long should I be in the maintenance phase?
+    - What are common strategies for maintaining weight?
+    - How to adjust my diet for maintenance?
+    - Can you provide a simple maintenance diet plan?
+    - What are the challenges of maintaining weight?
+    - How often should I adjust my maintenance diet?
+    - What are the signs that my maintenance diet is working?
+    - Is exercise important in the maintenance phase?
+    - How to prevent weight gain during maintenance?
+    - What's the difference between maintenance and a normal diet?
+    - How do I switch from cutting or bulking to maintenance?
+    - What supplements are helpful for maintenance?
+    - How to monitor progress during maintenance?
+    - What are the best practices for long-term maintenance?
+    - Can maintenance help in improving overall health?
+    - How to stay motivated during the maintenance phase?
+
 
 
 - intent: ask_about_nutrition
@@ -122,19 +170,28 @@ nlu:
     - Explain the importance of good nutrition.
     - Tell me about macronutrients and micronutrients.
     - What's a nutritious diet look like?
-    - What's a balanced diet look like?
+    - What does a balanced diet include?
     - Can you provide some nutritional advice?
     - What foods are considered nutritious?
     - How do I make sure I'm getting the right nutrients?
     - What are the key components of a healthy diet?
     - I want to learn about proper nutrition.
-    - Tell me about macronutrients and micronutrients.
     - What should I eat to stay healthy?
     - What are some healthy eating habits?
+    - How do vitamins and minerals fit into nutrition?
+    - What are the best foods for overall health?
+    - How does nutrition affect my energy levels?
+    - Can you explain the role of fiber in a diet?
+    - What is the importance of hydration in nutrition?
+    - How do I plan a nutritious meal?
+    - What are superfoods and their benefits?
+    - Can you suggest a guide for daily nutritional needs?
+    - How can I balance carbs, proteins, and fats in my diet?
+
 
 - intent: ask_about_nutrition_bulk
   examples: |
-    - what to eat for bulk?
+    - What to eat for bulk?
     - What should I eat to bulk up effectively?
     - Can you give me some nutritional advice for bulking?
     - What kind of diet is best for muscle gain?
@@ -149,33 +206,60 @@ nlu:
     - How should I adjust my diet for a bulking phase?
     - What foods are recommended for gaining muscle mass?
     - How much protein do I need to eat for bulking?
-    - Can you suggest a meal plan for bulking?
     - What's the best way to increase calorie intake for muscle growth?
+    - What nutrients are crucial for effective bulking?
+    - How can I ensure I'm getting enough calories for bulking?
+    - What are healthy high-calorie foods for bulking?
+    - Is carb intake important during the bulking phase?
+    - How to balance macros in a bulking diet?
+    - What supplements should I consider for bulking?
+    - Can you explain the importance of fats in a bulking diet?
+    - How often should I eat when bulking?
+    - Are there any specific foods to avoid while bulking?
+    - How to plan a bulking diet on a budget?
+    - What is clean bulking, and how is it different?
+    - Can you provide a vegetarian bulking diet plan?
+    - How to monitor my progress during bulking nutritionally?
+    - What are the common mistakes in a bulking diet?
+
 
 - intent: ask_about_nutrition_cut
   examples: |
-    - what to eat to cut?
+    - What to eat to cut?
     - What kind of diet should I follow while cutting?
     - Can you provide nutritional tips for fat loss?
     - How should I eat during a cutting phase?
     - What are the best foods to eat for cutting?
     - How can I maintain muscle while cutting fat?
     - Tell me about nutrition for cutting body fat.
-    - How should I eat during a cutting phase?
     - Explain the diet for effective fat loss.
     - Share some cutting diet strategies.
     - What foods should I focus on for cutting?
-    - How can I maintain muscle while cutting fat?
     - Give me the lowdown on cutting nutrition.
     - What's the best diet for reducing body fat?
     - What's a good macro split for a cutting diet?
     - Are there specific nutritional strategies for cutting?
     - How do I create a calorie deficit for cutting without losing muscle?
     - What kind of diet helps with reducing body fat effectively?
+    - What is the role of protein in a cutting diet?
+    - How to manage hunger while on a cutting diet?
+    - What are the key vitamins and minerals for cutting?
+    - How much carbohydrate should I eat when cutting?
+    - Are there any superfoods for fat loss?
+    - How do I avoid losing muscle mass during cutting?
+    - Can you suggest a vegetarian cutting diet?
+    - How to adjust my diet as I progress in my cutting phase?
+    - What are the best low-calorie foods for cutting?
+    - How to measure progress during a cutting diet?
+    - What are the common mistakes in cutting diets?
+    - How to ensure I'm cutting healthily?
+    - Can you suggest a cutting meal plan for beginners?
+    - What are the benefits of drinking water during cutting?
+
 
 - intent: ask_about_nutrition_maintenance
   examples: |
-    - what to eat to maintain?
+    - What to eat to maintain?
     - How do I maintain my weight with proper nutrition?
     - What should I eat to keep my current physique?
     - What are the dietary guidelines for maintenance?
@@ -188,11 +272,24 @@ nlu:
     - Explain how to balance calorie intake for maintenance.
     - What's the best way to sustain muscle and weight?
     - Can you suggest a balanced diet for weight maintenance?
-    - What's the best way to sustain my muscle mass and weight?
     - How do I balance my calorie intake for maintenance?
     - Are there specific foods I should focus on for maintenance?
     - How can I keep a stable weight with healthy eating?
     - What nutritional advice do you have for maintaining my current weight?
+    - What are the best practices for long-term weight maintenance?
+    - How to maintain weight after a cutting or bulking phase?
+    - What is the importance of fiber in maintenance diets?
+    - How do I adjust my macros for maintenance?
+    - Can you suggest some healthy snacks for maintenance?
+    - What role do supplements play in maintenance?
+    - How often should I adjust my diet in the maintenance phase?
+    - What are the risks of not following a maintenance diet?
+    - How to track calories for effective maintenance?
+    - What are the common pitfalls in a maintenance diet?
+    - How to maintain a balanced diet with busy lifestyle?
+    - Can you provide a sample meal plan for maintenance?
+    - What's the impact of exercise on weight maintenance?
+
 
 
 
