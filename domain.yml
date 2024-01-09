@@ -79,7 +79,7 @@ responses:
 
 
 
-
+  #Nutrition focused
   utter_ask_about_diet_planning:
   - text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
 
@@ -88,6 +88,20 @@ responses:
 
   utter_ask_about_vegan_diet:
   - text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
+
+
+  #Meal plan focused
+  utter_acknowledge_goal:
+    - text: "Great! Let's work on your goal to [lose weight](goal)."
+  
+  utter_ask_diet_preference:
+    - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
+
+  utter_ask_allergies:
+    - text: "Do you have any allergies or food intolerances I should be aware of?"
+
+  utter_present_meal_plan:
+    - text: "Here's your personalized meal plan for weight loss. Let me know what you think."
 
 
 
@@ -117,6 +131,13 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+
+
+
+
+actions:
+  - action_generate_weight_loss_plan
+  - action_adjust_meal_plan
 
 
 session_config:
