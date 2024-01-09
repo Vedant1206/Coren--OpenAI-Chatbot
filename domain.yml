@@ -24,6 +24,12 @@ intents:
   - ask_about_nutrition_cut
   - ask_about_nutrition_maintenance
   - ask_about_vegan_diet
+  - ask_cardio
+  - ask_strength_training
+  - ask_for_beginner_tips
+  - ask_for_intermediate_tips
+  - ask_for_advanced_tips
+  - inquire_about_flexibility
   - express_goal
   - inform_diet_preference
   - inform_allergies

@@ -298,7 +298,6 @@ nlu:
 # 3 goals : lose weight, gain muscle and improve fitness
 
 - intent: express_goal
-  description: "User expresses their fitness goal."
   examples: |
     - I want to [lose weight](goal).
     - My main aim is to [gain muscle](goal).
@@ -355,7 +354,6 @@ nlu:
 # 3 diet types: vegan, vegetarian, high-protein
 
 - intent: inform_diet_preference
-  description: "User informs about their dietary preference."
   examples: |
     - I stick to a [vegan](diet) lifestyle.
     - I am eating a [vegetarian](diet) diet currently.
@@ -409,7 +407,6 @@ nlu:
 
 
 - intent: inform_allergies
-  description: "User informs about their allergies or food intolerances."
   examples: |
     - I'm allergic to [nuts](allergy).
     - I have a [gluten](allergy) intolerance.
@@ -465,7 +462,6 @@ nlu:
 
 
 - intent: give_feedback
-  description: "User gives feedback on the provided meal plan."
   examples: |
     - This plan looks good.
     - I don't like some of the meals in this plan.
@@ -577,22 +573,101 @@ nlu:
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - absolutely
+    - definitely
+    - sure
+    - surely
+    - yeah
+    - yep
+    - certainly
+    - affirmative
+    - exactly
+    - right
+    - true
+    - okay
+    - ok
+    - sounds good
+    - sounds great
+    - I agree
+    - I do
+    - that's right
+    - you bet
+    - for sure
+    - I believe so
+    - I think so
+    - it is
+    - count me in
+    - I'm in
+    - sign me up
+    - let's do it
+    - let's go for it
+    - I'm for it
+    - I'm sure
+    - I'm certain
+    - no doubt
+    - no doubt about it
+    - all right
+    - alright
+    - good idea
+    - that's correct
+    - you're right
+    - you got it
+    - very well
+    - I can confirm
+    - I concur
+    - I'd love to
+    - that would be nice
+    - I think that's good
+    - that's fine
+
 
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - not at all
+    - nope
+    - nah
+    - I disagree
+    - not correct
+    - not true
+    - I don't agree
+    - not in agreement
+    - no thanks
+    - I'd rather not
+    - not interested
+    - not a chance
+    - not possible
+    - I don't think that's right
+    - that's not right
+    - that's not correct
+    - I'm not sure
+    - I don't believe so
+    - I don't believe that
+    - not this time
+    - maybe not
+    - doesn't sound good
+    - sounds bad
+    - I'm not interested
+    - not my thing
+    - not for me
+    - I don't want that
+    - doesn't work for me
+    - not a good idea
+    - that won't work
+    - not the best idea
+    - not what I want
+    - not feeling it
+    - I'm not feeling it
+    - not my cup of tea
+    - not my style
+    - doesn't suit me
+    - I pass
+    - I'll pass
+    - not now
+    - maybe later
+    - not keen
+    - not fond of it
+    - doesn't appeal to me
+
 
 - intent: mood_great
   examples: |
