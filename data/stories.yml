@@ -9,6 +9,7 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+
 - story: sad path 1
   steps:
   - intent: greet

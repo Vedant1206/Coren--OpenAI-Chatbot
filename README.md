@@ -52,3 +52,13 @@ Outline the process for contributing to the project, including any coding standa
 
 ## License
 Specify the license under which your project is released, if any.
+
+## Using rasa shell
+- If you update the code, before running code, run the following command to train the bot( If you make changes to it)
+```bash
+rasa train
+```
+- followed by
+```bash
+rasa shell
+```

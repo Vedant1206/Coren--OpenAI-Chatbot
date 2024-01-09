@@ -1,6 +1,54 @@
 version: "3.1"
 
 nlu:
+- intent: ask_cardio
+  examples: |
+    - Tell me about cardio exercises
+    - What are some good cardio workouts?
+    - I want to know about running
+    - Can you give me information on cycling?
+    - Tell me about swimming workouts
+    - How effective is jump rope for cardio?
+    - Give me some details on HIIT
+
+- intent: ask_strength_training
+  examples: |
+    - What does strength training involve?
+    - Can you provide information on weightlifting?
+    - I need details about back exercises
+    - Tell me about chest exercises
+    - What are some effective leg workouts?
+    - Recommend some arm exercises
+    - How do I strengthen my core?
+
+- intent: ask_for_beginner_tips
+  examples: |
+    - I'm a beginner, what exercises should I start with?
+    - Can you suggest a workout routine for a newbie?
+    - What's a good beginner workout?
+    - Tips for someone new to the gym?
+
+- intent: ask_for_intermediate_tips
+  examples: |
+    - I'm an intermediate level, what should I focus on?
+    - Intermediate workout suggestions?
+    - What are the best exercises for someone with moderate experience?
+    - Can you provide a workout plan for regular gym-goers?
+
+- intent: ask_for_advanced_tips
+  examples: |
+    - What do advanced workouts include?
+    - I'm experienced in lifting, any advanced tips?
+    - Suggestions for intense workout routines?
+    - How can I take my training to the next level?
+
+- intent: inquire_about_flexibility
+  examples: |
+    - How can I improve my flexibility?
+    - Are stretching exercises important?
+    - Can you suggest some flexibility exercises?
+    - Benefits of being flexible in fitness?
+
 - intent: greet
   examples: |
     - hey
