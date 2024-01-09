@@ -49,6 +49,45 @@ nlu:
     - Can you suggest some flexibility exercises?
     - Benefits of being flexible in fitness?
 
+
+#-----------------------DIET---------------------------------#
+
+- intent: ask_about_bulking
+  examples: |
+    - Whats Bulking?
+    - Explain bulking.
+    - Whats a bulk diet?
+    - Can you tell me about bulking diets?
+    - What does bulking focus on?
+    - I'd like to know more about bulking.
+    - What's involved in a bulking diet?
+    - How should I eat for muscle gain?
+
+- intent: ask_about_cutting
+  examples: |
+    - Whats cutting?
+    - Explain cutting.
+    - Whats a cut diet?
+    - What can you tell me about cutting diets?
+    - Explain the cutting phase to me.
+    - How do I go about cutting body fat?
+    - Tips for a cutting diet?
+    - What should I eat when I'm cutting?
+
+- intent: ask_about_maintenance
+  examples: |
+    - Whats maintenance?
+    - Explain maintenance.
+    - What is a maintenance diet?
+    - How do I maintain my current weight and muscle mass?
+    - Tell me about diet maintenance.
+    - What does a maintenance phase involve?
+    - What should my diet look like for maintenance?
+
+
+
+
+
 - intent: greet
   examples: |
     - hey

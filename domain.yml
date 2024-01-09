@@ -8,8 +8,25 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_about_bulking
+  - ask_about_cutting
+  - ask_about_maintenance
 
 responses:
+
+  #-------------------DIET-----------------#
+
+  utter_ask_about_bulking:
+  - text: "Bulking focuses on muscle gain through a calorie surplus and high protein intake. It involves consuming more calories than your body burns, combined with resistance training, leading to muscle growth. Key tips include high protein intake, increased calorie consumption focusing on nutrient-rich foods, frequent meals, and balanced macros."
+
+  utter_ask_about_cutting:
+  - text: "Cutting aims at reducing body fat while maintaining muscle mass through a calorie deficit and balanced diet. It involves eating fewer calories than you burn, leading to fat loss. Key tips are calorie deficit, maintaining protein intake to preserve muscle mass, hydration, and reduced carb intake focusing on complex carbohydrates."
+
+  utter_ask_about_maintenance:
+  - text: "Maintenance is about sustaining your current weight and muscle mass after a period of bulking or cutting. It involves adjusting your calorie intake to match your daily energy expenditure. The focus is on a balanced diet that supports your fitness level and body composition goals, with consistent protein intake and regular physical activity."
+
+  #---------------------------------------#
+
   utter_greet:
   - text: "Hey! How are you?"
 

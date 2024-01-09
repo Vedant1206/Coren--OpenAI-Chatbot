@@ -2,6 +2,27 @@ version: "3.1"
 
 stories:
 
+
+#--------------------DIET---------------#
+
+- story: user asks about bulking diet
+  steps:
+  - intent: ask_about_bulking
+  - action: utter_ask_about_bulking
+
+- story: user asks about cutting diet
+  steps:
+  - intent: ask_about_cutting
+  - action: utter_ask_about_cutting
+
+- story: user asks about maintenance diet
+  steps:
+  - intent: ask_about_maintenance
+  - action: utter_ask_about_maintenance
+
+
+#-------------------------------------#
+
 - story: happy path
   steps:
   - intent: greet
