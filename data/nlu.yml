@@ -59,9 +59,15 @@ nlu:
     - Whats a bulk diet?
     - Can you tell me about bulking diets?
     - What does bulking focus on?
+    - What's the deal with bulking up?
+    - I've heard about bulking, what's it all about?
+    - Share some bulking diet secrets with me.
+    - Explain how to eat for muscle growth.
+    - I'm interested in bulking, give me the scoop.
+    - Can you break down the bulking phase for me?
+    - What's the secret sauce for bulking?
     - I'd like to know more about bulking.
     - What's involved in a bulking diet?
-    - How should I eat for muscle gain?
 
 - intent: ask_about_cutting
   examples: |
@@ -71,6 +77,14 @@ nlu:
     - What can you tell me about cutting diets?
     - Explain the cutting phase to me.
     - How do I go about cutting body fat?
+    - How do I start cutting body fat with my diet?
+    - Explain the concept of a cutting diet.
+    - Tell me the basics of cutting weight.
+    - I want to learn about cutting, where should I start?
+    - How can I lose fat through dieting?
+    - What's the best diet for losing body fat?
+    - Can you guide me through a cutting diet?
+    - Share some cutting diet tips, please.
     - Tips for a cutting diet?
     - What should I eat when I'm cutting?
 
@@ -79,10 +93,107 @@ nlu:
     - Whats maintenance?
     - Explain maintenance.
     - What is a maintenance diet?
+    - What's the maintenance phase in fitness?
+    - Tell me about maintaining my physique through diet.
+    - Explain how to keep my current weight and muscle.
+    - Share some diet tips for maintenance.
+    - How do I sustain my current physique?
+    - Can you provide a diet plan for weight maintenance?
+    - I want to learn about maintaining my body shape.
+    - Tell me about diet maintenance.
     - How do I maintain my current weight and muscle mass?
     - Tell me about diet maintenance.
     - What does a maintenance phase involve?
     - What should my diet look like for maintenance?
+
+
+- intent: ask_about_nutrition
+  examples: |
+    - Can you tell me about good nutrition practices?
+    - What should I know about nutrition?
+    - Give me some nutrition tips.
+    - I need information on how to eat healthily.
+    - What are the basics of nutrition?
+    - How can I improve my diet?
+    - I need advice on healthy nutrition.
+    - What's the key to a balanced diet?
+    - Can you share some nutrition secrets?
+    - How can I improve my eating habits?
+    - Explain the importance of good nutrition.
+    - Tell me about macronutrients and micronutrients.
+    - What's a nutritious diet look like?
+    - What's a balanced diet look like?
+    - Can you provide some nutritional advice?
+    - What foods are considered nutritious?
+    - How do I make sure I'm getting the right nutrients?
+    - What are the key components of a healthy diet?
+    - I want to learn about proper nutrition.
+    - Tell me about macronutrients and micronutrients.
+    - What should I eat to stay healthy?
+    - What are some healthy eating habits?
+
+- intent: ask_about_nutrition_bulk
+  examples: |
+    - what to eat for bulk?
+    - What should I eat to bulk up effectively?
+    - Can you give me some nutritional advice for bulking?
+    - What kind of diet is best for muscle gain?
+    - What are the key nutrition tips for bulking?
+    - How do I eat to bulk up effectively?
+    - Give me the lowdown on bulking nutrition.
+    - Can you break down the nutrition for muscle gain?
+    - Share some nutritional tips for bulking.
+    - What's the best diet for muscle growth?
+    - Explain the role of nutrition in bulking.
+    - Can you suggest a meal plan for bulking?
+    - How should I adjust my diet for a bulking phase?
+    - What foods are recommended for gaining muscle mass?
+    - How much protein do I need to eat for bulking?
+    - Can you suggest a meal plan for bulking?
+    - What's the best way to increase calorie intake for muscle growth?
+
+- intent: ask_about_nutrition_cut
+  examples: |
+    - what to eat to cut?
+    - What kind of diet should I follow while cutting?
+    - Can you provide nutritional tips for fat loss?
+    - How should I eat during a cutting phase?
+    - What are the best foods to eat for cutting?
+    - How can I maintain muscle while cutting fat?
+    - Tell me about nutrition for cutting body fat.
+    - How should I eat during a cutting phase?
+    - Explain the diet for effective fat loss.
+    - Share some cutting diet strategies.
+    - What foods should I focus on for cutting?
+    - How can I maintain muscle while cutting fat?
+    - Give me the lowdown on cutting nutrition.
+    - What's the best diet for reducing body fat?
+    - What's a good macro split for a cutting diet?
+    - Are there specific nutritional strategies for cutting?
+    - How do I create a calorie deficit for cutting without losing muscle?
+    - What kind of diet helps with reducing body fat effectively?
+
+- intent: ask_about_nutrition_maintenance
+  examples: |
+    - what to eat to maintain?
+    - How do I maintain my weight with proper nutrition?
+    - What should I eat to keep my current physique?
+    - What are the dietary guidelines for maintenance?
+    - What's the nutritional strategy for maintenance?
+    - Explain diet guidelines for weight maintenance.
+    - Tell me about nutrition for sustaining physique.
+    - How should I eat to maintain my current weight?
+    - Share some nutritional advice for maintenance.
+    - Can you suggest a balanced diet for maintenance?
+    - Explain how to balance calorie intake for maintenance.
+    - What's the best way to sustain muscle and weight?
+    - Can you suggest a balanced diet for weight maintenance?
+    - What's the best way to sustain my muscle mass and weight?
+    - How do I balance my calorie intake for maintenance?
+    - Are there specific foods I should focus on for maintenance?
+    - How can I keep a stable weight with healthy eating?
+    - What nutritional advice do you have for maintaining my current weight?
+
 
 
 
@@ -117,6 +228,25 @@ nlu:
     - bye bye
     - see you later
 
+- intent: thank_you
+  examples: |
+    - Thanks!
+    - Thank you
+    - Thanks a lot
+    - Thank you so much
+    - Appreciate it
+    - Much appreciated
+    - Thanks for your help
+    - Thanks for the info
+    - Thank you for your assistance
+    - Thanks for everything
+    - Thanks, that was helpful
+    - I'm grateful
+    - Cheers for the help
+    - I appreciate your help
+    - Thank you, you've been very helpful
+
+
 - intent: affirm
   examples: |
     - yes
@@ -141,6 +271,7 @@ nlu:
     - perfect
     - great
     - amazing
+    - I'm good
     - feeling like a king
     - wonderful
     - I am feeling very good
