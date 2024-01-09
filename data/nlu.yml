@@ -292,7 +292,238 @@ nlu:
 
 
 
+# Meal planning focused_______________________________________
 
+
+# 3 goals : lose weight, gain muscle and improve fitness
+
+- intent: express_goal
+  description: "User expresses their fitness goal."
+  examples: |
+    - I want to [lose weight](goal).
+    - My main aim is to [gain muscle](goal).
+    - I'm working on [improving my fitness](goal).
+    - I need to [lose some weight](goal) for my health.
+    - I'm trying to [bulk up](goal) and gain muscle.
+    - I'm focusing on [getting fitter](goal).
+    - My objective is [weight loss](goal).
+    - I plan to [build more muscle](goal).
+    - I am aiming to [enhance my overall fitness](goal).
+    - I'm looking to [shed some pounds](goal).
+    - My goal is to [gain muscle mass](goal).
+    - I need to [improve my physical fitness](goal).
+    - I'm trying to [lose weight](goal) effectively.
+    - I'm interested in [muscle building](goal).
+    - I want to [get into better shape](goal).
+    - My main focus is on [losing weight](goal).
+    - I am working towards [muscle gain](goal).
+    - I'm targeting [better fitness levels](goal).
+    - My aim is to [drop weight](goal).
+    - I am planning on [gaining some muscle](goal).
+    - I wish to [enhance my fitness](goal).
+    - I want to [lose a few pounds](goal).
+    - I'm hoping to [increase my muscle size](goal).
+    - I am striving to [become more fit](goal).
+    - My goal is [cutting down my weight](goal).
+    - I would like to [gain lean muscle](goal).
+    - I'm focusing on [overall fitness improvement](goal).
+    - I need to [reduce my body weight](goal).
+    - I'm planning to [build muscle strength](goal).
+    - I aim to [boost my fitness level](goal).
+    - I want to [achieve weight loss](goal).
+    - My target is to [gain substantial muscle](goal).
+    - I'm working on [improving my general fitness](goal).
+    - I'm looking at [weight reduction](goal).
+    - I aspire to [build muscle](goal).
+    - I have a goal to [improve my fitness](goal).
+    - I'm determined to [lose excess weight](goal).
+    - I want to [bulk up with muscle](goal).
+    - I'm committed to [getting fit](goal).
+    - My objective is [losing weight quickly](goal).
+    - I have set a goal to [gain more muscle](goal).
+    - I'm focusing my efforts on [fitness enhancement](goal).
+    - I need to [cut down weight](goal) for a competition.
+    - I am aiming for [muscle development](goal).
+    - I wish to [get fit](goal) and active.
+    - I'm on a journey to [lose weight](goal) healthily.
+    - I plan on [gaining muscle](goal) this year.
+    - I'm motivated to [improve my overall fitness](goal).
+    - My primary goal is [weight management](goal).
+    - I'm eager to [build up muscles](goal).
+
+
+# 3 diet types: vegan, vegetarian, high-protein
+
+- intent: inform_diet_preference
+  description: "User informs about their dietary preference."
+  examples: |
+    - I stick to a [vegan](diet) lifestyle.
+    - I am eating a [vegetarian](diet) diet currently.
+    - My diet is mainly [high-protein](diet).
+    - I've been following a [vegan](diet) diet for years.
+    - I'm a strict [vegetarian](diet).
+    - I prefer a [high-protein](diet) diet for muscle building.
+    - I've recently switched to a [vegan](diet) diet.
+    - I enjoy [vegetarian](diet) meals.
+    - My nutritionist suggested a [high-protein](diet) diet.
+    - I am considering going [vegan](diet).
+    - My preference is for [vegetarian](diet) food.
+    - I've been focusing on a [high-protein](diet) intake.
+    - I like the [vegan](diet) way of eating.
+    - I have been a [vegetarian](diet) for a long time.
+    - I'm trying to eat more [high-protein](diet) meals.
+    - I'm committed to a [vegan](diet) diet.
+    - I find [vegetarian](diet) dishes delicious.
+    - I eat [high-protein](diet) foods to support my workouts.
+    - Being [vegan](diet) is important to me.
+    - I usually have [vegetarian](diet) options.
+    - My diet is [high-protein](diet) based.
+    - I recently adopted a [vegan](diet) lifestyle.
+    - I always choose [vegetarian](diet) dishes.
+    - I focus on [high-protein](diet) foods for energy.
+    - My choice is a [vegan](diet) diet for health reasons.
+    - I'm quite happy with my [vegetarian](diet) diet.
+    - I aim for a [high-protein](diet) diet to gain muscle.
+    - I've been [vegan](diet) for health benefits.
+    - I enjoy the variety in a [vegetarian](diet) diet.
+    - I ensure my meals are [high-protein](diet).
+    - I love the [vegan](diet) cuisine.
+    - I find a [vegetarian](diet) diet suits me best.
+    - I rely on a [high-protein](diet) diet for fitness.
+    - My diet is exclusively [vegan](diet).
+    - I've been experimenting with [vegetarian](diet) recipes.
+    - I look for [high-protein](diet) options in my meals.
+    - I'm a proud [vegan](diet).
+    - I've always been a [vegetarian](diet).
+    - I prefer a diet that is [high-protein](diet).
+    - My eating habits are [vegan](diet) based.
+    - I'm trying out a [vegetarian](diet) lifestyle.
+    - I've shifted to a [high-protein](diet) diet recently.
+    - I'm dedicated to following a [vegan](diet) diet.
+    - I opt for [vegetarian](diet) meals most of the time.
+    - I focus on consuming [high-protein](diet) foods.
+    - I've embraced the [vegan](diet) way.
+    - My diet mainly consists of [vegetarian](diet) food.
+    - I aim to eat [high-protein](diet) foods regularly.
+    - I've switched to a [vegan](diet) diet for ethical reasons.
+
+
+- intent: inform_allergies
+  description: "User informs about their allergies or food intolerances."
+  examples: |
+    - I'm allergic to [nuts](allergy).
+    - I have a [gluten](allergy) intolerance.
+    - I can't have [dairy](allergy) products.
+    - I need to avoid [gluten](allergy).
+    - [Dairy](allergy) doesn't agree with me.
+    - I have severe [nut](allergy) allergies.
+    - I must steer clear of [gluten](allergy).
+    - [Dairy](allergy) products cause me issues.
+    - My diet is [gluten](allergy)-free.
+    - I avoid [dairy](allergy) due to intolerance.
+    - I've been diagnosed with [gluten](allergy) sensitivity.
+    - I'm lactose intolerant, so no [dairy](allergy).
+    - I follow a [gluten](allergy)-free diet.
+    - I can't digest [dairy](allergy) well.
+    - My body can't handle [gluten](allergy).
+    - I have an intolerance to [dairy](allergy).
+    - I have to avoid [gluten](allergy) in my diet.
+    - [Dairy](allergy) is a no-go for me.
+    - [Gluten](allergy) makes me sick.
+    - I have a bad reaction to [dairy](allergy).
+    - I'm on a [gluten](allergy)-free regime.
+    - I abstain from [dairy](allergy) products.
+    - I need a diet without [gluten](allergy).
+    - I'm allergic to [dairy](allergy) products.
+    - I must avoid [gluten](allergy) in my meals.
+    - [Dairy](allergy) is off-limits for me.
+    - I cannot consume [gluten](allergy).
+    - I have an allergy to [dairy](allergy).
+    - I can't eat anything with [gluten](allergy).
+    - I avoid [dairy](allergy) due to allergies.
+    - My body reacts badly to [gluten](allergy).
+    - [Dairy](allergy) products are a problem for me.
+    - I'm sensitive to [nuts](allergy).
+    - I have a strong reaction to [gluten](allergy).
+    - I'm intolerant to [dairy](allergy).
+    - [Gluten](allergy) is harmful to me.
+    - I react badly to [dairy](allergy) products.
+    - I have a [nut](allergy) allergy.
+    - I'm on a strict [gluten](allergy)-free diet.
+    - [Dairy](allergy) causes health issues for me.
+    - I get sick from [gluten](allergy).
+    - I have to avoid [dairy](allergy) in my meals.
+    - I'm highly allergic to [nuts](allergy).
+    - I can't have foods containing [gluten](allergy).
+    - [Dairy](allergy) triggers my allergies.
+    - I have to be careful with [nuts](allergy).
+    - I'm strictly avoiding [gluten](allergy) in my diet.
+    - [Dairy](allergy) is not suitable for me.
+    - I have adverse reactions to [gluten](allergy).
+    - Eating [dairy](allergy) causes me discomfort.
+    - I'm extremely allergic to [nuts](allergy).
+
+
+- intent: give_feedback
+  description: "User gives feedback on the provided meal plan."
+  examples: |
+    - This plan looks good.
+    - I don't like some of the meals in this plan.
+    - Can we include more variety in my diet?
+    - I can't eat these foods.
+    - This meal plan seems perfect.
+    - Can you add more protein-rich foods?
+    - I'm not a fan of these recipes.
+    - This is exactly what I was looking for.
+    - Can the meals be simpler to prepare?
+    - I prefer more plant-based options.
+    - This plan has too many carbs for me.
+    - I love the variety in this plan.
+    - Some of these ingredients are hard to find.
+    - Can you adjust the calorie count?
+    - I'm allergic to some of the foods listed.
+    - The portion sizes seem too big.
+    - Can we swap out some of these meals?
+    - I need more breakfast options.
+    - Some meals are too complicated to make.
+    - I'd like more low-calorie meals.
+    - This plan is not what I expected.
+    - I appreciate the effort, but it's not quite right.
+    - The flavors in these recipes don't appeal to me.
+    - I'm looking for more gluten-free options.
+    - I need a plan with fewer animal products.
+    - I enjoy the meals, but I need more variety.
+    - This plan is too restrictive for me.
+    - I'm happy with the meal variety.
+    - Can you include more seasonal ingredients?
+    - I need a plan that's easier to follow.
+    - I like the plan but need smaller portions.
+    - I'm looking for a more balanced meal plan.
+    - The plan is great, but I need more snacks.
+    - I prefer a diet with more fresh fruits and vegetables.
+    - Can the plan accommodate my workout schedule?
+    - I need a diet plan that's less time-consuming to prepare.
+    - I'm looking for a meal plan with more dairy-free options.
+    - I'm not keen on the taste of some meals.
+    - I need a plan that aligns better with my lifestyle.
+    - The meals are good, but I need more protein.
+    - I'm looking for more heart-healthy options.
+    - I need a meal plan that's lower in sodium.
+    - This meal plan is a bit too complex for me.
+    - I'm satisfied with the plan overall.
+    - Can you provide more kid-friendly meal options?
+    - I'd like the plan to include more whole grains.
+    - The meal plan is good, but I need more hydration options.
+    - Can you add more superfood ingredients to the meals?
+    - I'm looking for a meal plan with more diverse flavors.
+
+
+
+
+
+
+
+#---------------------------------------------------------#
 
 
 
