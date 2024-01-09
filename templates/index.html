@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat</title>
-    <!-- Reference the CSS file directly inside the static folder -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Chatbot</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Reference the image file directly inside the static folder -->
-        <button id="microphone-btn" onclick="toggleMicrophone()">
-            <img src="{{ url_for('static', filename='microphone-icon.png') }}" alt="Microphone"/>
-        </button>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <input type="text" id="userInput">
+        <button onclick="sendMessage()">Send</button>
     </div>
 
-    <!-- Reference the JS file directly inside the static folder -->
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        function sendMessage() {
+            var userMessage = document.getElementById('userInput').value;
+            document.getElementById('messages').innerHTML += "<b>You:</b> " + userMessage + "<br>";
+
+            fetch('http://localhost:5005/webhooks/rest/webhook', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ "message": userMessage, "sender": "user" }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botMessage = data[0].text;
+                document.getElementById('messages').innerHTML += "<b>Bot:</b> " + botMessage + "<br>";
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+
+            document.getElementById('userInput').value = '';
+        }
+    </script>
 </body>
 </html>
