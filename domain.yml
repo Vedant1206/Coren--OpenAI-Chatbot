@@ -674,6 +674,9 @@ responses:
 actions:
   - action_generate_weight_loss_plan
   - action_adjust_meal_plan
+  - action_generate_muscle_gain_plan
+  - action_generate_general_fitness_plan
+
 
 
 session_config:
