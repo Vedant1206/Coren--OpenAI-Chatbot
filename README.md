@@ -29,6 +29,24 @@ To set up the project on your local machine, follow these steps:
    ```bash
    pip install Flask
    ```
+## Dependencies
+   Download these dependencies for smooth running of the bot:
+
+   Speech Recognition:
+   ```bash
+   pip install speechrecognition
+   ```
+
+   Python Audio:
+   ```bash
+   pip install PyAudio
+   ```
+
+   Requests:
+   ```bash
+   pip install requests
+   ```
+
 ## Configuration
 Describe any necessary configuration steps, such as setting up environment variables or external services.
 
