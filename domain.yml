@@ -23,18 +23,12 @@ intents:
   - ask_about_nutrition_bulk
   - ask_about_nutrition_cut
   - ask_about_nutrition_maintenance
-  - ask_about_vegan_diet
-  - ask_cardio
-  - ask_strength_training
-  - ask_for_beginner_tips
-  - ask_for_intermediate_tips
-  - ask_for_advanced_tips
-  - inquire_about_flexibility
   - express_goal
   - inform_diet_preference
   - inform_allergies
   - give_feedback
 
+  - ask_strength_training
   - ask_for_beginner_tips
   - start_strength_training
   - benefits_of_strength_training
@@ -46,7 +40,7 @@ intents:
   - strength_training_frequency
   - effective_strength_workout_tips
   - equipment_needed_for_strength_training
-  
+
   - ask_pull_ups
   - ask_rows
   - ask_lat_pulldowns
@@ -93,82 +87,7 @@ intents:
   - ask_ab_rollouts_technique
   - ask_twisting_leg_raises
   - ask_mountain_climbers_technique
-  - ask_plank_exercise
-  - ask_russian_twists
-  - ask_ab_rollouts
-  - ask_hanging_leg_raises
-  - ask_mountain_climbers
-
-  - ask_military_press_technique
-  - ask_lateral_raises
-  - ask_face_pulls_variations
-  - ask_arnold_press
-  - ask_shrugs_technique
-  - ask_shoulder_benefits
-
-  - ask_for_beginner_tips
-  - start_strength_training
-  - benefits_of_strength_training
-  - strength_training_routine
-  - different_strength_training_exercises
-  - importance_of_strength_training
-  - building_muscle_strength
-  - resistance_training
-  - strength_training_frequency
-  - effective_strength_workout_tips
-  - equipment_needed_for_strength_training
   
-  - ask_pull_ups
-  - ask_rows
-  - ask_lat_pulldowns
-  - ask_deadlifts
-  - ask_tbar_row
-  - ask_lat_pull
-  - ask_seated_cable_row
-  - ask_face_pulls
-
-  - ask_bench_press
-  - ask_incline_dumbbell_press
-  - ask_push_ups
-  - ask_chest_flyes
-  - ask_dips
-  - ask_close_grip_bench_press
-  - ask_decline_bench_press
-  - ask_chest_dumbbell_pullovers
-  - ask_machine_chest_press
-  - ask_chest_cable_crossovers
-
-  - ask_squats
-  - ask_lunges
-  - ask_leg_press
-  - ask_calf_raises
-  - ask_leg_curls
-  - ask_leg_extensions
-  - ask_sumo_deadlift
-  - ask_leg_workout_tips
-  - ask_leg_strength_training
-
-  - ask_bicep_curls
-  - ask_tricep_dips
-  - ask_barbell_shrugs
-  - ask_forearm_curls
-  - ask_skull_crushers
-  - ask_hammer_curl
-  - ask_forearm_exercises
-  - ask_dumbbell_shrug
-  - ask_overhead_tricep_extension
-  - ask_zottman_curl
-
-  - ask_plank_technique
-  - ask_russian_twists_variations
-  - ask_ab_rollouts_technique
-  - ask_twisting_leg_raises
-  - ask_mountain_climbers_technique
-  - ask_plank_exercise
-  - ask_russian_twists
-  - ask_ab_rollouts
-  - ask_hanging_leg_raises
-  - ask_mountain_climbers
 
   - ask_military_press_technique
   - ask_lateral_raises
@@ -278,6 +197,8 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_ask_strength_training: 
+  - text: "Strength training involves resistance exercises to build muscle strength and tone your body."
 
   utter_ask_for_beginner_tips:
   - text: |
@@ -695,36 +616,6 @@ responses:
       1. **Starting Position**: Begin in a plank position.
       2. **Movement**: Bring one knee towards your chest, then switch to the other leg quickly.
 
-  utter_ask_plank_exercise:
-  - text: |
-      Planks are key for core stability. Variations include:
-      1. **Side Plank**: Focus on obliques by shifting your weight to one arm and the side of your foot.
-      2. **Plank Jacks**: Jump your feet in and out for a cardio challenge.
-
-  utter_ask_russian_twists:
-  - text: |
-      Russian Twists are great for core and oblique strength. Here's the technique:
-      1. **Form**: Sit with bent knees, lean back slightly, and twist your torso side to side.
-      2. **With Weights**: Hold a dumbbell or medicine ball for added intensity.
-
-  utter_ask_ab_rollouts:
-  - text: |
-      Ab Rollouts are effective for core muscles. Here's how to do them:
-      1. **Technique**: Use an ab wheel or barbell, roll forward from your knees, and engage your core.
-      2. **Progression**: Increase the rollout distance as your strength improves.
-
-  utter_ask_hanging_leg_raises:
-  - text: |
-      Hanging Leg Raises target the lower abs. Here's the technique:
-      1. **Form**: Hang from a pull-up bar, keep your legs straight or knees bent.
-      2. **Movement**: Raise your legs or knees up towards your chest, then lower slowly.
-
-  utter_ask_mountain_climbers:
-  - text: |
-      Mountain Climbers are effective for core and cardio. Here's how to do them:
-      1. **Starting Position**: Begin in a push-up position.
-      2. **Movement**: Quickly draw one knee at a time towards your chest, alternating legs.
-
 #_________________________________________________________shoulder___________________________
 
   utter_ask_military_press_technique:
@@ -771,9 +662,6 @@ responses:
       3. **Arnold Press**: Targets multiple shoulder muscles for overall development.
       4. **Shrugs**: Strengthen the trapezius muscles, essential for neck and shoulder stability.
       5. **Military Press**: Develops shoulder power and stability, engaging the entire deltoid region.
-
-
-
 
 actions:
   - action_generate_weight_loss_plan
