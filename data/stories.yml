@@ -164,7 +164,7 @@ stories:
   - intent: express_goal
     entities:
     - goal: weight loss
-  - action: utter_acknowledge_goal
+  - action: utter_acknowledge_lw_goal
   - action: utter_ask_diet_preference
   - intent: inform_diet_preference
     entities:

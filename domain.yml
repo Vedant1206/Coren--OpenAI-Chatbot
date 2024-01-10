@@ -158,8 +158,8 @@ responses:
 
 
   #Meal plan focused
-  utter_acknowledge_goal:
-    - text: "Great! Let's work on your goal to [lose weight](goal)."
+  utter_acknowledge_lw_goal:
+    - text: "Great! Let's work on your goal to lose weight."
   
   utter_ask_diet_preference:
     - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
