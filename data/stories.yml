@@ -1,31 +1,317 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
+- story: user greets and asks for beginner tips
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: ask_for_beginner_tips
+  - action: utter_ask_for_beginner_tips
+  - intent: goodbye
   - action: utter_goodbye
+
+- story: user inquires about starting strength training and its benefits
+  steps:
+  - intent: start_strength_training
+  - action: utter_start_strength_training
+  - intent: benefits_of_strength_training
+  - action: utter_benefits_of_strength_training
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about strength training routine and exercises
+  steps:
+  - intent: strength_training_routine
+  - action: utter_strength_training_routine
+  - intent: different_strength_training_exercises
+  - action: utter_different_strength_training_exercises
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in muscle building and resistance training
+  steps:
+  - intent: building_muscle_strength
+  - action: utter_building_muscle_strength
+  - intent: resistance_training
+  - action: utter_resistance_training
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user queries about strength training frequency and workout tips
+  steps:
+  - intent: strength_training_frequency
+  - action: utter_strength_training_frequency
+  - intent: effective_strength_workout_tips
+  - action: utter_effective_strength_workout_tips
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about necessary equipment for strength training
+  steps:
+  - intent: equipment_needed_for_strength_training
+  - action: utter_equipment_needed_for_strength_training
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user inquires about pull-ups and rows
+  steps:
+  - intent: ask_pull_ups
+  - action: utter_ask_pull_ups
+  - intent: ask_rows
+  - action: utter_ask_rows
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in lat pulldowns and deadlifts
+  steps:
+  - intent: ask_lat_pulldowns
+  - action: utter_ask_lat_pulldowns
+  - intent: ask_deadlifts
+  - action: utter_ask_deadlifts
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about T-Bar row and lat pulls
+  steps:
+  - intent: ask_tbar_row
+  - action: utter_ask_tbar_row
+  - intent: ask_lat_pull
+  - action: utter_ask_lat_pull
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user inquires about seated cable row and face pulls
+  steps:
+  - intent: ask_seated_cable_row
+  - action: utter_ask_seated_cable_row
+  - intent: ask_face_pulls
+  - action: utter_ask_face_pulls
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in bench press and incline dumbbell press
+  steps:
+  - intent: ask_bench_press
+  - action: utter_ask_bench_press
+  - intent: ask_incline_dumbbell_press
+  - action: utter_ask_incline_dumbbell_press
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user queries about push-ups and chest flyes
+  steps:
+  - intent: ask_push_ups
+  - action: utter_ask_push_ups
+  - intent: ask_chest_flyes
+  - action: utter_ask_chest_flyes
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about dips and close grip bench press
+  steps:
+  - intent: ask_dips
+  - action: utter_ask_dips
+  - intent: ask_close_grip_bench_press
+  - action: utter_ask_close_grip_bench_press
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in decline bench press and chest dumbbell pullovers
+  steps:
+  - intent: ask_decline_bench_press
+  - action: utter_ask_decline_bench_press
+  - intent: ask_chest_dumbbell_pullovers
+  - action: utter_ask_chest_dumbbell_pullovers
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user inquires about machine chest press and chest cable crossovers
+  steps:
+  - intent: ask_machine_chest_press
+  - action: utter_ask_machine_chest_press
+  - intent: ask_chest_cable_crossovers
+  - action: utter_ask_chest_cable_crossovers
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about squats and lunges
+  steps:
+  - intent: ask_squats
+  - action: utter_ask_squats
+  - intent: ask_lunges
+  - action: utter_ask_lunges
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in leg press and calf raises
+  steps:
+  - intent: ask_leg_press
+  - action: utter_ask_leg_press
+  - intent: ask_calf_raises
+  - action: utter_ask_calf_raises
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user queries about leg curls and leg extensions
+  steps:
+  - intent: ask_leg_curls
+  - action: utter_ask_leg_curls
+  - intent: ask_leg_extensions
+  - action: utter_ask_leg_extensions
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about sumo deadlift and leg workout tips
+  steps:
+  - intent: ask_sumo_deadlift
+  - action: utter_ask_sumo_deadlift
+  - intent: ask_leg_workout_tips
+  - action: utter_ask_leg_workout_tips
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in leg strength training
+  steps:
+  - intent: ask_leg_strength_training
+  - action: utter_ask_leg_strength_training
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user inquires about bicep curls and tricep dips
+  steps:
+  - intent: ask_bicep_curls
+  - action: utter_ask_bicep_curls
+  - intent: ask_tricep_dips
+  - action: utter_ask_tricep_dips
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about barbell shrugs and forearm curls
+  steps:
+  - intent: ask_barbell_shrugs
+  - action: utter_ask_barbell_shrugs
+  - intent: ask_forearm_curls
+  - action: utter_ask_forearm_curls
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in skull crushers and hammer curls
+  steps:
+  - intent: ask_skull_crushers
+  - action: utter_ask_skull_crushers
+  - intent: ask_hammer_curl
+  - action: utter_ask_hammer_curl
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user queries about forearm exercises and dumbbell shrugs
+  steps:
+  - intent: ask_forearm_exercises
+  - action: utter_ask_forearm_exercises
+  - intent: ask_dumbbell_shrug
+  - action: utter_ask_dumbbell_shrug
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about overhead tricep extension and Zottman curls
+  steps:
+  - intent: ask_overhead_tricep_extension
+  - action: utter_ask_overhead_tricep_extension
+  - intent: ask_zottman_curl
+  - action: utter_ask_zottman_curl
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user inquires about plank technique and Russian twists variations
+  steps:
+  - intent: ask_plank_technique
+  - action: utter_ask_plank_technique
+  - intent: ask_russian_twists_variations
+  - action: utter_ask_russian_twists_variations
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in ab rollouts technique and twisting leg raises
+  steps:
+  - intent: ask_ab_rollouts_technique
+  - action: utter_ask_ab_rollouts_technique
+  - intent: ask_twisting_leg_raises
+  - action: utter_ask_twisting_leg_raises
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about mountain climbers technique and plank exercise
+  steps:
+  - intent: ask_mountain_climbers_technique
+  - action: utter_ask_mountain_climbers_technique
+  - intent: ask_plank_exercise
+  - action: utter_ask_plank_exercise
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user inquires about Russian twists and ab rollouts
+  steps:
+  - intent: ask_russian_twists
+  - action: utter_ask_russian_twists
+  - intent: ask_ab_rollouts
+  - action: utter_ask_ab_rollouts
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in hanging leg raises and mountain climbers
+  steps:
+  - intent: ask_hanging_leg_raises
+  - action: utter_ask_hanging_leg_raises
+  - intent: ask_mountain_climbers
+  - action: utter_ask_mountain_climbers
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user asks about military press technique and lateral raises
+  steps:
+  - intent: ask_military_press_technique
+  - action: utter_ask_military_press_technique
+  - intent: ask_lateral_raises
+  - action: utter_ask_lateral_raises
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user inquires about face pulls variations and Arnold press
+  steps:
+  - intent: ask_face_pulls_variations
+  - action: utter_ask_face_pulls_variations
+  - intent: ask_arnold_press
+  - action: utter_ask_arnold_press
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user interested in shrugs technique and shoulder benefits
+  steps:
+  - intent: ask_shrugs_technique
+  - action: utter_ask_shrugs_technique
+  - intent: ask_shoulder_benefits
+  - action: utter_ask_shoulder_benefits
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: bot_challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: mood_unhappy
+  steps:
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - intent: deny
+    - action: utter_did_that_help
+
+- story: mood_great
+  steps:
+    - intent: mood_great
+    - action: utter_happy

@@ -1,139 +1,706 @@
 version: "3.1"
 
 nlu:
-- intent: ask_cardio
-  examples: |
-    - Tell me about cardio exercises
-    - What are some good cardio workouts?
-    - I want to know about running
-    - Can you give me information on cycling?
-    - Tell me about swimming workouts
-    - How effective is jump rope for cardio?
-    - Give me some details on HIIT
+  - intent: ask_for_beginner_tips
+    examples: |
+      - I'm new to fitness, where should I start?
+      - Recommend some workouts for a beginner like me.
+      - What's the first step for someone starting their fitness journey?
+      - Can you provide a basic workout plan for beginners?
+      - I want to get into shape, what should I do as a beginner?
+      - How do I start a fitness routine from scratch?
+      - Tell me about easy exercises for someone with no experience.
+      - What's the best way to ease into working out for a beginner?
+      - Beginner's guide to getting fit
+      - Tips for someone who's never been to the gym before
+      - How to get started with exercise as a newbie
 
-- intent: ask_strength_training
-  examples: |
-    - What does strength training involve?
-    - Can you provide information on weightlifting?
-    - I need details about back exercises
-    - Tell me about chest exercises
-    - What are some effective leg workouts?
-    - Recommend some arm exercises
-    - How do I strengthen my core?
+#*******************************Basic Strength Training section********************************
+  - intent: start_strength_training
+    examples: |
+      - How do I start with strength training?
+      - What's the best way to begin strength training?
+      - Tips for starting strength training as a beginner.
+      - Starting a strength training program.
+      - Beginner's guide to strength training.
+      - How should I get started with strength workouts?
 
-- intent: ask_for_beginner_tips
-  examples: |
-    - I'm a beginner, what exercises should I start with?
-    - Can you suggest a workout routine for a newbie?
-    - What's a good beginner workout?
-    - Tips for someone new to the gym?
+  - intent: benefits_of_strength_training
+    examples: |
+      - What are the benefits of strength training?
+      - Tell me about the advantages of strength training.
+      - How can strength training improve my health?
+      - Benefits of incorporating strength workouts.
+      - Explain the positive impact of strength training.
 
-- intent: ask_for_intermediate_tips
-  examples: |
-    - I'm an intermediate level, what should I focus on?
-    - Intermediate workout suggestions?
-    - What are the best exercises for someone with moderate experience?
-    - Can you provide a workout plan for regular gym-goers?
+  - intent: strength_training_routine
+    examples: |
+      - Can you provide a strength training routine?
+      - Give me a sample strength training workout.
+      - Share a strength training plan with me.
+      - What should a typical strength training routine look like?
+      - Provide me with a basic strength training program.
 
-- intent: ask_for_advanced_tips
-  examples: |
-    - What do advanced workouts include?
-    - I'm experienced in lifting, any advanced tips?
-    - Suggestions for intense workout routines?
-    - How can I take my training to the next level?
+  - intent: different_strength_training_exercises
+    examples: |
+      - Tell me about different strength training exercises.
+      - What are some common strength training movements?
+      - Explain various exercises used in strength training.
+      - List some effective strength training exercises.
+      - Provide examples of strength training workouts.
 
-- intent: inquire_about_flexibility
-  examples: |
-    - How can I improve my flexibility?
-    - Are stretching exercises important?
-    - Can you suggest some flexibility exercises?
-    - Benefits of being flexible in fitness?
+  - intent: importance_of_strength_training
+    examples: |
+      - Explain the importance of strength training.
+      - Why is strength training essential for fitness?
+      - What role does strength training play in overall health?
+      - Discuss the significance of strength workouts.
+      - Teach me why strength training is valuable.
 
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: building_muscle_strength
+    examples: |
+      - Teach me about building muscle strength.
+      - How can I increase my muscle strength?
+      - Tips for enhancing muscle power through training.
+      - Strategies for improving muscular strength.
+      - Techniques for building strength effectively.
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: resistance_training
+    examples: |
+      - What is resistance training?
+      - Explain the concept of resistance workouts.
+      - Define resistance training for me.
+      - Tell me about strength training using resistance.
+      - Teach me the principles of resistance-based workouts.
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: strength_training_frequency
+    examples: |
+      - How often should I do strength training?
+      - What's the recommended frequency for strength workouts?
+      - How many days a week should I engage in strength training?
+      - Frequency of strength training sessions.
+      - Strength training schedule guidance.
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: effective_strength_workout_tips
+    examples: |
+      - Give me tips for an effective strength workout.
+      - How can I make my strength training sessions more effective?
+      - Strategies to maximize the benefits of strength training.
+      - Tips for achieving the best results from strength workouts.
+      - Improving the efficiency of strength training.
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: equipment_needed_for_strength_training
+    examples: |
+      - What equipment do I need for strength training?
+      - List the essential gear for strength workouts.
+      - Tell me about the tools required for strength training.
+      - Equipment recommendations for strength exercises.
+      - What should I have in my strength training setup?
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+#_______________________________Questions on Back exercises_________________________________
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: ask_pull_ups
+    examples: |
+      - How do I do Pull-Ups?
+      - Teach me the proper form for Pull-Ups.
+      - Explain Pull-Ups technique.
+      - What muscles do Pull-Ups work?
+      - Tips for performing Pull-Ups.
+
+  - intent: ask_rows
+    examples: |
+      - Tell me about Rows.
+      - What are the different types of Rows?
+      - Explain the benefits of Rows.
+      - How to perform Rows correctly?
+      - Variations of Rows for back muscles.
+      - Can you provide a beginner's guide to Rows?
+      - What's the difference between Barbell Rows and Dumbbell Rows?
+
+  - intent: ask_lat_pulldowns
+    examples: |
+      - Explain Lat Pulldowns.
+      - How to properly do Lat Pulldowns?
+      - Tell me about Lat Pulldowns benefits.
+      - Techniques for Lat Pulldowns.
+      - Variations of Lat Pulldown exercises.
+      - What's the difference between Wide Grip and Close Grip Lat Pulldowns?
+      - Lat Pulldowns vs. Pull-Ups, which is more effective?
+
+  - intent: ask_deadlifts
+    examples: |
+      - Teach me about Deadlifts.
+      - Describe the Deadlifts exercise.
+      - What are the benefits of Deadlifts?
+      - How to perform Deadlifts with proper form?
+      - Variations of Deadlifts techniques.
+      - Deadlifts for strength vs. Deadlifts for hypertrophy, which is better?
+      - How should I warm up before Deadlifts?
+
+  - intent: ask_tbar_row
+    examples: |
+      - How to perform T-Bar Row?
+      - What's the technique for T-Bar Row?
+      - Explain T-Bar Row benefits.
+      - Tell me about T-Bar Row variations.
+      - Tips for a successful T-Bar Row workout.
+      - T-Bar Row vs. Bent-Over Rows, which one targets the back better?
+      - Should I use a wide or narrow grip for T-Bar Rows?
+
+  - intent: ask_lat_pull
+    examples: |
+      - What are Lat Pulls?
+      - How to do Lat Pulls?
+      - Tell me about the advantages of Lat Pulls.
+      - Explain the target muscles in Lat Pulls.
+      - Tips for proper Lat Pull technique.
+      - Lat Pulls vs. Lat Pulldowns, what's the difference?
+      - Is a wide or narrow grip better for Lat Pulls?
+
+  - intent: ask_seated_cable_row
+    examples: |
+      - How to perform Seated Cable Rows?
+      - Teach me about Seated Cable Row form.
+      - Benefits of Seated Cable Rows for the back.
+      - Variations of Seated Cable Rows.
+      - Seated Cable Rows vs. Bent-Over Rows, which is more effective?
+      - What's the role of the lower back in Seated Cable Rows?
+
+  - intent: ask_face_pulls
+    examples: |
+      - What are Face Pulls?
+      - Explain Face Pulls technique.
+      - Tell me about Face Pulls benefits.
+      - How to do Face Pulls with proper form?
+      - Face Pulls vs. Lat Pulls, which is better for the upper back?
+      - Should I use a rope attachment or a band for Face Pulls?
+
+#_______________________________Exercises for chest workout__________________________________
+  - intent: ask_bench_press
+    examples: |
+      - What's the proper form for Bench Press?
+      - Teach me the correct technique for Bench Press.
+      - Explain the benefits of Bench Press.
+      - How often should I include Bench Press in my routine?
+      - Bench Press variations and their advantages.
+      - What's the difference between Bench Press and Incline Bench Press?
+      - What are the safety precautions for Bench Press?
+
+  - intent: ask_incline_dumbbell_press
+    examples: |
+      - Explain Incline Dumbbell Press.
+      - How to perform Incline Dumbbell Press correctly?
+      - Tell me about the advantages of Incline Dumbbell Press.
+      - Variations of Incline Dumbbell Press for chest development.
+      - Incline Dumbbell Press vs. Flat Bench Press, which is more effective?
+      - Should I start with a low or high incline for Incline Dumbbell Press?
+
+  - intent: ask_push_ups
+    examples: |
+      - Tell me about different types of Push-Ups.
+      - How to do Push-Ups with proper technique?
+      - Teach me Push-Up variations.
+      - Explain the muscle groups worked during Push-Ups.
+      - Push-Ups vs. Bench Press, which is better for chest development?
+      - Are wide grip Push-Ups more effective than standard Push-Ups?
+      - How can I increase the difficulty of Push-Ups?
+
+  - intent: ask_chest_flyes
+    examples: |
+      - How to perform Chest Flyes?
+      - Teach me about Chest Flyes form.
+      - Benefits of including Chest Flyes in my chest workout.
+      - Variations of Chest Flyes for chest definition.
+      - Chest Flyes vs. Bench Press, which one targets the chest better?
+      - Should I use dumbbells or a cable machine for Chest Flyes?
+      - How to prevent shoulder injuries while doing Chest Flyes?
+
+  - intent: ask_dips
+    examples: |
+      - Teach me about Dips.
+      - Describe the technique for Dips.
+      - What are the benefits of Dips for chest and triceps?
+      - Variations of Dips for upper body strength.
+      - Dips vs. Push-Ups, which is more effective for chest development?
+      - Should I use parallel bars or a bench for Dips?
+      - How can I increase my Dip performance?
+
+  - intent: ask_close_grip_bench_press
+    examples: |
+      - Explain Close-Grip Bench Press.
+      - How to do Close-Grip Bench Press safely?
+      - Tell me about the tricep engagement in Close-Grip Bench Press.
+      - Close-Grip Bench Press vs. Standard Bench Press, which is better for triceps?
+      - Should I use an EZ curl bar for Close-Grip Bench Press?
+      - Tips for building tricep strength with Close-Grip Bench Press.
+
+  - intent: ask_decline_bench_press
+    examples: |
+      - Describe Decline Bench Press.
+      - How to perform Decline Bench Press effectively?
+      - Benefits of incorporating Decline Bench Press in my routine.
+      - Decline Bench Press vs. Flat Bench Press, which targets the lower chest better?
+      - What's the ideal decline angle for Decline Bench Press?
+      - Common mistakes to avoid during Decline Bench Press.
+
+  - intent: ask_chest_dumbbell_pullovers
+    examples: |
+      - Teach me about Chest Dumbbell Pullovers.
+      - Explain the muscle engagement in Chest Dumbbell Pullovers.
+      - Chest Dumbbell Pullovers vs. Chest Flyes, which is more effective for chest expansion?
+      - How to avoid strain on the shoulders during Chest Dumbbell Pullovers?
+      - Variations of Chest Dumbbell Pullovers for chest development.
+      - Frequency recommendations for Chest Dumbbell Pullovers.
+
+  - intent: ask_machine_chest_press
+    examples: |
+      - How to use the Machine Chest Press?
+      - Describe the advantages of Machine Chest Press.
+      - Machine Chest Press vs. Free Weight Bench Press, which is safer for beginners?
+      - How to adjust the machine for different chest angles in Machine Chest Press?
+      - Tips for a controlled and effective Machine Chest Press workout.
+
+  - intent: ask_chest_cable_crossovers
+    examples: |
+      - Explain Chest Cable Crossovers.
+      - How to perform Chest Cable Crossovers for maximum chest activation?
+      - Tell me about the cable machine settings for Chest Cable Crossovers.
+      - Variations of Chest Cable Crossovers for chest definition.
+      - Chest Cable Crossovers vs. Chest Flyes, which is more effective for chest isolation?
+      - Common mistakes to avoid during Chest Cable Crossovers.
+
+#_______________________________Exercises for Legs workout___________________________________
+
+  - intent: ask_squats
+    examples: |
+      - How to squat with correct form?
+      - Explain the benefits of Squats.
+      - Teach me about Squat variations.
+      - What's the difference between Back Squats and Front Squats?
+      - Squats vs. Leg Press, which is better for leg development?
+      - Should I use a Smith machine for Squats?
+      - Tips for increasing squat depth and flexibility.
+
+  - intent: ask_lunges
+    examples: |
+      - How to properly do Lunges?
+      - Tell me about the advantages of Lunges.
+      - Teach me about Lunges variations.
+      - Lunges vs. Squats, which is more effective for leg strength?
+      - What are walking Lunges and how to perform them?
+      - Should I use weights while doing Lunges?
+      - Common mistakes to avoid during Lunges.
+
+  - intent: ask_leg_press
+    examples: |
+      - Teach me about Leg Press.
+      - Describe the technique for Leg Press.
+      - Benefits of incorporating Leg Press in my leg workout.
+      - Leg Press vs. Squats, which is gentler on the lower back?
+      - How to adjust the Leg Press machine for different leg angles?
+      - Tips for a controlled and effective Leg Press workout.
+      - Leg Press variations and their advantages.
+
+  - intent: ask_calf_raises
+    examples: |
+      - Explain the technique for Calf Raises.
+      - How to perform Calf Raises effectively?
+      - Tell me about the benefits of Calf Raises.
+      - Standing Calf Raises vs. Seated Calf Raises, which is more beneficial?
+      - Frequency recommendations for Calf Raises.
+      - How can I prevent calf cramps during Calf Raises?
+      - Using a Smith machine for Calf Raises, is it a good idea?
+
+  - intent: ask_leg_curls
+    examples: |
+      - What are the variations of Leg Curls?
+      - Explain the technique for Leg Curls.
+      - How to target hamstrings with Leg Curls?
+      - Benefits of including Leg Curls in my leg workout.
+      - Leg Curls vs. Romanian Deadlifts, which is better for hamstring development?
+      - Common mistakes to avoid during Leg Curls.
+      - Using resistance bands for Leg Curls, is it effective?
+
+  - intent: ask_leg_extensions
+    examples: |
+      - What muscles do Leg Extensions work?
+      - Benefits of including Leg Extensions in my leg workout.
+      - How to safely perform Leg Extensions?
+      - Leg Extensions vs. Squats, which is better for quadriceps?
+      - Frequency recommendations for Leg Extensions.
+      - Leg Extensions for improving leg aesthetics.
+      - How to adjust the Leg Extension machine for different leg lengths?
+
+  - intent: ask_sumo_deadlift
+    examples: |
+      - Teach me about Sumo Deadlifts.
+      - Explain the proper form for Sumo Deadlifts.
+      - Benefits of including Sumo Deadlifts in my leg and back workout.
+      - Sumo Deadlifts vs. Conventional Deadlifts, which is more effective for overall strength?
+      - How to prevent lower back strain during Sumo Deadlifts?
+      - Sumo Deadlift variations and their advantages.
+      - Frequency recommendations for Sumo Deadlifts.
+
+  - intent: ask_leg_workout_tips
+    examples: |
+      - Tips for building strong and toned legs.
+      - How to improve leg endurance during workouts?
+      - Effective leg workout routines for beginners.
+      - How to avoid muscle imbalances in the legs.
+      - Leg day nutrition and recovery recommendations.
+      - The importance of proper warm-up before leg workouts.
+      - Overcoming leg workout plateaus.
+
+  - intent: ask_leg_strength_training
+    examples: |
+      - How to increase leg strength through training?
+      - Leg strength training exercises for athletes.
+      - Tips for enhancing explosive leg power.
+      - The role of flexibility in leg strength.
+      - Leg training for specific sports like running and cycling.
+      - Combining leg strength and endurance workouts.
+      - Benefits of unilateral leg exercises like lunges and Bulgarian split squats.
+
+#_______________________________Exercises for arms workout___________________________________
+
+  - intent: ask_bicep_curls
+    examples: |
+      - How to do Bicep Curls with proper form.
+      - Explain the benefits of Bicep Curls.
+      - Teach me about different variations of Bicep Curls.
+      - Bicep Curls vs. Hammer Curls, which is more effective for bicep development?
+      - Frequency recommendations for Bicep Curls.
+      - Tips for avoiding wrist strain during Bicep Curls.
+      - Using resistance bands for Bicep Curls, is it effective?
+
+
+  - intent: ask_tricep_dips
+    examples: |
+      - Describe Tricep Dips.
+      - What muscles do Tricep Dips target?
+      - Teach me about Tricep Dips variations.
+      - Benefits of incorporating Tricep Dips into my arm workout.
+      - Proper technique for Tricep Dips.
+      - Tricep Dips vs. Tricep Pushdowns, which is better for tricep strength?
+      - Frequency recommendations for Tricep Dips.
+
+  - intent: ask_barbell_shrugs
+    examples: |
+      - What's the proper technique for Barbell Shrugs?
+      - Explain the benefits of Barbell Shrugs.
+      - Teach me about different variations of Barbell Shrugs.
+      - Barbell Shrugs vs. Dumbbell Shrugs, which is more effective for trap development?
+      - Frequency recommendations for Barbell Shrugs.
+      - Tips for maintaining shoulder stability during Barbell Shrugs.
+      - Using lifting straps for Barbell Shrugs, is it recommended?
+
+  - intent: ask_forearm_curls
+    examples: |
+      - How to perform Forearm Curls effectively?
+      - Explain the benefits of Forearm Curls.
+      - Teach me about different variations of Forearm Curls.
+      - Forearm Curls vs. Wrist Rollers, which is better for forearm strength?
+      - Frequency recommendations for Forearm Curls.
+      - Tips for preventing forearm muscle imbalances.
+      - Using a forearm roller for Forearm Curls, how effective is it?
+
+  - intent: ask_skull_crushers
+    examples: |
+      - What's the technique for Skull Crushers?
+      - Describe the benefits of Skull Crushers.
+      - Teach me about different variations of Skull Crushers.
+      - Skull Crushers vs. Close-Grip Bench Press, which is more effective for tricep development?
+      - Frequency recommendations for Skull Crushers.
+      - Tips for elbow joint health during Skull Crushers.
+      - Common mistakes to avoid while doing Skull Crushers.
+
+  - intent: ask_hammer_curl
+    examples: |
+      - How to do Hammer Curls with proper form?
+      - Explain the benefits of Hammer Curls for arm development.
+      - Teach me about different variations of Hammer Curls.
+      - Hammer Curls vs. Regular Curls, which is more effective for bicep growth?
+      - Frequency recommendations for Hammer Curls.
+      - Tips for maintaining wrist and elbow health during Hammer Curls.
+      - Incorporating Hammer Curls into an arm workout routine.
+
+  - intent: ask_forearm_exercises
+    examples: |
+      - What are some effective forearm exercises for grip strength?
+      - Explain the benefits of forearm-specific workouts.
+      - Teach me about different exercises to target forearm muscles.
+      - Forearm training frequency and recommendations.
+      - Using grip strengtheners for forearm development, is it effective?
+      - Tips for preventing forearm injuries during exercise.
+      - Incorporating forearm exercises into a full-body workout plan.
+
+  - intent: ask_dumbbell_shrug
+    examples: |
+      - How to perform Dumbbell Shrugs for strong traps?
+      - Describe the benefits of Dumbbell Shrugs.
+      - Teach me about different variations of Dumbbell Shrugs.
+      - Dumbbell Shrugs vs. Barbell Shrugs, which is better for trap development?
+      - Frequency recommendations for Dumbbell Shrugs.
+      - Tips for maintaining proper posture during Dumbbell Shrugs.
+      - Incorporating Dumbbell Shrugs into a shoulder-focused workout routine.
+
+  - intent: ask_overhead_tricep_extension
+    examples: |
+      - What's the technique for Overhead Tricep Extensions?
+      - Explain the benefits of Overhead Tricep Extensions.
+      - Teach me about different variations of Overhead Tricep Extensions.
+      - Overhead Tricep Extensions vs. Skull Crushers, which is more effective for tricep strength?
+      - Frequency recommendations for Overhead Tricep Extensions.
+      - Tips for shoulder health during Overhead Tricep Extensions.
+      - Incorporating Overhead Tricep Extensions into a tricep-focused workout routine.
+
+  - intent: ask_zottman_curl
+    examples: |
+      - How to perform Zottman Curls effectively?
+      - Describe the benefits of Zottman Curls for forearm and bicep development.
+      - Teach me about different variations of Zottman Curls.
+      - Zottman Curls vs. Hammer Curls, which is better for overall arm strength?
+      - Frequency recommendations for Zottman Curls.
+      - Tips for wrist stability during Zottman Curls.
+      - Adding Zottman Curls to an arm workout plan for balanced muscle growth.
+
+  #_______________________________Exercises for core workout
+  - intent: ask_plank_technique
+    examples: |
+      - What's the proper technique for Plank?
+      - Can you explain the correct form for a Plank?
+      - Walk me through the steps of performing a Plank correctly.
+      - How long should I hold a Plank position?
+      - Tips for maintaining good posture during a Plank exercise.
+
+  - intent: ask_russian_twists_variations
+    examples: |
+      - Tell me about variations of Russian Twists.
+      - What are some different ways to do Russian Twists?
+      - Can you suggest some challenging Russian Twist variations?
+      - Russian Twists with weights vs. without weights, which is more effective?
+      - Adding variety to Russian Twists for a more engaging workout.
+
+  - intent: ask_ab_rollouts_technique
+    examples: |
+      - Explain the technique for Ab Rollouts.
+      - How do I properly execute Ab Rollouts?
+      - Walk me through the steps of performing Ab Rollouts effectively.
+      - Common mistakes to avoid during Ab Rollouts.
+      - Recommendations for selecting the right rollout wheel or equipment.
+
+  - intent: ask_twisting_leg_raises
+    examples: |
+      - Teach me about Twisting Leg Raises.
+      - What's the proper way to perform Twisting Leg Raises?
+      - Explain the benefits of Twisting Leg Raises for core and oblique strength.
+      - Twisting Leg Raises vs. Hanging Leg Raises, which is more challenging?
+      - Incorporating Twisting Leg Raises into a comprehensive core workout.
+
+  - intent: ask_mountain_climbers_technique
+    examples: |
+      - What's the correct technique for Mountain Climbers?
+      - Can you provide step-by-step instructions for proper Mountain Climbers?
+      - How to maintain a consistent rhythm while doing Mountain Climbers?
+      - Mountain Climbers for beginners: Tips for getting started.
+      - Techniques for avoiding wrist strain during Mountain Climbers.
+
+  - intent: ask_plank_exercise
+    examples: |
+      - How to perform a Plank correctly?
+      - Explain the benefits of Planks for core strength.
+      - Teach me about different variations of Planks.
+      - Planks vs. Sit-Ups, which is more effective for core development?
+      - Frequency recommendations for Plank exercises.
+      - Tips for maintaining proper form during Planks.
+      - Incorporating Planks into a core-focused workout routine.
+
+  - intent: ask_russian_twists
+    examples: |
+      - What's the technique for Russian Twists?
+      - Describe the benefits of Russian Twists for core and oblique development.
+      - Teach me about different variations of Russian Twists.
+      - Russian Twists vs. Bicycle Crunches, which is better for oblique strength?
+      - Frequency recommendations for Russian Twists.
+      - Tips for preventing lower back strain during Russian Twists.
+      - Adding Russian Twists to an ab workout plan for improved core stability.
+
+  - intent: ask_ab_rollouts
+    examples: |
+      - How to perform Ab Rollouts effectively?
+      - Explain the benefits of Ab Rollouts for core and abdominal strength.
+      - Teach me about different variations of Ab Rollouts.
+      - Ab Rollouts vs. Plank Rollouts, which is more effective for core development?
+      - Frequency recommendations for Ab Rollouts.
+      - Tips for maintaining proper spinal alignment during Ab Rollouts.
+      - Incorporating Ab Rollouts into an ab-focused workout routine.
+
+  - intent: ask_hanging_leg_raises
+    examples: |
+      - What are the proper techniques for Hanging Leg Raises?
+      - Describe the benefits of Hanging Leg Raises for lower abdominal strength.
+      - Teach me about different variations of Hanging Leg Raises.
+      - Hanging Leg Raises vs. Knee Raises, which is more effective for lower ab development?
+      - Frequency recommendations for Hanging Leg Raises.
+      - Tips for grip strength during Hanging Leg Raises.
+      - Adding Hanging Leg Raises to a lower ab workout plan for enhanced core definition.
+
+  - intent: ask_mountain_climbers
+    examples: |
+      - What's the correct way to do Mountain Climbers?
+      - Explain the benefits of Mountain Climbers for core and cardio fitness.
+      - Teach me about different variations of Mountain Climbers.
+      - Mountain Climbers vs. Burpees, which is better for overall fitness?
+      - Frequency recommendations for Mountain Climbers.
+      - Tips for maintaining a steady pace during Mountain Climbers.
+      - Incorporating Mountain Climbers into a full-body workout routine for cardiovascular conditioning.
+
+  #_______________________________Exercises for Shoulder workout
+
+  - intent: ask_military_press_technique
+    examples: |
+      - How to perform Military Press with proper technique?
+      - Explain the correct form for Military Press.
+      - Teach me the steps for Military Press.
+      - Military Press vs. Dumbbell Shoulder Press, which is more effective?
+      - Tips for maintaining shoulder health during Military Press.
+
+  - intent: ask_lateral_raises
+    examples: |
+      - How do I do Lateral Raises correctly?
+      - Explain the technique for Lateral Raises.
+      - Teach me about different variations of Lateral Raises.
+      - Lateral Raises vs. Front Raises, which targets the shoulders better?
+      - Recommendations for selecting the right weight for Lateral Raises.
+
+  - intent: ask_face_pulls_variations
+    examples: |
+      - Tell me about variations of Face Pulls.
+      - What are some different ways to do Face Pulls?
+      - Can you suggest some challenging Face Pull variations?
+      - Face Pulls with resistance bands vs. cable machines, which is better?
+      - Adding variety to Face Pulls for a more engaging workout.
+
+  - intent: ask_arnold_press
+    examples: |
+      - Explain Arnold Press and its technique.
+      - How to properly execute Arnold Press?
+      - Walk me through the steps of performing Arnold Press effectively.
+      - Arnold Press vs. Military Press, which is more challenging?
+      - Incorporating Arnold Press into a comprehensive shoulder workout.
+
+  - intent: ask_shrugs_technique
+    examples: |
+      - What's the correct technique for Shrugs?
+      - Can you provide step-by-step instructions for proper Shrugs?
+      - How to maintain good form while doing Shrugs?
+      - Shrugs with a barbell vs. dumbbells, which is more effective?
+      - Recommendations for avoiding neck strain during Shrugs.
+
+  - intent: ask_shoulder_benefits
+    examples: |
+      - What are the benefits of Lateral Raises for shoulder development?
+      - Tell me about the advantages of Face Pulls for shoulder health.
+      - Explain how Arnold Press benefits overall shoulder strength.
+      - Why should I include Shrugs in my shoulder workout routine?
+      - The role of Military Press in building shoulder power and stability.
+  #****************************Strength Training section complete********************************
+
+  #*******************************Basic Cardio Training section********************************
+
+  #*******************************Cardio Training section complete********************************
+
+
+  #*******************************Basic Diet section********************************
+
+  #*******************************Diet section complete********************************
+
+  #*******************************Already given****************************************
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?

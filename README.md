@@ -25,7 +25,10 @@ To set up the project on your local machine, follow these steps:
    ```bash
    pip install rasa-sdk==3.6.2
    ```
-
+4. **Install flask**
+   ```bash
+   pip install Flask
+   ```
 ## Configuration
 Describe any necessary configuration steps, such as setting up environment variables or external services.
 
@@ -61,4 +64,14 @@ rasa train
 - followed by
 ```bash
 rasa shell
+```
+
+## For running on browser
+
+```bash
+rasa run --enable-api --cors "*"
+```
+- on other terminal
+```bash
+python app.py
 ```
