@@ -157,9 +157,17 @@ responses:
   - text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
 
 
-  #Meal plan focused
+  #--------------------------Meal plan focused------------------------------
+
+
   utter_acknowledge_lw_goal:
     - text: "Great! Let's work on your goal to lose weight."
+
+  utter_acknowledge_mg_goal:
+    - text: "Alright, let's talk about how to gain muscle?"
+
+  utter_acknowledge_gf_goal:
+    - text: ""
   
   utter_ask_diet_preference:
     - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
