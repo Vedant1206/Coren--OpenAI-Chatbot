@@ -1,13 +1,110 @@
 version: "3.1"
 
+entities:
+  - goal
+  - diet
+  - allergy
+
+
 intents:
   - greet
   - goodbye
+  - thank_you
   - affirm
   - deny
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_about_bulking
+  - ask_about_cutting
+  - ask_about_maintenance
+  - ask_about_diet_planning
+  - ask_about_nutrition
+  - ask_about_nutrition_bulk
+  - ask_about_nutrition_cut
+  - ask_about_nutrition_maintenance
+  - ask_about_vegan_diet
+  - ask_cardio
+  - ask_strength_training
+  - ask_for_beginner_tips
+  - ask_for_intermediate_tips
+  - ask_for_advanced_tips
+  - inquire_about_flexibility
+  - express_goal
+  - inform_diet_preference
+  - inform_allergies
+  - give_feedback
+
+  - ask_for_beginner_tips
+  - start_strength_training
+  - benefits_of_strength_training
+  - strength_training_routine
+  - different_strength_training_exercises
+  - importance_of_strength_training
+  - building_muscle_strength
+  - resistance_training
+  - strength_training_frequency
+  - effective_strength_workout_tips
+  - equipment_needed_for_strength_training
+  
+  - ask_pull_ups
+  - ask_rows
+  - ask_lat_pulldowns
+  - ask_deadlifts
+  - ask_tbar_row
+  - ask_lat_pull
+  - ask_seated_cable_row
+  - ask_face_pulls
+
+  - ask_bench_press
+  - ask_incline_dumbbell_press
+  - ask_push_ups
+  - ask_chest_flyes
+  - ask_dips
+  - ask_close_grip_bench_press
+  - ask_decline_bench_press
+  - ask_chest_dumbbell_pullovers
+  - ask_machine_chest_press
+  - ask_chest_cable_crossovers
+
+  - ask_squats
+  - ask_lunges
+  - ask_leg_press
+  - ask_calf_raises
+  - ask_leg_curls
+  - ask_leg_extensions
+  - ask_sumo_deadlift
+  - ask_leg_workout_tips
+  - ask_leg_strength_training
+
+  - ask_bicep_curls
+  - ask_tricep_dips
+  - ask_barbell_shrugs
+  - ask_forearm_curls
+  - ask_skull_crushers
+  - ask_hammer_curl
+  - ask_forearm_exercises
+  - ask_dumbbell_shrug
+  - ask_overhead_tricep_extension
+  - ask_zottman_curl
+
+  - ask_plank_technique
+  - ask_russian_twists_variations
+  - ask_ab_rollouts_technique
+  - ask_twisting_leg_raises
+  - ask_mountain_climbers_technique
+  - ask_plank_exercise
+  - ask_russian_twists
+  - ask_ab_rollouts
+  - ask_hanging_leg_raises
+  - ask_mountain_climbers
+
+  - ask_military_press_technique
+  - ask_lateral_raises
+  - ask_face_pulls_variations
+  - ask_arnold_press
+  - ask_shrugs_technique
+  - ask_shoulder_benefits
 
   - ask_for_beginner_tips
   - start_strength_training
@@ -81,6 +178,85 @@ intents:
   - ask_shoulder_benefits
 
 responses:
+
+  #-------------------DIET-----------------#
+
+  #Bulk focused
+  utter_ask_about_bulking:
+  - text: "Bulking focuses on muscle gain through a calorie surplus and high protein intake. It involves consuming more calories than your body burns, combined with resistance training, leading to muscle growth. Key tips include high protein intake, increased calorie consumption focusing on nutrient-rich foods, frequent meals, and balanced macros. Do you wanna know more?"
+
+  utter_more_details_bulking:
+  - text: "Sure, let's dive deeper into bulking. A successful bulking phase not only involves eating more, but also choosing the right types of foods. Focus on lean proteins, whole grains, healthy fats, and plenty of fruits and vegetables. It's also important to structure your resistance training effectively, targeting different muscle groups and progressively increasing the intensity. Remember, rest and recovery are just as crucial as your workouts and diet."
+
+  utter_ask_about_nutrition_bulk:
+  - text: "Nutrition plays a vital role in bulking effectively. You'll want to focus on protein-rich foods like chicken, fish, eggs, and legumes. Carbohydrates are also important for energy; whole grains and starchy vegetables are great choices. Don't forget about healthy fats from sources like avocados and nuts. It's all about the right balance. Need tips on meal planning?"
+
+  utter_bulking_meal_planning_tips:
+  - text: "Great! For effective bulking, it's important to have a meal plan that incorporates a balance of macronutrients. Start your day with a protein-rich breakfast like eggs with whole-grain toast. For lunch and dinner, include lean protein sources, such as grilled chicken or fish, with a side of brown rice or quinoa and plenty of vegetables. Snacking on nuts, yogurt, or fruit can help keep your energy up throughout the day. Don't forget to include post-workout meals that combine protein and carbs to aid muscle recovery."
+
+ 
+
+
+  #Cut focused
+  utter_ask_about_cutting:
+  - text: "Cutting aims at reducing body fat while maintaining muscle mass through a calorie deficit and balanced diet. It involves eating fewer calories than you burn, leading to fat loss. Key tips are calorie deficit, maintaining protein intake to preserve muscle mass, hydration, and reduced carb intake focusing on complex carbohydrates. Want to know more about how to effectively cut?"
+
+  utter_more_details_cutting:
+  - text: "Certainly! During the cutting phase, the goal is to lose fat while preserving as much muscle mass as possible. This involves a careful balance of diet and exercise. From a dietary perspective, it's important to maintain a moderate calorie deficit - eating fewer calories than you burn, but not so few that it hampers your metabolism or muscle retention. High protein intake is crucial to support muscle mass. Lean meats, fish, dairy, eggs, and plant-based proteins are great options. Complex carbohydrates like whole grains and vegetables should also be included to provide energy for your workouts. Healthy fats from sources like avocados, nuts, and olive oil are important as well. In terms of exercise, a combination of weightlifting and cardiovascular workouts is effective. Weightlifting helps maintain muscle mass, while cardio aids in burning fat. It's also important to keep hydrated and get enough sleep as these factors significantly impact your cutting success."
+
+  utter_ask_about_nutrition_cut:
+  - text: "Nutrition is a key component of the cutting phase. It's important to focus on foods that are high in protein and low in unhealthy fats and simple carbohydrates. Protein is essential for maintaining muscle mass while you're in a calorie deficit. Good sources include lean meats, fish, low-fat dairy, beans, and legumes. Complex carbohydrates, like whole grains, vegetables, and fruits, are also important as they provide the necessary energy for your workouts and help keep you full. Healthy fats are crucial too; think avocados, nuts, seeds, and olive oil. Avoiding processed foods, sugary snacks, and high-fat fast foods is advisable. It's also important to drink plenty of water and stay hydrated. Would you like specific meal ideas or tips on balancing these nutrients effectively?"
+
+  utter_cutting_meal_planning_tips:
+  - text: "Absolutely! For a cutting diet, it's important to plan your meals to ensure you're getting the right balance of nutrients. Start your day with a breakfast high in protein, like Greek yogurt or scrambled eggs with spinach. For lunch and dinner, focus on lean protein sources such as grilled chicken or fish, accompanied by a large portion of vegetables and a serving of whole grains like brown rice or quinoa. Snacking on fruits, nuts, and seeds is a great way to keep your energy levels up while avoiding unhealthy fats and sugars. Remember to include a post-workout meal that combines protein and carbs for muscle recovery. Also, drinking water throughout the day is crucial."
+
+
+
+  #Maintenance focused
+  utter_ask_about_maintenance:
+  - text: "Maintenance is about sustaining your current weight and muscle mass after a period of bulking or cutting. It involves adjusting your calorie intake to match your daily energy expenditure. The focus is on a balanced diet that supports your fitness level and body composition goals, with consistent protein intake and regular physical activity. Are you interested in more details on how to maintain your physique?"
+
+  utter_more_details_maintenance:
+  - text: "To effectively maintain your physique, you'll need to find a calorie balance where you're neither gaining nor losing weight. Focus on a balanced diet with a good mix of protein, carbs, and fats. Regular exercise is also key, with a combination of strength training and some cardio. Monitoring your weight and body composition regularly can help you make small adjustments as needed."
+
+  utter_ask_about_nutrition_maintenance:
+  - text: "Nutrition for maintenance is about balancing your energy intake with your energy expenditure to keep your weight and muscle mass stable. Focus on a diet rich in lean proteins to support muscle, whole grains and complex carbohydrates for sustained energy, and healthy fats for overall well-being. It's also important to include a variety of fruits and vegetables to ensure you're getting all the necessary vitamins and minerals. Portion control plays a crucial role in this phase; it's about eating enough to fuel your activities without excess leading to weight gain. Hydration remains key, so keep up with your water intake. Would you like to explore specific foods or dietary patterns that can help in this phase?"
+
+  utter_maintenance_meal_planning_tips:
+  - text: "Great! For maintenance, it's all about finding the right balance to keep your body at its current level. Your diet should have a good mix of protein, carbohydrates, and fats. Aim for a variety of foods to get all the necessary nutrients. Include plenty of vegetables and fruits, whole grains, lean proteins, and healthy fats. It’s also important to adjust your calorie intake based on your activity level."
+
+
+
+  #Nutrition focused
+  utter_ask_about_diet_planning:
+  - text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
+
+  utter_ask_about_nutrition:
+  - text: "Good nutrition is key to a healthy life. It involves getting the right balance of macronutrients (proteins, fats, and carbohydrates) and micronutrients (vitamins and minerals) from your diet. Do you need more in-depth detail about nutrition based on whether you are on a cut or bulk?"
+
+  utter_ask_about_vegan_diet:
+  - text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
+
+
+  #Meal plan focused
+  utter_acknowledge_goal:
+    - text: "Great! Let's work on your goal to [lose weight](goal)."
+  
+  utter_ask_diet_preference:
+    - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
+
+  utter_ask_allergies:
+    - text: "Do you have any allergies or food intolerances I should be aware of?"
+
+  utter_present_meal_plan:
+    - text: "Here's your personalized meal plan for weight loss. Let me know what you think."
+
+
+
+  utter_anything_else:
+  - text: "No problem! If you have any other questions about different diet plans, workouts, or anything else, feel free to ask. I'm here to help!"
+  #---------------------------------------#
+
   utter_greet:
   - text: "Hey! How are you?"
 
@@ -89,6 +265,9 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you?"
+
+  utter_youre_welcome:
+  - text: "You're welcome! If you have any more questions or need further assistance in the future, don't hesitate to ask. Have a great day!"
 
   utter_happy:
   - text: "Great, how can I help you today?"
@@ -592,6 +771,15 @@ responses:
       3. **Arnold Press**: Targets multiple shoulder muscles for overall development.
       4. **Shrugs**: Strengthen the trapezius muscles, essential for neck and shoulder stability.
       5. **Military Press**: Develops shoulder power and stability, engaging the entire deltoid region.
+
+
+
+
+actions:
+  - action_generate_weight_loss_plan
+  - action_adjust_meal_plan
+
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

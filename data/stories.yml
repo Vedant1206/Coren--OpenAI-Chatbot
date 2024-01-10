@@ -1,6 +1,228 @@
 version: "3.1"
 
 stories:
+
+
+#--------------------DIET---------------#
+
+- story: user asks about bulking diet
+  steps:
+  - intent: ask_about_bulking
+  - action: utter_ask_about_bulking
+
+- story: user asks about cutting diet
+  steps:
+  - intent: ask_about_cutting
+  - action: utter_ask_about_cutting
+
+- story: user asks about maintenance diet
+  steps:
+  - intent: ask_about_maintenance
+  - action: utter_ask_about_maintenance
+
+
+
+- story: complex conversation about bulking diet, deny nutrition detail
+  steps:
+  - intent: ask_about_bulking
+  - action: utter_ask_about_bulking
+  - intent: affirm
+  - action: utter_more_details_bulking
+  - intent: ask_about_nutrition_bulk
+  - action: utter_ask_about_nutrition_bulk
+  - intent: deny
+  - action: utter_anything_else
+
+- story: complex conversation about bulking diet, affirm nutrition detail
+  steps:
+  - intent: ask_about_bulking
+  - action: utter_ask_about_bulking
+  - intent: affirm
+  - action: utter_more_details_bulking
+  - intent: ask_about_nutrition_bulk
+  - action: utter_ask_about_nutrition_bulk
+  - intent: affirm
+  - action: utter_bulking_meal_planning_tips
+  - intent: thank_you
+  - action: utter_youre_welcome
+
+
+
+- story: complex conversation about cutting diet, deny nutrition detail
+  steps:
+  - intent: ask_about_cutting
+  - action: utter_ask_about_cutting
+  - intent: affirm
+  - action: utter_more_details_cutting
+  - intent: ask_about_nutrition_cut
+  - action: utter_ask_about_nutrition_cut
+  - intent: deny
+  - action: utter_anything_else
+
+
+
+- story: complex conversation about cutting diet, affirm nutrition detail
+  steps:
+  - intent: ask_about_cutting
+  - action: utter_ask_about_cutting
+  - intent: affirm
+  - action: utter_more_details_cutting
+  - intent: ask_about_nutrition_cut
+  - action: utter_ask_about_nutrition_cut
+  - intent: affirm
+  - action: utter_cutting_meal_planning_tips
+  - intent: thank_you
+  - action: utter_youre_welcome
+
+
+
+- story: conversation about maintenance diet, deny nutrition detail
+  steps:
+  - intent: ask_about_maintenance
+  - action: utter_ask_about_maintenance
+  - intent: affirm
+  - action: utter_more_details_maintenance
+  - intent: ask_about_nutrition_maintenance
+  - action: utter_ask_about_nutrition_maintenance
+  - intent: deny
+  - action: utter_anything_else
+
+
+- story: detailed conversation about maintenance diet, affirm nutrition detail
+  steps:
+  - intent: ask_about_maintenance
+  - action: utter_ask_about_maintenance
+  - intent: affirm
+  - action: utter_more_details_maintenance
+  - intent: ask_about_nutrition_maintenance
+  - action: utter_ask_about_nutrition_maintenance
+  - intent: affirm
+  - action: utter_maintenance_meal_planning_tips
+  - intent: thank_you
+  - action: utter_youre_welcome
+
+
+
+
+- story: user inquires about cutting then switches to maintenance
+  steps:
+  - intent: ask_about_cutting
+  - action: utter_ask_about_cutting
+  - intent: ask_about_maintenance
+  - action: utter_ask_about_maintenance
+  - intent: affirm
+  - action: utter_more_details_maintenance
+
+
+- story: user inquires about nutrition, bulk
+  steps:
+  - intent: ask_about_nutrition
+  - action: utter_ask_about_nutrition
+  - intent: ask_about_nutrition_bulk
+  - action: utter_ask_about_nutrition_bulk
+  - intent: affirm
+  - action: utter_bulking_meal_planning_tips
+  - intent: thank_you
+  - action: utter_youre_welcome
+
+- story: user inquires about nutrition, cut
+  steps:
+  - intent: ask_about_nutrition
+  - action: utter_ask_about_nutrition
+  - intent: ask_about_nutrition_cut
+  - action: utter_ask_about_nutrition_cut
+  - intent: deny
+  - action: utter_anything_else
+
+- story: user inquires about nutrition, maintenance
+  steps:
+  - intent: ask_about_nutrition
+  - action: utter_ask_about_nutrition
+  - intent: ask_about_nutrition_maintenance
+  - action: utter_ask_about_nutrition_maintenance
+  - intent: affirm
+  - action: utter_maintenance_meal_planning_tips
+  - intent: thank_you
+  - action: utter_youre_welcome
+
+- story: user inquires about nutrition, all
+  steps:
+  - intent: ask_about_nutrition
+  - action: utter_ask_about_nutrition
+  - intent: ask_about_nutrition_maintenance
+  - action: utter_ask_about_nutrition_maintenance
+  - intent: ask_about_nutrition_bulk
+  - action: utter_ask_about_nutrition_bulk
+  - intent: ask_about_nutrition_cut
+  - action: utter_ask_about_nutrition_cut
+
+
+#Meal Plan focused
+
+- story: Customized Meal Plan for Weight Loss
+  steps:
+  - intent: express_goal
+    entities:
+    - goal: weight loss
+  - action: utter_acknowledge_goal
+  - action: utter_ask_diet_preference
+  - intent: inform_diet_preference
+    entities:
+    - diet: vegan
+  - action: utter_ask_allergies
+  - intent: inform_allergies
+    entities:
+    - allergy: none
+  - action: action_generate_weight_loss_plan
+  - action: utter_present_meal_plan
+  - intent: give_feedback
+  - action: action_adjust_meal_plan
+
+
+
+# - story: Customized Meal Plan for Muscle Gain
+#   steps:
+#   - intent: express_goal
+#     entities:
+#     - goal: muscle gain
+#   - action: utter_acknowledge_goal
+#   - action: utter_ask_diet_preference
+#   - intent: inform_diet_preference
+#     entities:
+#     - diet: high protein
+#   - action: utter_ask_allergies
+#   - intent: inform_allergies
+#     entities:
+#     - allergy: gluten
+#   - action: action_generate_muscle_gain_plan
+#   - action: utter_present_meal_plan
+#   - intent: give_feedback
+#   - action: action_adjust_meal_plan
+
+# - story: Customized Meal Plan for General Fitness
+#   steps:
+#   - intent: express_goal
+#     entities:
+#     - goal: general fitness
+#   - action: utter_acknowledge_goal
+#   - action: utter_ask_diet_preference
+#   - intent: inform_diet_preference
+#     entities:
+#     - diet: balanced
+#   - action: utter_ask_allergies
+#   - intent: inform_allergies
+#     entities:
+#     - allergy: lactose
+#   - action: action_generate_general_fitness_plan
+#   - action: utter_present_meal_plan
+#   - intent: give_feedback
+#   - action: action_adjust_meal_plan
+
+
+
+
+
+#-------------------------------------#
 - story: user greets and asks for beginner tips
   steps:
   - intent: greet
