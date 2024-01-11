@@ -1047,6 +1047,57 @@ stories:
   - intent: improving_box_jumps
   - action: utter_improving_box_jumps
 
+- story: High Knees Exercise
+  steps:
+  - intent: high_knees_exercise
+  - action: utter_high_knees_exercise
+
+- story: High Knees as Cardio
+  steps:
+  - intent: high_knees_as_cardio
+  - action: utter_high_knees_as_cardio
+
+- story: Incorporating High Knees in a Workout
+  steps:
+  - intent: high_knees_in_workout
+  - action: utter_high_knees_in_workout
+
+- story: High Knees Routine
+  steps:
+  - intent: high_knees_routine
+  - action: utter_high_knees_routine
+
+- story: High Knees Variations
+  steps:
+  - intent: high_knees_variations
+  - action: utter_high_knees_variations
+
+- story: Benefits of High Knees
+  steps:
+  - intent: high_knees_benefits
+  - action: utter_high_knees_benefits
+
+- story: Adding High Knees to Your Exercise Regimen
+  steps:
+  - intent: adding_high_knees_to_exercise
+  - action: utter_adding_high_knees_to_exercise
+
+- story: High Knees Technique
+  steps:
+  - intent: high_knees_technique
+  - action: utter_high_knees_technique
+
+- story: Improving High Knees
+  steps:
+  - intent: improving_high_knees
+  - action: utter_improving_high_knees
+
+- story: Tips for Performing High Knees
+  steps:
+  - intent: high_knees_tips
+  - action: utter_high_knees_tips
+
+
 
 - story: Cycling as Cardio
   steps:
