@@ -83,7 +83,7 @@
         function sendMessage(text) {
             //var userMessage = document.getElementById('userInput').value;
             text = text || document.getElementById('userInput').value;
-            if(userMessage.trim() === '') return; // Ignore empty messages
+            if(text.trim() === '') return; // Ignore empty messages
             document.getElementById('messages').innerHTML += '<div class="message user"><b>You:</b> ' + text + '<br></div>';
             
             fetch('http://localhost:5005/webhooks/rest/webhook', {
@@ -97,7 +97,7 @@
             .then(data => {
                 var botMessage = data[0].text;
                 document.getElementById('messages').innerHTML += '<div class="message bot"><b>Bot:</b> ' + botMessage + '<br></div>';
-                //document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Scroll to the bottom
+                document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Scroll to the bottom
                 document.getElementById('userInput').value = ''; // Clear the input field
             })
             .catch((error) => {
