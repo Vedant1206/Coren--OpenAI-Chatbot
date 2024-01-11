@@ -162,7 +162,7 @@ stories:
 - story: Customized Meal Plan for Weight Loss
   steps:
   - intent: express_goal
-  - action: utter_acknowledge_goal_askdp
+  - action: utter_acknowledge_wlgoal_askdp
   # - action: utter_ask_diet_preference
   - intent: inform_diet_preference
     entities:

@@ -2446,7 +2446,6 @@ nlu:
   - intent: ask_cardio_weight_loss
     examples: |
       - Is cardio effective for weight loss?
-      - How can I use cardio to lose weight?
       - What's the relationship between cardio and burning calories?
 
   - intent: ask_cardio_health_conditions

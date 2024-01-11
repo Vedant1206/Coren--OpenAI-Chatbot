@@ -30,8 +30,7 @@ intents:
   - bot_challenge
   - ask_about_bulking
   - ask_about_cutting
-  - ask_about_maintenance
-  - ask_about_diet_planning
+  - ask_about_maintenance #- ask_about_diet_planning
   - ask_about_nutrition
   - ask_about_nutrition_bulk
   - ask_about_nutrition_cut
@@ -308,39 +307,43 @@ responses:
 
 
   #Nutrition focused
-  utter_ask_about_diet_planning:
-  - text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
+  #utter_ask_about_diet_planning:
+  #- text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
 
   utter_ask_about_nutrition:
   - text: "Good nutrition is key to a healthy life. It involves getting the right balance of macronutrients (proteins, fats, and carbohydrates) and micronutrients (vitamins and minerals) from your diet. Do you need more in-depth detail about nutrition based on whether you are on a cut or bulk?"
 
-  utter_ask_about_vegan_diet:
-  - text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
+  #utter_ask_about_vegan_diet:
+  #- text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
 
 
   #--------------------------Meal plan focused------------------------------
 
 
-  utter_acknowledge_goal_askdp:
-    - condition:
-        - type: slot
-          name: goal
-          value: lose weight
-      text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
-    - condition:
-        - type: slot
-          name: goal
-          value: gain muscle
-      text: "Great! Let's work on your goal to gain muscle.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
-    - condition:
-        - type: slot
-          name: goal
-          value: improve fitness
-      text: "Great! Let's work on your goal to improve fitness.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+#   utter_acknowledge_goal_askdp:
+#     - condition:
+#         - type: slot
+#           name: goal
+#           value: lose weight
+#       text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+#     - condition:
+#         - type: slot
+#           name: goal
+#           value: gain muscle
+#       text: "Great! Let's work on your goal to gain muscle.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+#     - condition:
+#         - type: slot
+#           name: goal
+#           value: improve fitness
+#       text: "Great! Let's work on your goal to improve fitness.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
   
 #   utter_ask_diet_preference:
 #     - text: ""
 
+  utter_acknowledge_wlgoal_askdp:
+    - text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+
+    
   utter_ask_allergies:
     - text: "Do you have any allergies or food intolerances I should be aware of?"
 
@@ -1155,8 +1158,8 @@ responses:
   utter_improving_box_jumps:
   - text: "Improving your box jump performance involves consistent practice and gradual progression. Track your progress and celebrate achievements along the way."
 
-  utter_box_jumps_tips:
-  - text: "For successful box jumps, maintain a strong core, bend your knees when landing, and use your arms for momentum. Start at a manageable height and progress cautiously."
+  #utter_box_jumps_tips:
+  #- text: "For successful box jumps, maintain a strong core, bend your knees when landing, and use your arms for momentum. Start at a manageable height and progress cautiously."
 
 #_________________________________________________________high knees__________________________
 
