@@ -44,7 +44,7 @@
             line-height: 1.5;
         }
         .user {
-            color: blue;
+            color: white;
         }
         .bot {
             color: #B4A6AB;
@@ -109,19 +109,17 @@
         <div id="messages"></div>
         <div id="input-area">
             <input type="text" id="userInput" placeholder="Type a message..." autocomplete="off">
-            <button onclick="sendMessage()">Send</button>
-            <button style = "margin-left:10px;"><i class="gg-mic"></i></button>
+            <button id = "sendButton" onclick="sendMessage()">Send</button>
+            <button id= "speakButton" onclick = "startDictation()" style = "margin-left:10px;"><i class="gg-mic"></i></button>
         </div>
     </div>
 
     <script>
-        function sendMessage() {
-            var userInputField = document.getElementById('userInput');
-            var userMessage = userInputField.value;
-            if(userMessage.trim() === '') return; // Ignore empty messages
-            document.getElementById('messages').innerHTML += '<div class="message_user"><b class="message_user">You:</b> ' + userMessage + '<br></div>';
-            
-            var text = userMessage; // Make sure to assign the message to a variable named 'text'
+        function sendMessage(text) {
+            //var userMessage = document.getElementById('userInput').value;
+            text = text || document.getElementById('userInput').value;
+            if(text.trim() === '') return; // Ignore empty messages
+            document.getElementById('messages').innerHTML += '<div class="message_user"><b class = "message_user">You:</b> ' + text + '<br></div>';
             
             fetch('http://localhost:5005/webhooks/rest/webhook', {
                 method: 'POST',
@@ -133,14 +131,17 @@
             .then(response => response.json())
             .then(data => {
                 var botMessage = data[0].text;
-                document.getElementById('messages').innerHTML += '<div class="message_bot"><b class="message_bot">Bot:</b> ' + botMessage + '<br></div>';
-                var messagesDiv = document.getElementById('messages');
-                messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to the bottom
+                document.getElementById('messages').innerHTML += '<div class="message_bot"><b class = "message_bot">Bot:</b> ' + botMessage + '<br></div>';
+                var messageDiv = document.getElementById('messages');//.scrollTop = document.getElementById('messages').scrollHeight; // Scroll to the bottom
+                document.getElementById('userInput').value = ''; // Clear the input field
+                messageDiv.scrollTop = messageDiv.scrollHeight;
             })
             .catch((error) => {
                 console.error('Error:', error);
+                //document.getElementById('userInput').value = ''; // Clear the input field
+                
             });
-            userInputField.value = ''; // Clear the input field after sending the message
+            userInputField.value = '';
         }
     
         function startDictation() {
