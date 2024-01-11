@@ -173,25 +173,25 @@ responses:
   #--------------------------Meal plan focused------------------------------
 
 
-  utter_acknowledge_goal:
+  utter_acknowledge_goal_askdp:
     - condition:
         - type: slot
           name: goal
           value: lose weight
-      text: "Great! Let's work on your goal to lose weight."
+      text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
     - condition:
         - type: slot
           name: goal
           value: gain muscle
-      text: "Great! Let's work on your goal to gain muscle."
+      text: "Great! Let's work on your goal to gain muscle.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
     - condition:
         - type: slot
           name: goal
           value: improve fitness
-      text: "Great! Let's work on your goal to improve fitness."
+      text: "Great! Let's work on your goal to improve fitness.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
   
-  utter_ask_diet_preference:
-    - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
+#   utter_ask_diet_preference:
+#     - text: ""
 
   utter_ask_allergies:
     - text: "Do you have any allergies or food intolerances I should be aware of?"
