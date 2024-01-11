@@ -2377,7 +2377,6 @@ nlu:
     examples: |
       - Effective swimming workouts?
       - Can you suggest swim routines?
-      - Swim workouts for fitness goals?
       - Structuring swimming sessions?
 
   - intent: swimming_health_benefits

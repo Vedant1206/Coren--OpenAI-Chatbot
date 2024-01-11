@@ -341,9 +341,9 @@ responses:
 #     - text: ""
 
   utter_acknowledge_wlgoal_askdp:
-    - text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+    - text: "Great! Let's work on your goal to lose weight. What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
 
-    
+
   utter_ask_allergies:
     - text: "Do you have any allergies or food intolerances I should be aware of?"
 
