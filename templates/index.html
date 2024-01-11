@@ -8,28 +8,35 @@
     <style>
         /* Basic reset */
         * {
+            
+            background:black;
+            color: white;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-size: 20px;
         }
         /* Style the chat container */
         #chatbox {
             display: flex;
             flex-direction: column;
             max-width: 600px;
-            margin: auto;
-            height: 90vh;
+            width: 100%; /* This makes it responsive */
+            margin: 0 auto; /* Center the chatbox */
+            height: calc(100vh - 50px);
             border: 1px solid #ccc;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            background: white;
+            background: #F4A950;
+            border-radius: 10px;
         }
         /* Style the messages area */
         #messages {
+            margin-top: 55px;
             flex-grow: 1;
             overflow-y: auto;
             padding: 10px;
-            background: #f9f9f9;
+            background:#161B21;
         }
         /* Style for user and bot messages */
         .message {
@@ -40,13 +47,13 @@
             color: blue;
         }
         .bot {
-            color: green;
+            color: #B4A6AB;
         }
         /* Style the input area */
         #input-area {
             display: flex;
             padding: 10px;
-            background: #fff;
+            background: #F4A950;
         }
         #userInput {
             flex-grow: 1;
@@ -54,17 +61,45 @@
             border: 1px solid #ddd;
             margin-right: 10px;
             border-radius: 5px;
+            background: #fff; 
+        }
+        .message_user {
+            text-align: right;
+            clear: both;
+            background:#161B21;
+            color: white;
+        }
+        
+        .message_bot {
+            text-align: left;
+            clear: both;
+            background:#161B21;
+            color: #ECCFC3;
+        }
+        strong{
+            text-align: left;
+            clear: both;
+            background:#161B21;
+            color: #ECCFC3;
         }
         button {
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            background: rgb(178, 102, 255);;
+            background: rgb(31, 36, 33);
             color: white;
             cursor: pointer;
+
         }
         button:hover{
             background: rgb(51, 0, 102);
+
+        }
+        .gg-mic{
+            background: white;
+        }
+        #userInput{
+            color: black;
         }
     </style>
 </head>
@@ -74,17 +109,19 @@
         <div id="messages"></div>
         <div id="input-area">
             <input type="text" id="userInput" placeholder="Type a message..." autocomplete="off">
-            <button id= "sendButton" onclick="sendMessage()">Send</button>
-            <button id= "speakButton" onclick = "startDictation()"><i class="gg-mic"></i></button>
+            <button onclick="sendMessage()">Send</button>
+            <button style = "margin-left:10px;"><i class="gg-mic"></i></button>
         </div>
     </div>
 
     <script>
-        function sendMessage(text) {
-            //var userMessage = document.getElementById('userInput').value;
-            text = text || document.getElementById('userInput').value;
-            if(text.trim() === '') return; // Ignore empty messages
-            document.getElementById('messages').innerHTML += '<div class="message user"><b>You:</b> ' + text + '<br></div>';
+        function sendMessage() {
+            var userInputField = document.getElementById('userInput');
+            var userMessage = userInputField.value;
+            if(userMessage.trim() === '') return; // Ignore empty messages
+            document.getElementById('messages').innerHTML += '<div class="message_user"><b class="message_user">You:</b> ' + userMessage + '<br></div>';
+            
+            var text = userMessage; // Make sure to assign the message to a variable named 'text'
             
             fetch('http://localhost:5005/webhooks/rest/webhook', {
                 method: 'POST',
@@ -96,47 +133,48 @@
             .then(response => response.json())
             .then(data => {
                 var botMessage = data[0].text;
-                document.getElementById('messages').innerHTML += '<div class="message bot"><b>Bot:</b> ' + botMessage + '<br></div>';
-                document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Scroll to the bottom
-                document.getElementById('userInput').value = ''; // Clear the input field
+                document.getElementById('messages').innerHTML += '<div class="message_bot"><b class="message_bot">Bot:</b> ' + botMessage + '<br></div>';
+                var messagesDiv = document.getElementById('messages');
+                messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to the bottom
             })
             .catch((error) => {
                 console.error('Error:', error);
-                document.getElementById('userInput').value = ''; // Clear the input field
             });
+            userInputField.value = ''; // Clear the input field after sending the message
         }
-
+    
         function startDictation() {
             if (window.hasOwnProperty('webkitSpeechRecognition')) {
-
+    
                 var recognition = new webkitSpeechRecognition();
-
+    
                 recognition.continuous = false;
                 recognition.interimResults = false;
-
+    
                 recognition.lang = "en-US";
                 recognition.start();
-
+    
                 recognition.onresult = function(e) {
                     document.getElementById('userInput').value = e.results[0][0].transcript;
                     recognition.stop();
-                    sendMessage(e.results[0][0].transcript);
+                    sendMessage(); // Directly call sendMessage without arguments
                 };
-
+    
                 recognition.onerror = function(e) {
                     recognition.stop();
                 }
             }
         }
-
+    
         // Allow pressing "Enter" to send a message
         document.getElementById('userInput').addEventListener('keypress', function(event) {
             if (event.keyCode === 13) { // 13 is the enter key
                 event.preventDefault();
-                document.getElementById('sendButton').click();
+                sendMessage(); // Call sendMessage directly instead
             }
         });
     </script>
+    
 </body>
 </html>
 
