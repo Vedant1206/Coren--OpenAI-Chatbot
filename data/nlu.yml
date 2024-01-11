@@ -5,11 +5,16 @@ nlu:
     examples: |
       - What does strength training involve?
       - Can you provide information on weightlifting?
-      - I need details about back exercises
-      - Tell me about chest exercises
-      - What are some effective leg workouts?
-      - Recommend some arm exercises
-      - How do I strengthen my core?
+      - strength training
+      - muscle building
+      - weightlifting
+      - resistance training
+      - bodybuilding
+      - fitness
+      - workout routines
+      - gym exercises
+      - muscle groups
+      - physical strength
 
   - intent: ask_for_beginner_tips
     examples: |
@@ -24,6 +29,17 @@ nlu:
       - Beginner's guide to getting fit
       - Tips for someone who's never been to the gym before
       - How to get started with exercise as a newbie
+      - beginner fitness
+      - starting exercise
+      - first-time gym
+      - basic workouts
+      - fitness journey start
+      - beginner's guide
+      - easy exercises
+      - workout basics
+      - fitness routine for beginners
+      - new to exercise
+      - gym introduction
 
 #*******************************Basic Strength Training section********************************
   - intent: start_strength_training
@@ -34,8 +50,17 @@ nlu:
       - Starting a strength training program.
       - Beginner's guide to strength training.
       - How should I get started with strength workouts?
-      - strength
-      - beginner training
+      - initiating strength training
+      - strength training basics
+      - beginner strength tips
+      - starting strength workouts
+      - strength training fundamentals
+      - first steps in strength training
+      - strength training for starters
+      - foundational strength exercises
+      - strength training initiation
+      - beginner's strength program
+
 
   - intent: benefits_of_strength_training
     examples: |
@@ -44,6 +69,16 @@ nlu:
       - How can strength training improve my health?
       - Benefits of incorporating strength workouts.
       - Explain the positive impact of strength training.
+      - strength training advantages
+      - health benefits strength training
+      - strength workout benefits
+      - positive effects strength training
+      - strength training health impact
+      - muscle building benefits
+      - strength exercise advantages
+      - physical benefits strength training
+      - strength training rewards
+      - improving health through strength training
 
   - intent: strength_training_routine
     examples: |
@@ -52,6 +87,16 @@ nlu:
       - Share a strength training plan with me.
       - What should a typical strength training routine look like?
       - Provide me with a basic strength training program.
+      - strength training schedule
+      - sample strength workout
+      - strength training plan
+      - typical strength routine
+      - basic strength program
+      - structured strength training
+      - workout routine for strength
+      - strength exercise plan
+      - strength training regimen
+      - comprehensive strength workout
 
   - intent: different_strength_training_exercises
     examples: |
@@ -60,6 +105,16 @@ nlu:
       - Explain various exercises used in strength training.
       - List some effective strength training exercises.
       - Provide examples of strength training workouts.
+      - variety strength exercises
+      - common strength movements
+      - strength training techniques
+      - effective strength workouts
+      - strength exercise examples
+      - diverse strength routines
+      - strength training variations
+      - strength workout types
+      - strength training methods
+      - range of strength exercises
 
   - intent: importance_of_strength_training
     examples: |
@@ -68,6 +123,16 @@ nlu:
       - What role does strength training play in overall health?
       - Discuss the significance of strength workouts.
       - Teach me why strength training is valuable.
+      - significance of strength training
+      - strength training necessity
+      - role in overall health
+      - strength workout importance
+      - value of strength exercises
+      - essential strength training
+      - fitness through strength training
+      - health benefits of strength
+      - strength training impact
+      - why strength training matters
 
   - intent: building_muscle_strength
     examples: |
@@ -76,6 +141,17 @@ nlu:
       - Tips for enhancing muscle power through training.
       - Strategies for improving muscular strength.
       - Techniques for building strength effectively.
+      - muscle strength building
+      - increasing muscle power
+      - muscle enhancement techniques
+      - muscular strength improvement
+      - effective strength building
+      - muscle power strategies
+      - muscle strength enhancement
+      - strength training tips
+      - muscle fortification methods
+      - boosting muscular power
+
 
   - intent: resistance_training
     examples: |
@@ -84,6 +160,16 @@ nlu:
       - Define resistance training for me.
       - Tell me about strength training using resistance.
       - Teach me the principles of resistance-based workouts.
+      - resistance training definition
+      - concept of resistance workouts
+      - principles of resistance training
+      - strength training with resistance
+      - resistance-based exercise
+      - understanding resistance training
+      - basics of resistance workouts
+      - resistance training techniques
+      - about resistance training
+      - resistance exercise fundamentals
 
   - intent: strength_training_frequency
     examples: |
@@ -91,7 +177,15 @@ nlu:
       - What's the recommended frequency for strength workouts?
       - How many days a week should I engage in strength training?
       - Frequency of strength training sessions.
-      - Strength training schedule guidance.
+      - strength training regularity
+      - recommended strength workout frequency
+      - weekly strength training routine
+      - strength session frequency
+      - optimal strength training days
+      - frequency of strength exercises
+      - strength training regimen frequency
+      - strength workout intervals
+      - strength training routine planning
 
   - intent: effective_strength_workout_tips
     examples: |
@@ -100,6 +194,16 @@ nlu:
       - Strategies to maximize the benefits of strength training.
       - Tips for achieving the best results from strength workouts.
       - Improving the efficiency of strength training.
+      - strength workout optimization
+      - enhancing strength training
+      - maximizing strength benefits
+      - effective strength strategies
+      - improving strength efficiency
+      - strength training effectiveness
+      - better strength workout results
+      - strength session improvement
+      - productive strength exercises
+      - optimizing strength routines
 
   - intent: equipment_needed_for_strength_training
     examples: |
@@ -108,8 +212,99 @@ nlu:
       - Tell me about the tools required for strength training.
       - Equipment recommendations for strength exercises.
       - What should I have in my strength training setup?
+      - intent: equipment_needed_for_strength_training
+      - strength training gear
+      - essential strength equipment
+      - strength workout tools
+      - strength exercise equipment
+      - strength training setup
+      - required workout gear
+      - strength training essentials
+      - equipment for strength workouts
+      - must-have strength tools
+      - strength training accessories
 
 #_______________________________Questions on Back exercises_________________________________
+
+  - intent: back_health_importance
+    examples: |
+      - Why is back health important?
+      - Explain the significance of maintaining a healthy back.
+      - How does back health impact overall well-being?
+      - The importance of a healthy back.
+      - Role of back health in daily activities.
+      - back health significance
+      - maintaining healthy back
+      - back health benefits
+      - importance of back care
+      - back health in well-being
+
+  - intent: general_back_exercises
+    examples: |
+      - What are some general back exercises?
+      - what should i do for back
+      - List exercises for overall back health.
+      - Recommend some basic exercises for the back.
+      - Exercises to maintain a healthy back.
+      - General workouts for back strength.
+      - back exercises
+      - overall back health workouts
+      - basic back exercises
+      - maintaining back health
+      - back strength workouts
+
+  - intent: back_pain_prevention
+    examples: |
+      - How can I prevent back pain?
+      - Tips to avoid back pain.
+      - Strategies for preventing back pain.
+      - Preventative measures for back pain.
+      - How to keep my back pain-free?
+      - preventing back pain
+      - back pain avoidance
+      - back pain prevention tips
+      - preventative back care
+      - maintaining a pain-free back
+
+  - intent: back_injury_risk_factors
+    examples: |
+      - What are risk factors for back injuries?
+      - Causes of back injuries.
+      - How can I identify risk factors for back injuries?
+      - Factors contributing to back injuries.
+      - Common causes of back problems.
+      - back injury risks
+      - causes of back injuries
+      - identifying back injury factors
+      - back injury contributors
+      - common back problems causes
+
+  - intent: back_stretching_benefits
+    examples: |
+      - What are the benefits of back stretching?
+      - How does stretching help the back?
+      - Advantages of stretching exercises for the back.
+      - Why should I stretch my back?
+      - The importance of back stretching.
+      - benefits of back stretching
+      - back stretching advantages
+      - stretching for back health
+      - importance of back stretches
+      - why stretch the back
+
+  - intent: back_posture_importance
+    examples: |
+      - Why is good back posture important?
+      - How does back posture affect health?
+      - The importance of maintaining proper back posture.
+      - Benefits of good back posture.
+      - Role of posture in back health.
+      - importance of back posture
+      - back posture and health
+      - maintaining proper back posture
+      - benefits of good posture
+      - posture in back health
+
 
   - intent: ask_pull_ups
     examples: |
@@ -118,6 +313,12 @@ nlu:
       - Explain Pull-Ups technique.
       - What muscles do Pull-Ups work?
       - Tips for performing Pull-Ups.
+      - pull-up technique
+      - pull-up muscles worked
+      - pull-up form
+      - pull-up variations
+      - pull-up tips
+      - pull up
 
   - intent: ask_rows
     examples: |
@@ -128,6 +329,13 @@ nlu:
       - Variations of Rows for back muscles.
       - Can you provide a beginner's guide to Rows?
       - What's the difference between Barbell Rows and Dumbbell Rows?
+      - rowing techniques
+      - barbell vs dumbbell rows
+      - row variations
+      - row benefits
+      - beginner's row guide
+      - rows
+      - rowing
       - row
 
   - intent: ask_lat_pulldowns
@@ -140,6 +348,12 @@ nlu:
       - What's the difference between Wide Grip and Close Grip Lat Pulldowns?
       - Lat Pulldowns vs. Pull-Ups, which is more effective?
       - lat
+      - lat pulldown technique
+      - wide vs close grip
+      - lat pulldown benefits
+      - lat pulldown variations
+      - lat pulldown vs pull-up
+      - pull down
 
   - intent: ask_deadlifts
     examples: |
@@ -150,6 +364,12 @@ nlu:
       - Variations of Deadlifts techniques.
       - Deadlifts for strength vs. Deadlifts for hypertrophy, which is better?
       - How should I warm up before Deadlifts?
+      - deadlift technique
+      - deadlift benefits
+      - deadlift variations
+      - deadlift form
+      - deadlift warm-up
+      - dead lift
 
   - intent: ask_tbar_row
     examples: |
@@ -160,6 +380,13 @@ nlu:
       - Tips for a successful T-Bar Row workout.
       - T-Bar Row vs. Bent-Over Rows, which one targets the back better?
       - Should I use a wide or narrow grip for T-Bar Rows?
+      - T-bar row technique
+      - T-bar vs bent-over row
+      - T-bar row benefits
+      - grip width T-bar row
+      - T-bar row variations
+      - t bar
+      - tbar
 
   - intent: ask_lat_pull
     examples: |
@@ -170,6 +397,11 @@ nlu:
       - Tips for proper Lat Pull technique.
       - Lat Pulls vs. Lat Pulldowns, what's the difference?
       - Is a wide or narrow grip better for Lat Pulls?
+      - lat pull technique
+      - lat pull benefits
+      - lat pull vs lat pulldown
+      - grip variation lat pull
+      - lat pull target muscles
 
   - intent: ask_seated_cable_row
     examples: |
@@ -179,7 +411,12 @@ nlu:
       - Variations of Seated Cable Rows.
       - Seated Cable Rows vs. Bent-Over Rows, which is more effective?
       - What's the role of the lower back in Seated Cable Rows?
-
+      - seated cable row form
+      - cable row vs bent-over row
+      - seated cable row benefits
+      - lower back in cable row
+      - cable row variations
+    
   - intent: ask_face_pulls
     examples: |
       - What are Face Pulls?
@@ -188,8 +425,57 @@ nlu:
       - How to do Face Pulls with proper form?
       - Face Pulls vs. Lat Pulls, which is better for the upper back?
       - Should I use a rope attachment or a band for Face Pulls?
-
+      - face pull technique
+      - face pull benefits
+      - face pull vs lat pull
+      - rope vs band face pull
+      - face pull form
 #_______________________________Exercises for chest workout__________________________________
+  - intent: chest_exercises_overview
+    examples: |
+      - what should i do for chest
+      - What are some common chest exercises?
+      - List some exercises for chest muscles.
+      - Can you recommend chest workouts?
+      - What are the best exercises for the chest?
+      - chest exercises
+      - chest workouts
+      - pectoral training
+      - upper body exercises
+
+  - intent: benefits_of_chest_training
+    examples: |
+      - What are the benefits of chest training?
+      - How does chest exercise help?
+      - Why should I train my chest muscles?
+      - What are the advantages of chest workouts?
+      - chest training benefits
+      - pectoral advantages
+      - chest workout gains
+      - strength in chest
+
+  - intent: chest_training_techniques
+    examples: |
+      - What are effective chest training techniques?
+      - How to perform chest exercises correctly?
+      - Tips for effective chest workouts.
+      - Techniques for chest muscle training.
+      - chest training tips
+      - effective chest techniques
+      - chest exercise methods
+      - proper chest workouts
+
+  - intent: chest_equipment_recommendations
+    examples: |
+      - What equipment do I need for chest exercises?
+      - Recommended gear for chest workouts.
+      - Tools needed for chest training.
+      - Equipment for effective chest exercises.
+      - chest exercise gear
+      - chest workout equipment
+      - chest training tools
+      - chest exercise accessories
+
   - intent: ask_bench_press
     examples: |
       - What's the proper form for Bench Press?
@@ -199,6 +485,10 @@ nlu:
       - Bench Press variations and their advantages.
       - What's the difference between Bench Press and Incline Bench Press?
       - What are the safety precautions for Bench Press?
+      - bench
+      - bench press
+      - flat bench
+      - flat bench press
 
   - intent: ask_incline_dumbbell_press
     examples: |
@@ -208,6 +498,9 @@ nlu:
       - Variations of Incline Dumbbell Press for chest development.
       - Incline Dumbbell Press vs. Flat Bench Press, which is more effective?
       - Should I start with a low or high incline for Incline Dumbbell Press?
+      - incline dumbell
+      - incline dumbel
+      - incline press
 
   - intent: ask_push_ups
     examples: |
@@ -218,6 +511,9 @@ nlu:
       - Push-Ups vs. Bench Press, which is better for chest development?
       - Are wide grip Push-Ups more effective than standard Push-Ups?
       - How can I increase the difficulty of Push-Ups?
+      - push up
+      - pushups
+      - push ups
 
   - intent: ask_chest_flyes
     examples: |
@@ -228,7 +524,12 @@ nlu:
       - Chest Flyes vs. Bench Press, which one targets the chest better?
       - Should I use dumbbells or a cable machine for Chest Flyes?
       - How to prevent shoulder injuries while doing Chest Flyes?
-
+      - chest flies
+      - flies
+      - flyes
+      - chest fly
+      - fly
+  
   - intent: ask_dips
     examples: |
       - Teach me about Dips.
@@ -238,6 +539,11 @@ nlu:
       - Dips vs. Push-Ups, which is more effective for chest development?
       - Should I use parallel bars or a bench for Dips?
       - How can I increase my Dip performance?
+      - dips
+      - dip
+      - chest dip
+      - tricep dip
+      - triceps dip
 
   - intent: ask_close_grip_bench_press
     examples: |
@@ -247,6 +553,11 @@ nlu:
       - Close-Grip Bench Press vs. Standard Bench Press, which is better for triceps?
       - Should I use an EZ curl bar for Close-Grip Bench Press?
       - Tips for building tricep strength with Close-Grip Bench Press.
+      - close grip
+      - close bench press
+      - close bench
+      - close press
+      - bench close press
 
   - intent: ask_decline_bench_press
     examples: |
@@ -256,6 +567,9 @@ nlu:
       - Decline Bench Press vs. Flat Bench Press, which targets the lower chest better?
       - What's the ideal decline angle for Decline Bench Press?
       - Common mistakes to avoid during Decline Bench Press.
+      - decline bench
+      - decline press
+      - bench decline
 
   - intent: ask_chest_dumbbell_pullovers
     examples: |
@@ -265,7 +579,9 @@ nlu:
       - How to avoid strain on the shoulders during Chest Dumbbell Pullovers?
       - Variations of Chest Dumbbell Pullovers for chest development.
       - Frequency recommendations for Chest Dumbbell Pullovers.
-
+      - dumbel fly
+      - dumbell fly
+      
   - intent: ask_machine_chest_press
     examples: |
       - How to use the Machine Chest Press?
@@ -285,6 +601,79 @@ nlu:
 
 #_______________________________Exercises for Legs workout___________________________________
 
+  - intent: leg_anatomy
+    examples: |
+      - what do i do for leg
+      - what do i do for legs
+      - Tell me about the anatomy of the leg.
+      - What are the major muscles in the leg?
+      - Explain the structure of the leg.
+      - leg anatomy
+      - leg muscles
+      - leg structure
+      - lower limb anatomy
+      - leg training
+
+  - intent: leg_stretching_benefits
+    examples: |
+      - What are the benefits of leg stretching?
+      - How does stretching help the leg muscles?
+      - Advantages of leg stretching exercises.
+      - leg stretching benefits
+      - stretching for leg health
+      - leg flexibility
+
+  - intent: leg_injury_prevention
+    examples: |
+      - How can I prevent leg injuries?
+      - Tips for avoiding leg injuries.
+      - Strategies for preventing leg injuries.
+      - leg injury prevention
+      - preventing leg injuries
+      - leg injury prevention tips
+      - injury avoidance for legs
+
+  - intent: leg_strength_training
+    examples: |
+      - What are some effective leg strength exercises?
+      - Recommend leg workouts for building strength.
+      - Exercises to strengthen the legs.
+      - leg strength exercises
+      - leg workouts
+      - leg muscle strengthening
+      - lower body strength training
+
+  - intent: leg_pain_management
+    examples: |
+      - How to manage leg pain effectively?
+      - Tips for relieving leg discomfort.
+      - Strategies for dealing with leg pain.
+      - managing leg pain
+      - leg pain relief
+      - leg discomfort remedies
+      - coping with leg pain
+
+  - intent: leg_posture_importance
+    examples: |
+      - Why is maintaining good leg posture important?
+      - How does leg posture affect overall health?
+      - Benefits of proper leg posture.
+      - good leg posture
+      - leg posture benefits
+      - proper leg alignment
+      - leg posture and health
+
+  - intent: leg_care_tips
+    examples: |
+      - Give me some tips for taking care of my legs.
+      - How to keep my legs healthy and strong?
+      - Leg care recommendations.
+      - leg care tips
+      - maintaining leg health
+      - healthy legs advice
+      - lower limb care
+
+
   - intent: ask_squats
     examples: |
       - How to squat with correct form?
@@ -294,6 +683,7 @@ nlu:
       - Squats vs. Leg Press, which is better for leg development?
       - Should I use a Smith machine for Squats?
       - Tips for increasing squat depth and flexibility.
+      - squats
       - squat
 
   - intent: ask_lunges
@@ -377,7 +767,179 @@ nlu:
       - Combining leg strength and endurance workouts.
       - Benefits of unilateral leg exercises like lunges and Bulgarian split squats.
 
+  - intent: ask_glute_bridge
+    examples: |
+      - How to perform Glute Bridges for stronger glutes?
+      - Explain the benefits of Glute Bridges.
+      - Teach me about Glute Bridge variations.
+      - Glute Bridges vs. Squats, which is more effective for glute development?
+      - Frequency recommendations for Glute Bridges.
+      - Tips for proper form during Glute Bridges.
+      - Using resistance bands for Glute Bridges, is it effective?
+      - glute bridges
+      - glutes exercise
+      - butt workout
+      - hip thrusts
+
+  - intent: ask_lunges_for_glutes
+    examples: |
+      - How to properly do Lunges for targeting the glutes?
+      - Tell me about the advantages of Lunges for glute development.
+      - Teach me about Lunges variations specifically for glutes.
+      - Lunges vs. Squats, which is more effective for glute strength?
+      - Frequency recommendations for Lunges targeting the glutes.
+      - How to use weights effectively while doing Lunges for glutes?
+      - Common mistakes to avoid during Glute-focused Lunges.
+      - lunges for glutes
+      - glute-focused exercises
+      - glute-enhancing workouts
+      - glute strength training
+      - leg exercises
+
+  - intent: ask_donkey_kicks
+    examples: |
+      - Explain the technique for Donkey Kicks and their impact on glutes.
+      - How to perform Donkey Kicks effectively for glute growth?
+      - Tell me about the benefits of Donkey Kicks for glute development.
+      - Donkey Kicks vs. Leg Press, which is better for targeting the glutes?
+      - Frequency recommendations for Donkey Kicks to tone the glutes.
+      - Tips for proper Donkey Kicks form to maximize .
+      - Adding ankle weights to Donkey Kicks, is it effective for glutes?
+      - donkey kicks
+      - glute exercises
+      - glute workouts
+      - butt lifts
+      - posterior chain
+
+  - intent: ask_glute_workout_tips
+    examples: |
+      - Tips for building strong and shapely glutes.
+      - How to improve glute endurance during workouts?
+      - Effective glute workout routines for achieving glute gains.
+      - How to avoid muscle imbalances in the glutes.
+      - Glute day nutrition and recovery recommendations.
+      - The importance of proper warm-up before glute workouts.
+      - Overcoming glute workout plateaus for noticeable results.
+      - glute workout tips
+      - glute strength
+      - glute training
+      - glute exercise tips
+      - glute workout routine
+      - glute nutrition
+      - glute recovery
+
+  - intent: ask_squats_for_glutes
+    examples: |
+      - How to squat to target and strengthen the glutes?
+      - Explain the benefits of squats for glute development.
+      - Teach me about squat variations that focus on the glutes.
+      - Squats vs. Lunges for glute growth, which is more effective?
+      - Frequency recommendations for squats to build and tone the glutes.
+      - Tips for proper squat form to maximize .
+      - Adding weights to squats, is it effective for glute gains?
+      - squats for glutes
+      - glute-focused squats
+      - during squats
+      - squat variations for glutes
+      - glute-building squats
+      - squatting for butt
+  - intent: ask_hip_thrusts
+    examples: |
+      - How to perform Hip Thrusts to target and strengthen the glutes?
+      - Explain the benefits of Hip Thrusts for glute development.
+      - Teach me about Hip Thrust variations for glute gains.
+      - Hip Thrusts vs. Glute Bridges, which is more effective for glute growth?
+      - Frequency recommendations for Hip Thrusts to build and tone the glutes.
+      - Tips for proper Hip Thrust form to maximize .
+      - Adding resistance bands to Hip Thrusts, is it effective for glute gains?  
+      - hip thrusts for glutes
+      - glute-focused hip thrusts
+      - during hip thrusts
+      - hip thrust variations for glutes
+      - glute-building exercises
+      - glute workout
+
+
 #_______________________________Exercises for arms workout___________________________________
+
+  - intent: arm_anatomy
+    examples: |
+      - Tell me about the anatomy of the arms.
+      - what should i do for arms
+      - what should i do for arm
+      - What are the major muscles in the arms?
+      - Explain the structure of the arm.
+      - arm anatomy
+      - arm muscles
+      - upper limb structure
+      - forearm anatomy
+      - biceps and triceps
+      - arm exercise 
+      - arms workout
+
+  - intent: arm_stretching_benefits
+    examples: |
+      - What are the benefits of arm stretching?
+      - How does stretching help the arm muscles?
+      - Advantages of arm stretching exercises.
+      - arm stretching benefits
+      - stretching for arm health
+      - arm flexibility
+      - arm muscle relaxation
+
+  - intent: arm_injury_prevention
+    examples: |
+      - How can I prevent arm injuries?
+      - Tips for avoiding arm injuries.
+      - Strategies for preventing arm injuries.
+      - arm injury prevention
+      - preventing arm injuries
+      - arm injury prevention tips
+      - injury avoidance for arms
+      - arm safety
+
+  - intent: arm_strength_training
+    examples: |
+      - What are some effective arm strength exercises?
+      - Recommend arm workouts for building strength.
+      - Exercises to strengthen the arms.
+      - arm strength exercises
+      - arm workouts
+      - biceps and triceps exercises
+      - arm muscle building
+
+  - intent: arm_pain_management
+    examples: |
+      - How to manage arm pain effectively?
+      - Tips for relieving arm discomfort.
+      - Strategies for dealing with arm pain.
+      - managing arm pain
+      - arm pain relief
+      - arm discomfort remedies
+      - coping with arm pain
+      - arm pain management
+
+  - intent: arm_posture_importance
+    examples: |
+      - Why is maintaining good arm posture important?
+      - How does arm posture affect overall health?
+      - Benefits of proper arm posture.
+      - good arm posture
+      - arm posture benefits
+      - proper arm alignment
+      - arm posture and health
+      - arm posture advantages
+
+  - intent: arm_care_tips
+    examples: |
+      - Give me some tips for taking care of my arms.
+      - How to keep my arms healthy and strong?
+      - Arm care recommendations.
+      - arm care tips
+      - maintaining arm health
+      - healthy arms advice
+      - upper limb care
+      - arm muscle care
 
   - intent: ask_bicep_curls
     examples: |
@@ -481,6 +1043,86 @@ nlu:
       - Adding Zottman Curls to an arm workout plan for balanced muscle growth.
 
   #_______________________________Exercises for core workout
+  - intent: core_anatomy
+    examples: |
+      - Tell me about the anatomy of the core.
+      - What muscles make up the core?
+      - Explain the structure of the core.
+      - core anatomy
+      - core muscles
+      - abs
+      - 6 packs abs
+      - 8 packs
+      - abdomin
+      - abdominal structure
+      - core muscle groups
+      - torso anatomy
+
+  - intent: core_stretching_benefits
+    examples: |
+      - What are the benefits of core stretching?
+      - How does stretching help the core muscles?
+      - Advantages of core stretching exercises.
+      - core stretching benefits
+      - stretching for core health
+      - abdominal flexibility
+      - core muscle relaxation
+
+  - intent: core_injury_prevention
+    examples: |
+      - How can I prevent core injuries?
+      - Tips for avoiding core injuries.
+      - Strategies for preventing core injuries.
+      - core injury prevention
+      - preventing core injuries
+      - core injury prevention tips
+      - injury avoidance for core
+      - core safety
+
+  - intent: core_strength_training
+    examples: |
+      - What are some effective core strength exercises?
+      - Recommend core workouts for building strength.
+      - Exercises to strengthen the core.
+      - core strength exercises
+      - core workouts
+      - abdominal strength training
+      - core muscle building
+      - torso strength exercises
+
+  - intent: core_pain_management
+    examples: |
+      - How to manage core pain effectively?
+      - Tips for relieving core discomfort.
+      - Strategies for dealing with core pain.
+      - managing core pain
+      - core pain relief
+      - abdominal discomfort remedies
+      - coping with core pain
+      - core pain management
+
+  - intent: core_posture_importance
+    examples: |
+      - Why is maintaining good core posture important?
+      - How does core posture affect overall health?
+      - Benefits of proper core posture.
+      - good core posture
+      - core posture benefits
+      - proper core alignment
+      - core posture and health
+      - core posture advantages
+
+  - intent: core_care_tips
+    examples: |
+      - Give me some tips for taking care of my core.
+      - How to keep my core healthy and strong?
+      - Core care recommendations.
+      - core care tips
+      - maintaining core health
+      - healthy core advice
+      - abdominal care
+      - torso muscle care
+
   - intent: ask_plank_technique
     examples: |
       - What's the proper technique for Plank?
@@ -522,6 +1164,84 @@ nlu:
       - Techniques for avoiding wrist strain during Mountain Climbers.
 
   #_______________________________Exercises for Shoulder workout
+
+  - intent: shoulder_anatomy
+    examples: |
+      - Tell me about the anatomy of the shoulder.
+      - What are the major muscles in the shoulder?
+      - Explain the structure of the shoulder.
+      - shoulder anatomy
+      - shoulder muscles
+      - deltoid muscles
+      - shoulder joint
+      - shoulder structure
+      - what do i do for shoulders
+      - what do i do for shoulder
+
+  - intent: shoulder_stretching_benefits
+    examples: |
+      - What are the benefits of shoulder stretching?
+      - How does stretching help the shoulder muscles?
+      - Advantages of shoulder stretching exercises.
+      - shoulder stretching benefits
+      - stretching for shoulder health
+      - shoulder flexibility
+      - shoulder muscle relaxation
+
+  - intent: shoulder_injury_prevention
+    examples: |
+      - How can I prevent shoulder injuries?
+      - Tips for avoiding shoulder injuries.
+      - Strategies for preventing shoulder injuries.
+      - shoulder injury prevention
+      - preventing shoulder injuries
+      - shoulder injury prevention tips
+      - injury avoidance for shoulders
+      - shoulder safety
+
+  - intent: shoulder_strength_training
+    examples: |
+      - What are some effective shoulder strength exercises?
+      - Recommend shoulder workouts for building strength.
+      - Exercises to strengthen the shoulders.
+      - shoulder strength exercises
+      - shoulder workouts
+      - deltoid muscle training
+      - shoulder muscle building
+      - upper body strength training
+
+  - intent: shoulder_pain_management
+    examples: |
+      - How to manage shoulder pain effectively?
+      - Tips for relieving shoulder discomfort.
+      - Strategies for dealing with shoulder pain.
+      - managing shoulder pain
+      - shoulder pain relief
+      - shoulder discomfort remedies
+      - coping with shoulder pain
+      - shoulder pain management
+
+  - intent: shoulder_posture_importance
+    examples: |
+      - Why is maintaining good shoulder posture important?
+      - How does shoulder posture affect overall health?
+      - Benefits of proper shoulder posture.
+      - good shoulder posture
+      - shoulder posture benefits
+      - proper shoulder alignment
+      - shoulder posture and health
+      - shoulder posture advantages
+
+  - intent: shoulder_care_tips
+    examples: |
+      - Give me some tips for taking care of my shoulders.
+      - How to keep my shoulders healthy and strong?
+      - Shoulder care recommendations.
+      - shoulder care tips
+      - maintaining shoulder health
+      - healthy shoulders advice
+      - shoulder muscle care
+
 
   - intent: ask_military_press_technique
     examples: |

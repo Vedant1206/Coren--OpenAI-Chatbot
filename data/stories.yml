@@ -296,6 +296,36 @@ stories:
   - action: utter_equipment_needed_for_strength_training
 
 #_________________strength training - Back stories______________
+- story: Back Health Importance
+  steps:
+    - intent: back_health_importance
+    - action: utter_back_health_importance
+
+- story: General Back Exercises
+  steps:
+    - intent: general_back_exercises
+    - action: utter_general_back_exercises
+
+- story: Back Pain Prevention
+  steps:
+    - intent: back_pain_prevention
+    - action: utter_back_pain_prevention
+
+- story: Back Injury Risk Factors
+  steps:
+    - intent: back_injury_risk_factors
+    - action: utter_back_injury_risk_factors
+
+- story: Back Stretching Benefits
+  steps:
+    - intent: back_stretching_benefits
+    - action: utter_back_stretching_benefits
+
+- story: Back Posture Importance
+  steps:
+    - intent: back_posture_importance
+    - action: utter_back_posture_importance
+
 - story: User asks about Pull-Ups
   steps:
   - intent: ask_pull_ups
@@ -337,6 +367,26 @@ stories:
   - action: utter_ask_face_pulls
 
 #_________________strength training - Chest stories______________
+- story: Chest Exercises Overview
+  steps:
+  - intent: chest_exercises_overview
+  - action: utter_chest_exercises_overview
+
+- story: Benefits of Chest Training
+  steps:
+  - intent: benefits_of_chest_training
+  - action: utter_benefits_of_chest_training
+
+- story: Chest Training Techniques
+  steps:
+  - intent: chest_training_techniques
+  - action: utter_chest_training_techniques
+
+- story: Chest Equipment Recommendations
+  steps:
+  - intent: chest_equipment_recommendations
+  - action: utter_chest_equipment_recommendations
+
 - story: User asks about Bench Press
   steps:
   - intent: ask_bench_press
@@ -389,6 +439,41 @@ stories:
 
 #_________________strength training - Legs stories______________
 
+- story: Leg Anatomy Overview
+  steps:
+  - intent: leg_anatomy
+  - action: utter_leg_anatomy
+
+- story: Leg Stretching Benefits
+  steps:
+  - intent: leg_stretching_benefits
+  - action: utter_leg_stretching_benefits
+
+- story: Leg Injury Prevention Tips
+  steps:
+  - intent: leg_injury_prevention
+  - action: utter_leg_injury_prevention
+
+- story: Leg Strength Training
+  steps:
+  - intent: leg_strength_training
+  - action: utter_leg_strength_training
+
+- story: Leg Pain Management
+  steps:
+  - intent: leg_pain_management
+  - action: utter_leg_pain_management
+
+- story: Importance of Leg Posture
+  steps:
+  - intent: leg_posture_importance
+  - action: utter_leg_posture_importance
+
+- story: Leg Care Recommendations
+  steps:
+  - intent: leg_care_tips
+  - action: utter_leg_care_tips
+
 - story: User asks about Squats
   steps:
   - intent: ask_squats
@@ -433,7 +518,74 @@ stories:
   steps:
   - intent: ask_leg_strength_training
   - action: utter_ask_leg_strength_training
+
+- story: Glute Bridge Exercise
+  steps:
+    - intent: ask_glute_bridge
+    - action: utter_ask_glute_bridge
+
+- story: Lunges for Glutes
+  steps:
+    - intent: ask_lunges_for_glutes
+    - action: utter_ask_lunges_for_glutes
+
+- story: Donkey Kicks for Glutes
+  steps:
+    - intent: ask_donkey_kicks
+    - action: utter_ask_donkey_kicks
+
+- story: Glute Workout Tips
+  steps:
+    - intent: ask_glute_workout_tips
+    - action: utter_ask_glute_workout_tips
+
+- story: Squats for Glutes
+  steps:
+    - intent: ask_squats_for_glutes
+    - action: utter_ask_squats_for_glutes
+
+- story: Hip Thrusts for Glutes
+  steps:
+    - intent: ask_hip_thrusts
+    - action: utter_ask_hip_thrusts
+ 
 #_________________strength training - Arms stories______________
+
+- story: Arm Anatomy Overview
+  steps:
+  - intent: arm_anatomy
+  - action: utter_arm_anatomy
+
+- story: Arm Stretching Benefits
+  steps:
+  - intent: arm_stretching_benefits
+  - action: utter_arm_stretching_benefits
+
+- story: Arm Injury Prevention Tips
+  steps:
+  - intent: arm_injury_prevention
+  - action: utter_arm_injury_prevention
+
+- story: Arm Strength Training
+  steps:
+  - intent: arm_strength_training
+  - action: utter_arm_strength_training
+
+- story: Arm Pain Management
+  steps:
+  - intent: arm_pain_management
+  - action: utter_arm_pain_management
+
+- story: Importance of Arm Posture
+  steps:
+  - intent: arm_posture_importance
+  - action: utter_arm_posture_importance
+
+- story: Arm Care Recommendations
+  steps:
+  - intent: arm_care_tips
+  - action: utter_arm_care_tips
+
 - story: User asks about Bicep Curls
   steps:
   - intent: ask_bicep_curls
@@ -485,6 +637,43 @@ stories:
   - action: utter_ask_zottman_curl
 
 #_________________strength training - Core stories______________
+
+- story: Core Anatomy Overview
+  steps:
+  - intent: core_anatomy
+  - action: utter_core_anatomy
+
+- story: Core Stretching Benefits
+  steps:
+  - intent: core_stretching_benefits
+  - action: utter_core_stretching_benefits
+
+- story: Core Injury Prevention Tips
+  steps:
+  - intent: core_injury_prevention
+  - action: utter_core_injury_prevention
+
+- story: Core Strength Training
+  steps:
+  - intent: core_strength_training
+  - action: utter_core_strength_training
+
+- story: Core Pain Management
+  steps:
+  - intent: core_pain_management
+  - action: utter_core_pain_management
+
+- story: Importance of Core Posture
+  steps:
+  - intent: core_posture_importance
+  - action: utter_core_posture_importance
+
+- story: Core Care Recommendations
+  steps:
+  - intent: core_care_tips
+  - action: utter_core_care_tips
+
+
 - story: User asks about Plank technique
   steps:
   - intent: ask_plank_technique
@@ -511,6 +700,41 @@ stories:
   - action: utter_ask_mountain_climbers_technique
 
 #_________________strength training - Shoulder stories______________
+
+- story: Shoulder Anatomy Overview
+  steps:
+  - intent: shoulder_anatomy
+  - action: utter_shoulder_anatomy
+
+- story: Shoulder Stretching Benefits
+  steps:
+  - intent: shoulder_stretching_benefits
+  - action: utter_shoulder_stretching_benefits
+
+- story: Shoulder Injury Prevention Tips
+  steps:
+  - intent: shoulder_injury_prevention
+  - action: utter_shoulder_injury_prevention
+
+- story: Shoulder Strength Training
+  steps:
+  - intent: shoulder_strength_training
+  - action: utter_shoulder_strength_training
+
+- story: Shoulder Pain Management
+  steps:
+  - intent: shoulder_pain_management
+  - action: utter_shoulder_pain_management
+
+- story: Importance of Shoulder Posture
+  steps:
+  - intent: shoulder_posture_importance
+  - action: utter_shoulder_posture_importance
+
+- story: Shoulder Care Recommendations
+  steps:
+  - intent: shoulder_care_tips
+  - action: utter_shoulder_care_tips
 
 - story: User asks about Military Press technique
   steps:
