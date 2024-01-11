@@ -564,3 +564,422 @@ stories:
   steps:
     - intent: mood_great
     - action: utter_happy
+
+#_________________________________________cardio and cardio types_________________________________________
+- story: Going for a Run
+  steps:
+  - intent: going_for_a_run
+  - action: utter_going_for_a_run
+
+- story: Jogging in the Park
+  steps:
+  - intent: jogging_in_the_park
+  - action: utter_jogging_in_the_park
+
+- story: Treadmill Running
+  steps:
+  - intent: running_on_the_treadmill
+  - action: utter_running_on_the_treadmill
+
+- story: Cardio with Running
+  steps:
+  - intent: cardio_with_running
+  - action: utter_cardio_with_running
+
+- story: Sprinting Session
+  steps:
+  - intent: sprinting_session
+  - action: utter_sprinting_session
+
+- story: Running for Fitness
+  steps:
+  - intent: running_for_fitness
+  - action: utter_running_for_fitness
+
+- story: Daily Run
+  steps:
+  - intent: daily_run
+  - action: utter_daily_run
+
+- story: Long Distance Running
+  steps:
+  - intent: long_distance_running
+  - action: utter_long_distance_running
+
+- story: Skipping Rope Exercise
+  steps:
+  - intent: skipping_rope_exercise
+  - action: utter_skipping_rope_exercise
+
+- story: Jump Rope Workout
+  steps:
+  - intent: jump_rope_workout
+  - action: utter_jump_rope_workout
+
+- story: Rope Jumping Session
+  steps:
+  - intent: rope_jumping_session
+  - action: utter_rope_jumping_session
+
+- story: Skipping for Cardio
+  steps:
+  - intent: skipping_for_cardio
+  - action: utter_skipping_for_cardio
+
+- story: Rope Jumping as Fitness
+  steps:
+  - intent: rope_jumping_as_fitness
+  - action: utter_rope_jumping_as_fitness
+
+- story: Double Unders Practice
+  steps:
+  - intent: double_unders_practice
+  - action: utter_double_unders_practice
+
+- story: Jump Rope Training
+  steps:
+  - intent: jump_rope_training
+  - action: utter_jump_rope_training
+
+- story: Star Jumps Exercise
+  steps:
+  - intent: star_jumps_exercise
+  - action: utter_star_jumps_exercise
+
+- story: Jumping Jacks
+  steps:
+  - intent: jumping_jacks
+  - action: utter_jumping_jacks
+
+- story: Star Jump Workout
+  steps:
+  - intent: star_jump_workout
+  - action: utter_star_jump_workout
+
+- story: Jumping Out and In
+  steps:
+  - intent: jumping_out_and_in
+  - action: utter_jumping_out_and_in
+
+- story: Side Straddle Hop
+  steps:
+  - intent: side_straddle_hop
+  - action: utter_side_straddle_hop
+
+- story: Star Jumps as Cardio
+  steps:
+  - intent: star_jumps_as_cardio
+  - action: utter_star_jumps_as_cardio
+
+
+- story: Full Body Jumping Exercise
+  steps:
+  - intent: full_body_jumping_exercise
+  - action: utter_full_body_jumping_exercise
+
+- story: Calisthenics Jumping Jacks
+  steps:
+  - intent: calisthenics_jumping_jacks
+  - action: utter_calisthenics_jumping_jacks
+
+- story: Jumping Jacks for Fitness
+  steps:
+  - intent: jumping_jacks_for_fitness
+  - action: utter_jumping_jacks_for_fitness
+
+
+- story: Star Jump Training
+  steps:
+  - intent: star_jump_training
+  - action: utter_star_jump_training
+
+- story: Mountain Hikers Exercise
+  steps:
+  - intent: mountain_hikers_exercise
+  - action: utter_mountain_hikers_exercise
+
+- story: Mimicking Mountain Hikers
+  steps:
+  - intent: mimicking_mountain_hikers
+  - action: utter_mimicking_mountain_hikers
+
+- story: Mountain Hikers Workout
+  steps:
+  - intent: mountain_hikers_workout
+  - action: utter_mountain_hikers_workout
+
+- story: Mountain Hikers Routine
+  steps:
+  - intent: mountain_hikers_routine
+  - action: utter_mountain_hikers_routine
+
+- story: Mountain Hikers as Cardio
+  steps:
+  - intent: mountain_hikers_as_cardio
+  - action: utter_mountain_hikers_as_cardio
+
+- story: Full Body Mountain Hikers
+  steps:
+  - intent: full_body_mountain_hikers
+  - action: utter_full_body_mountain_hikers
+
+- story: Calisthenics Mountain Hikers
+  steps:
+  - intent: calisthenics_mountain_hikers
+  - action: utter_calisthenics_mountain_hikers
+
+- story: Mountain Hikers for Fitness
+  steps:
+  - intent: mountain_hikers_for_fitness
+  - action: utter_mountain_hikers_for_fitness
+
+- story: Mountain Hiker Training
+  steps:
+  - intent: mountain_hiker_training
+  - action: utter_mountain_hiker_training
+
+- story: Burpees Exercise
+  steps:
+  - intent: burpees_exercise
+  - action: utter_burpees_exercise
+
+- story: Burpees as Cardio
+  steps:
+  - intent: burpees_as_cardio
+  - action: utter_burpees_as_cardio
+
+- story: Burpees Full Body Workout
+  steps:
+  - intent: burpees_full_body_workout
+  - action: utter_burpees_full_body_workout
+
+- story: High-Intensity Burpees
+  steps:
+  - intent: high_intensity_burpees
+  - action: utter_high_intensity_burpees
+
+- story: Burpees Routine
+  steps:
+  - intent: burpees_routine
+  - action: utter_burpees_routine
+
+- story: Burpees with Cardio
+  steps:
+  - intent: burpees_with_cardio
+  - action: utter_burpees_with_cardio
+
+- story: Adding Burpees to Workout
+  steps:
+  - intent: adding_burpees_to_workout
+  - action: utter_adding_burpees_to_workout
+
+- story: Intense Burpee Training
+  steps:
+  - intent: intense_burpee_training
+  - action: utter_intense_burpee_training
+
+- story: Burpees for Fitness
+  steps:
+  - intent: burpees_for_fitness
+  - action: utter_burpees_for_fitness
+
+- story: Burpees Variations
+  steps:
+  - intent: burpees_variations
+  - action: utter_burpees_variations
+
+- story: Incorporating Burpees
+  steps:
+  - intent: incorporating_burpees
+  - action: utter_incorporating_burpees
+
+- story: Burpees Benefits
+  steps:
+  - intent: burpees_benefits
+  - action: utter_burpees_benefits
+
+- story: Box Jumps Exercise
+  steps:
+  - intent: box_jumps_exercise
+  - action: utter_box_jumps_exercise
+
+- story: Box Jumps as Workout
+  steps:
+  - intent: box_jumps_as_workout
+  - action: utter_box_jumps_as_workout
+
+- story: Box Jumps Incorporation
+  steps:
+  - intent: box_jumps_incorporation
+  - action: utter_box_jumps_incorporation
+
+- story: Box Jumps Routine
+  steps:
+  - intent: box_jumps_routine
+  - action: utter_box_jumps_routine
+
+- story: Explosive Box Jumps
+  steps:
+  - intent: explosive_box_jumps
+  - action: utter_explosive_box_jumps
+
+- story: Box Jumps Variations
+  steps:
+  - intent: box_jumps_variations
+  - action: utter_box_jumps_variations
+
+- story: Box Jumps Benefits
+  steps:
+  - intent: box_jumps_benefits
+  - action: utter_box_jumps_benefits
+
+- story: Adding Box Jumps to Exercise
+  steps:
+  - intent: adding_box_jumps_to_exercise
+  - action: utter_adding_box_jumps_to_exercise
+
+- story: Box Jumps Technique
+  steps:
+  - intent: box_jumps_technique
+  - action: utter_box_jumps_technique
+
+- story: Improving Box Jumps
+  steps:
+  - intent: improving_box_jumps
+  - action: utter_improving_box_jumps
+
+
+- story: Cycling as Cardio
+  steps:
+  - intent: cycling_as_cardio
+  - action: utter_cycling_as_cardio
+
+- story: Cycling as Workout
+  steps:
+  - intent: cycling_as_workout
+  - action: utter_cycling_as_workout
+
+- story: Cycling Benefits
+  steps:
+  - intent: cycling_benefits
+  - action: utter_cycling_benefits
+
+- story: Cycling Routines
+  steps:
+  - intent: cycling_routines
+  - action: utter_cycling_routines
+
+- story: Cycling Tips
+  steps:
+  - intent: cycling_tips
+  - action: utter_cycling_tips
+
+- story: Cycling Speed Improvement
+  steps:
+  - intent: cycling_speed_improvement
+  - action: utter_cycling_speed_improvement
+
+- story: Indoor Cycling
+  steps:
+  - intent: indoor_cycling
+  - action: utter_indoor_cycling
+
+- story: Outdoor Cycling
+  steps:
+  - intent: outdoor_cycling
+  - action: utter_outdoor_cycling
+
+- story: Cycling for Beginners
+  steps:
+  - intent: cycling_for_beginners
+  - action: utter_cycling_for_beginners
+
+- story: Cycling Gear Recommendations
+  steps:
+  - intent: cycling_gear_recommendations
+  - action: utter_cycling_gear_recommendations
+
+- story: Swimming Technique
+  steps:
+  - intent: swimming_technique
+  - action: utter_swimming_technique
+
+- story: Swimming Advantages
+  steps:
+  - intent: swimming_advantages
+  - action: utter_swimming_advantages
+
+- story: Swimming Speed Improvement
+  steps:
+  - intent: swimming_speed_improvement
+  - action: utter_swimming_speed_improvement
+
+- story: Indoor Swimming
+  steps:
+  - intent: indoor_swimming
+  - action: utter_indoor_swimming
+
+- story: Outdoor Swimming
+  steps:
+  - intent: outdoor_swimming
+  - action: utter_outdoor_swimming
+
+- story: Swimming Workouts
+  steps:
+  - intent: swimming_workouts
+  - action: utter_swimming_workouts
+
+- story: Swimming Health Benefits
+  steps:
+  - intent: swimming_health_benefits
+  - action: utter_swimming_health_benefits
+
+- story: Swimming for Cardio
+  steps:
+  - intent: swimming_for_cardio
+  - action: utter_swimming_for_cardio
+
+- story: Cardio Benefits
+  steps:
+    - intent: ask_cardio_benefits
+    - action: utter_ask_cardio_benefits
+
+- story: Cardio Exercises
+  steps:
+    - intent: ask_cardio_exercises
+    - action: utter_ask_cardio_exercises
+
+- story: Cardio Frequency
+  steps:
+    - intent: ask_cardio_frequency
+    - action: utter_ask_cardio_frequency
+
+- story: Cardio Duration
+  steps:
+    - intent: ask_cardio_duration
+    - action: utter_ask_cardio_duration
+
+- story: Cardio Intensity
+  steps:
+    - intent: ask_cardio_intensity
+    - action: utter_ask_cardio_intensity
+
+- story: Cardio Equipments
+  steps:
+    - intent: ask_cardio_equipments
+    - action: utter_ask_cardio_equipments
+
+- story: Cardio Beginners
+  steps:
+    - intent: ask_cardio_beginners
+    - action: utter_ask_cardio_beginners
+
+- story: Cardio Weight Loss
+  steps:
+    - intent: ask_cardio_weight_loss
+    - action: utter_ask_cardio_weight_loss
+
+- story: Cardio Health Conditions
+  steps:
+    - intent: ask_cardio_health_conditions
+    - action: utter_ask_cardio_health_conditions
