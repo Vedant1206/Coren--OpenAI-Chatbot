@@ -1763,6 +1763,698 @@ nlu:
   #*******************************Diet section complete********************************
 
 
+#*******************************Cardio Section**************************************
+  - intent: going_for_a_run
+    examples: |
+      - Planning to go for a run?
+      - How to start a run?
+      - Tips for a successful running session?
+      - Preparing for a run outdoors?
+      - Ready to lace up and hit the road for a jog?
+      - Wanna take your sneakers out for a spin?
+      - Feel like embracing the runner's high today?
+      - Got the running bug? Need any tips?
+      - Time to turn your playlist on and go for a run?
+      - Up for a jog? Let's talk about it!
+      - Thinking about breaking into a run? Tips inside!
+      - Fancy a jog? Let's chat about running!
+      - Running vibes today? Let's discuss!
+      - Got your running shoes handy? Let's talk running!
+      - Wanna go for a run?
+      - Thinking of running today?
+      - Ever tried going for a jog?
+      - Up for a run?
+      - Fancy a quick run?
+      - Ever considered running for fun?
+      - Feel like hitting the pavement?
+      - How about a run today?
+      - Want to go for a jog?
+      - Ready for a quick run?
+
+
+
+  - intent: jogging_in_the_park
+    examples: |
+      - Benefits of jogging in the park?
+      - How to maximize a park jog?
+      - Tips for jogging outdoors?
+
+  - intent: running_on_the_treadmill
+    examples: |
+      - Benefits of treadmill running?
+      - Treadmill running techniques?
+      - Tips for treadmill workouts?
+
+  - intent: cardio_with_running
+    examples: |
+      - How effective is running for cardio?
+      - Running for cardio fitness?
+      - Cardio routines involving running?
+
+  - intent: sprinting_session
+    examples: |
+      - Sprinting workout tips?
+      - Sprinting for fitness?
+      - Sprinting routine?
+
+  - intent: running_for_fitness
+    examples: |
+      - How does running contribute to fitness?
+      - Benefits of running for overall fitness?
+      - Role of running in fitness routines?
+
+  - intent: daily_run
+    examples: |
+      - Incorporating a daily run?
+      - Benefits of a daily running routine?
+      - Daily running for health?
+
+  - intent: long_distance_running
+    examples: |
+      - Tips for long-distance running?
+      - Benefits of long-distance running?
+      - Long-distance running techniques?
+      - Preparing for long runs?
+
+
+  - intent: skipping_rope_exercise
+    examples: |
+      - How to perform skipping rope exercise?
+      - Demonstrating rope jumping?
+      - Steps for a jump rope workout?
+      - Techniques for skipping for cardio?
+      - Skipping rope exercise guide?
+      - Instructions for a rope skipping routine?
+
+  - intent: jump_rope_workout
+    examples: |
+      - Benefits of jump rope in a workout?
+      - Jump rope in workout routines?
+      - Effective jump rope workout plan?
+      - Using skipping rope in exercise routines?
+      - Role of rope jumping in workouts?
+
+  - intent: rope_jumping_session
+    examples: |
+      - What is a rope jumping session?
+      - Benefits of rope jumping session?
+      - Rope jumping routine?
+
+  - intent: skipping_for_cardio
+    examples: |
+      - Using skipping for cardio?
+      - How effective is skipping for cardio?
+      - Cardio routines with a skipping rope?
+      - Impact of rope jumping on cardio workouts?
+
+  - intent: rope_jumping_as_fitness
+    examples: |
+      - Benefits of rope jumping for fitness?
+      - How effective is rope jumping for fitness?
+      - Role of rope jumping in fitness routines?
+      - Impact of rope jumping on overall health?
+
+  - intent: double_unders_practice
+    examples: |
+      - Practicing double unders with a jump rope?
+      - Tips for mastering double unders?
+      - How to improve double unders practice?
+      - Double unders training advice?
+
+  - intent: jump_rope_training
+    examples: |
+      - Jump rope training techniques?
+      - How to train for rope jumping?
+      - Tips for mastering rope jumping?
+      - Rope jumping workout advice?
+
+
+  - intent: star_jumps_exercise
+    examples: |
+      - How to perform star jumps?
+      - Demonstrating star jumps?
+      - Steps for doing jumping jacks?
+      - Techniques for star jump workout?
+      - Star jumps exercise guide?
+      - Instructions for star jump routine?
+
+  - intent: jumping_jacks
+    examples: |
+      - Explaining jumping jacks?
+      - Performing jumping jacks?
+      - Steps for jumping out and in?
+      - Technique for side-straddle hop?
+      - Doing jumping jacks?
+      - Instructions for jumping jacks exercise?
+
+  - intent: star_jump_workout
+    examples: |
+      - Benefits of star jumps in a workout?
+      - Star jumps in workout routines?
+      - Effective star jump workout plan?
+      - Using star jumps in exercise routines?
+      - Role of star jumps in workouts?
+
+  - intent: jumping_out_and_in
+    examples: |
+      - Explaining jumping out and in exercise?
+      - Technique for side-straddle hop exercise?
+      - Doing the jumping out and in exercise?
+
+  - intent: side_straddle_hop
+    examples: |
+      - What is a side-straddle hop?
+      - Benefits of side-straddle hop?
+      - Side-straddle hop routine?
+
+  - intent: star_jumps_as_cardio
+    examples: |
+      - Using star jumps for cardio?
+      - How effective are star jumps for cardio?
+      - Cardio routines with star jumps?
+      - Impact of star jumps on cardio workouts?
+
+  - intent: full_body_jumping_exercise
+    examples: |
+      - Benefits of star jumps as a full-body exercise?
+      - How effective are star jumps for a full-body workout?
+      - Star jumps for comprehensive body workouts?
+      - Impact of star jumps on overall fitness?
+
+  - intent: calisthenics_jumping_jacks
+    examples: |
+      - Calisthenics with jumping jacks?
+      - Incorporating calisthenics in jumping jacks exercise?
+      - Calisthenics exercises including star jumps?
+
+  - intent: jumping_jacks_for_fitness
+    examples: |
+      - How effective are jumping jacks for fitness?
+      - Benefits of incorporating jumping jacks in fitness routines?
+      - Why choose jumping jacks for fitness?
+      - Impact of jumping jacks on overall health?
+
+  - intent: star_jump_training
+    examples: |
+      - Star jumps training techniques?
+      - How to train for star jumps?
+      - Tips for mastering star jumps?
+      - Star jumps workout advice?
+
+
+  - intent: mountain_hikers_exercise
+    examples: |
+      - How to do mountain hikers?
+      - Explaining mountain climbers exercise?
+      - Techniques for mountain hikers?
+      - Demonstrating mountain hikers?
+      - Steps for performing mountain climbers?
+      - Correct way to execute mountain climbers?
+
+  - intent: mimicking_mountain_hikers
+    examples: |
+      - Imitating mountain climbers?
+      - Replicating mountain hikers exercise?
+      - Mimicry of mountain climbers?
+      - Copying mountain hikers exercise?
+
+  - intent: mountain_hikers_workout
+    examples: |
+      - How effective are mountain hikers for a workout?
+      - Benefits of mountain hikers as a workout?
+      - Are mountain climbers effective for exercise routines?
+      - Mountain climbers workout plan?
+      - Role of mountain climbers in a workout routine?
+
+  - intent: mountain_hikers_routine
+    examples: |
+      - Structuring a mountain hikers routine?
+      - Effective mountain hikers routines?
+      - Mountain climbers workout plan?
+      - Creating a routine with mountain hikers?
+
+  - intent: mountain_hikers_as_cardio
+    examples: |
+      - Are mountain climbers effective for cardio?
+      - Using mountain hikers in a cardio workout?
+      - How intense are mountain hikers for cardio?
+      - Role of mountain climbers in cardio routines?
+
+  - intent: full_body_mountain_hikers
+    examples: |
+      - Benefits of mountain hikers as a full-body workout?
+      - How good are mountain hikers for a full-body exercise?
+      - Mountain hikers for comprehensive body workouts?
+      - Impact of mountain climbers on overall fitness?
+
+  - intent: calisthenics_mountain_hikers
+    examples: |
+      - Calisthenics with mountain hikers?
+      - Incorporating calisthenics in mountain climbers exercise?
+      - Calisthenics exercises including mountain hikers?
+
+  - intent: mountain_hikers_for_fitness
+    examples: |
+      - How effective are mountain hikers for fitness?
+      - Benefits of incorporating mountain climbers in fitness routines?
+      - Why choose mountain hikers for fitness?
+      - Impact of mountain hikers on overall health?
+
+  - intent: mountain_hiker_training
+    examples: |
+      - Mountain hikers training techniques?
+      - How to train for mountain climbers?
+      - Tips for mastering mountain hikers?
+      - Mountain hikers workout advice?
+
+
+  - intent: burpees_exercise
+    examples: |
+      - How to do burpees?
+      - What's the technique for burpees?
+      - Demonstrating burpees?
+      - Steps for performing burpees?
+      - Explaining burpee exercise?
+      - Correct way to execute burpees?
+
+  - intent: burpees_as_cardio
+    examples: |
+      - Are burpees effective for cardio?
+      - Using burpees in a cardio workout?
+      - How intense are burpees for cardio?
+      - Role of burpees in cardio routines?
+
+  - intent: burpees_full_body_workout
+    examples: |
+      - Benefits of burpees as a full-body workout?
+      - How good are burpees for a full-body exercise?
+      - Burpees for comprehensive body workouts?
+      - Impact of burpees on overall fitness?
+
+  - intent: high_intensity_burpees
+    examples: |
+      - High-intensity burpees techniques?
+      - How to perform high-intensity burpees?
+      - Tips for high-intensity burpees?
+      - Mastering high-intensity burpees?
+
+  - intent: burpees_routine
+    examples: |
+      - Effective burpees routines?
+      - Structuring a burpees workout?
+      - Burpees workout plan?
+      - Creating a routine with burpees?
+
+  - intent: burpees_with_cardio
+    examples: |
+      - Cardio workouts including burpees?
+      - How to mix burpees with cardio exercises?
+      - Combining burpees with cardio routines?
+      - Any suggestions for cardio routines with burpees?
+
+  - intent: adding_burpees_to_workout
+    examples: |
+      - Integrating burpees into my workout?
+      - Can I add burpees to my current routine?
+      - How to include burpees in exercises?
+      - Enhancing workouts with burpees?
+
+  - intent: intense_burpee_training
+    examples: |
+      - Intense burpee training techniques?
+      - How to perform intense burpees?
+      - Tips for mastering intense burpees?
+      - Intense burpees workout advice?
+
+  - intent: burpees_for_fitness
+    examples: |
+      - How effective are burpees for fitness?
+      - Benefits of incorporating burpees in fitness routines?
+      - Why choose burpees for fitness?
+      - Impact of burpees on overall health?
+
+  - intent: burpees_variations
+    examples: |
+      - Variations of burpees?
+      - Different types of burpees?
+      - Burpees variations for variety?
+      - How to vary burpees routine?
+
+  - intent: incorporating_burpees
+    examples: |
+      - Incorporating burpees in exercises?
+      - How to add burpees to my workout routine?
+      - Can I include burpees in my current workout?
+      - Suggestions for incorporating burpees?
+      
+  - intent: burpees_benefits
+    examples: |
+      - Benefits of doing burpees?
+      - Advantages of burpees exercise?
+      - Why choose burpees for workouts?
+      - Impact of burpees on fitness?
+
+
+  - intent: box_jumps_exercise
+    examples: |
+      - How to do box jumps?
+      - What is the technique for box jumps?
+      - Box jumps demonstration?
+      - Steps for performing box jumps?
+      - Explaining box jumps exercise?
+      - Correct way to execute box jumps?
+
+  - intent: box_jumps_as_workout
+    examples: |
+      - Are box jumps good for workouts?
+      - Using box jumps in a workout?
+      - How effective are box jumps for a workout routine?
+      - Role of box jumps in exercise routines?
+
+  - intent: box_jumps_incorporation
+    examples: |
+      - Incorporating box jumps in exercises?
+      - How to add box jumps to my workout routine?
+      - Can I include box jumps in my current workout?
+      - Suggestions for incorporating box jumps?
+
+  - intent: box_jumps_routine
+    examples: |
+      - Effective box jumps routines?
+      - Structuring a box jumps workout?
+      - Box jumps workout plan?
+      - Creating a routine with box jumps?
+
+  - intent: explosive_box_jumps
+    examples: |
+      - Explosive box jumps techniques?
+      - How to perform explosive box jumps?
+      - Tips for explosive box jumps?
+      - Mastering explosive box jumps?
+
+  - intent: box_jumps_variations
+    examples: |
+      - Variations of box jumps?
+      - Different types of box jumps?
+      - Box jumps variations for variety?
+      - How to vary box jumps routine?
+
+  - intent: box_jumps_benefits
+    examples: |
+      - Benefits of doing box jumps?
+      - Advantages of box jumps exercise?
+      - Why choose box jumps for workouts?
+      - Impact of box jumps on fitness?
+
+  - intent: adding_box_jumps_to_exercise
+    examples: |
+      - Integrating box jumps into my exercise?
+      - Can I add box jumps to my current routine?
+      - How to include box jumps in exercises?
+      - Enhancing workouts with box jumps?
+
+  - intent: box_jumps_technique
+    examples: |
+      - Correct box jumps technique?
+      - Perfecting box jumps form?
+      - Tips for proper box jumps execution?
+      - Box jumps form advice?
+
+  - intent: improving_box_jumps
+    examples: |
+      - Enhancing box jumps performance?
+      - Techniques for better box jumps?
+      - How to improve box jumps?
+      - Tips for mastering box jumps?
+
+  - intent: box_jumps_tips
+    examples: |
+      - Tips for effective box jumps?
+      - Box jumps workout advice?
+      - Box jumps tips for beginners?
+      - Any suggestions for box jumps?
+
+  - intent: high_knees_exercise
+    examples: |
+      - How to perform high knees?
+      - Doing high knees correctly?
+      - What are high knees?
+      - Steps for doing high knees?
+      - Explaining high knees exercise?
+      - High knees demonstration?
+
+  - intent: high_knees_as_cardio
+    examples: |
+      - Are high knees good for cardio?
+      - Using high knees for cardiovascular workout?
+      - How effective are high knees for heart health?
+      - High knees' role in cardio routines?
+
+  - intent: high_knees_in_workout
+    examples: |
+      - Including high knees in workouts?
+      - How to incorporate high knees into a workout?
+      - Can I add high knees to my exercise routine?
+      - High knees routine suggestions?
+
+  - intent: high_knees_routine
+    examples: |
+      - Effective high knees routines?
+      - Structuring a high knees workout?
+      - High knees workout plan?
+      - Creating a high knees routine?
+
+  - intent: high_knees_variations
+    examples: |
+      - Variations of high knees?
+      - Different types of high knees?
+      - High knees variations for variety?
+      - How to vary high knees routine?
+
+  - intent: high_knees_benefits
+    examples: |
+      - Benefits of doing high knees?
+      - Advantages of high knees exercise?
+      - Why choose high knees for workouts?
+      - Impact of high knees on fitness?
+
+  - intent: adding_high_knees_to_exercise
+    examples: |
+      - Integrating high knees into my exercise?
+      - Can I add high knees to my current routine?
+      - How to include high knees in exercises?
+      - Enhancing workouts with high knees?
+
+  - intent: high_knees_technique
+    examples: |
+      - Correct high knees technique?
+      - Perfecting high knees form?
+      - Tips for proper high knees execution?
+      - High knees form advice?
+
+  - intent: improving_high_knees
+    examples: |
+      - Enhancing high knees performance?
+      - Techniques for better high knees?
+      - How to improve high knees?
+      - Tips for mastering high knees?
+
+  - intent: high_knees_tips
+    examples: |
+      - Tips for effective high knees?
+      - High knees workout advice?
+      - High knees tips for beginners?
+      - Any suggestions for high knees?
+
+
+  - intent: cycling_as_cardio
+    examples: |
+      - Is cycling effective for cardio?
+      - Cycling's role in cardiovascular fitness?
+      - Does cycling work for heart health?
+      - Cardio benefits of cycling?
+
+  - intent: cycling_as_workout
+    examples: |
+      - Using cycling as a workout?
+      - Workouts incorporating cycling?
+      - Benefits of cycling-based workouts?
+      - Is cycling a good workout choice?
+
+  - intent: cycling_benefits
+    examples: |
+      - Advantages of cycling?
+      - Health benefits of cycling?
+      - Why choose cycling for fitness?
+      - Impact of cycling on health?
+
+  - intent: cycling_routines
+    examples: |
+      - Effective cycling routines?
+      - Structuring cycling sessions?
+      - Can you suggest cycling routines?
+      - Creating a cycling workout plan?
+
+  - intent: cycling_tips
+    examples: |
+      - Tips for better cycling?
+      - Cycling technique advice?
+      - Cycling tips for beginners?
+      - Improving cycling performance?
+
+  - intent: cycling_speed_improvement
+    examples: |
+      - Enhancing cycling speed?
+      - Techniques for faster cycling?
+      - How to increase cycling speed?
+      - Speed drills for cycling?
+
+  - intent: indoor_cycling
+    examples: |
+      - Indoor cycling benefits?
+      - Choosing indoor cycling vs. outdoor?
+      - Indoor cycling facilities near me?
+      - Effective indoor cycling routines?
+
+  - intent: outdoor_cycling
+    examples: |
+      - Outdoor cycling spots?
+      - Benefits of outdoor cycling?
+      - Outdoor cycling vs. indoor cycling?
+      - Is outdoor cycling better?
+
+  - intent: cycling_for_beginners
+    examples: |
+      - Beginner cycling tips?
+      - Starting cycling as a beginner?
+      - Advice for novice cyclists?
+      - Beginner-friendly cycling routines?
+
+  - intent: cycling_gear_recommendations
+    examples: |
+      - Essential cycling gear?
+      - Best cycling accessories to have?
+      - Gear recommendations for cyclists?
+      - Must-have cycling equipment?
+
+
+  - intent: swimming_technique
+    examples: |
+      - How to improve swimming technique?
+      - Tips for refining swimming form?
+      - Correcting swimming strokes?
+      - Mastering swimming technique?
+
+  - intent: swimming_advantages
+    examples: |
+      - Benefits of swimming?
+      - Advantages of swimming workouts?
+      - Why choose swimming for fitness?
+      - How does swimming improve health?
+
+  - intent: swimming_speed_improvement
+    examples: |
+      - Enhancing swimming speed?
+      - Techniques for faster swimming?
+      - How to increase swimming speed?
+      - Speed drills for swimming?
+
+  - intent: indoor_swimming
+    examples: |
+      - Indoor swimming facilities near me?
+      - Advantages of indoor swimming?
+      - Is indoor swimming better?
+      - Choosing an indoor pool for swimming?
+
+  - intent: outdoor_swimming
+    examples: |
+      - Benefits of outdoor swimming?
+      - Outdoor swimming spots?
+      - Outdoor swimming vs. indoor swimming?
+      - Is open water swimming better?
+
+  - intent: swimming_workouts
+    examples: |
+      - Effective swimming workouts?
+      - Can you suggest swim routines?
+      - Swim workouts for fitness goals?
+      - Structuring swimming sessions?
+
+  - intent: swimming_health_benefits
+    examples: |
+      - How does swimming benefit health?
+      - Health improvements from swimming?
+      - Swimming's impact on mental health?
+      - Swimming and overall well-being?
+
+  - intent: swimming_for_cardio
+    examples: |
+      - Is swimming good for cardio?
+      - How effective is swimming as cardio?
+      - Swimming for cardiovascular health?
+      - Cardio benefits of swimming?
+
+  - intent: ask_cardio_benefits
+    examples: |
+      - What are the benefits of cardio?
+      - Can you tell me why cardio is good for health?
+      - How does cardio benefit the body?
+
+  - intent: ask_cardio_exercises
+    examples: |
+      - What are some cardio exercises?
+      - Can you recommend effective cardio workouts?
+      - Which exercises are good for cardio?
+
+  - intent: ask_cardio_frequency
+    examples: |
+      - How often should I do cardio?
+      - What's the recommended frequency for cardio workouts?
+      - Is daily cardio good, or should it be done on alternate days?
+
+  - intent: ask_cardio_duration
+    examples: |
+      - How long should a cardio session be?
+      - What's the ideal duration for a cardio workout?
+      - Is a 30-minute cardio session enough?
+      - how long should I do cardio?
+      - how long cardio?
+      - how long?
+
+  - intent: ask_cardio_intensity
+    examples: |
+      - How intense should my cardio workouts be?
+      - What's the right level of intensity for cardio?
+      - Should I focus on high-intensity or moderate-intensity cardio?
+
+  - intent: ask_cardio_equipments
+    examples: |
+      - Are there any specific cardio equipment you recommend?
+      - What cardio machines are best for home workouts?
+      - Can I do cardio without any equipment?
+
+  - intent: ask_cardio_beginners
+    examples: |
+      - I'm new to cardio. Where should I start?
+      - What are some beginner-friendly cardio exercises?
+      - How can beginners incorporate cardio into their routine?
+      - want to learn cardio?
+      - cardio?
+      - what to do for cardio?
+      - what to do in cardio?
+
+  - intent: ask_cardio_weight_loss
+    examples: |
+      - Is cardio effective for weight loss?
+      - How can I use cardio to lose weight?
+      - What's the relationship between cardio and burning calories?
+
+  - intent: ask_cardio_health_conditions
+    examples: |
+      - Can I do cardio if I have certain health conditions?
+      - Are there any restrictions for cardio with specific health issues?
+      - What precautions should I take before starting cardio with health concerns?
+#*******************************Cardio Section Ended********************************
 
 #---------------------------------------------------------#
 

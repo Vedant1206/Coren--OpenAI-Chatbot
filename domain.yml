@@ -152,6 +152,110 @@ intents:
   - ask_arnold_press
   - ask_shrugs_technique
   - ask_shoulder_benefits
+  
+  - going_for_a_run
+  - jogging_in_the_park
+  - running_on_the_treadmill
+  - cardio_with_running
+  - sprinting_session
+  - running_for_fitness
+  - daily_run
+  - long_distance_running
+
+  - skipping_rope_exercise
+  - jump_rope_workout
+  - rope_jumping_session
+  - skipping_for_cardio
+  - rope_jumping_as_fitness
+  - double_unders_practice
+  - jump_rope_training
+
+  - star_jumps_exercise
+  - jumping_jacks
+  - star_jump_workout
+  - jumping_out_and_in
+  - side_straddle_hop
+  - star_jumps_as_cardio
+  - full_body_jumping_exercise
+  - calisthenics_jumping_jacks
+  - jumping_jacks_for_fitness
+  - star_jump_training
+
+  - mountain_hikers_exercise
+  - mimicking_mountain_hikers
+  - mountain_hikers_workout
+  - mountain_hikers_routine
+  - mountain_hikers_as_cardio
+  - full_body_mountain_hikers
+  - calisthenics_mountain_hikers
+  - mountain_hikers_for_fitness
+  - mountain_hiker_training
+
+  - burpees_exercise
+  - burpees_as_cardio
+  - burpees_full_body_workout
+  - high_intensity_burpees
+  - burpees_routine
+  - burpees_with_cardio
+  - adding_burpees_to_workout
+  - intense_burpee_training
+  - burpees_for_fitness
+  - burpees_variations
+  - incorporating_burpees
+  - burpees_benefits
+
+  - box_jumps_exercise
+  - box_jumps_as_workout
+  - box_jumps_incorporation
+  - box_jumps_routine
+  - explosive_box_jumps
+  - box_jumps_variations
+  - box_jumps_benefits
+  - adding_box_jumps_to_exercise
+  - box_jumps_technique
+  - improving_box_jumps
+  - box_jumps_tips
+
+  - high_knees_exercise
+  - high_knees_as_cardio
+  - high_knees_in_workout
+  - high_knees_routine
+  - high_knees_variations
+  - high_knees_benefits
+  - adding_high_knees_to_exercise
+  - high_knees_technique
+  - improving_high_knees
+  - high_knees_tips
+
+  - cycling_as_cardio
+  - cycling_as_workout
+  - cycling_benefits
+  - cycling_routines
+  - cycling_tips
+  - cycling_speed_improvement
+  - indoor_cycling
+  - outdoor_cycling
+  - cycling_for_beginners
+  - cycling_gear_recommendations
+
+  - swimming_technique
+  - swimming_advantages
+  - swimming_speed_improvement
+  - indoor_swimming
+  - outdoor_swimming
+  - swimming_workouts
+  - swimming_health_benefits
+  - swimming_for_cardio
+
+  - ask_cardio_benefits
+  - ask_cardio_exercises
+  - ask_cardio_frequency
+  - ask_cardio_duration
+  - ask_cardio_intensity
+  - ask_cardio_equipments
+  - ask_cardio_beginners
+  - ask_cardio_weight_loss
+  - ask_cardio_health_conditions
 
 responses:
 
@@ -870,6 +974,308 @@ responses:
       3. **Arnold Press**: Targets multiple shoulder muscles for overall development.
       4. **Shrugs**: Strengthen the trapezius muscles, essential for neck and shoulder stability.
       5. **Military Press**: Develops shoulder power and stability, engaging the entire deltoid region.
+
+
+#_________________________________________________________running___________________________
+  utter_going_for_a_run:
+  - text: "Thinking of going for a run? Lace up those shoes and hit the pavement! It's a fantastic way to stay fit and energized."
+
+  utter_jogging_in_the_park:
+  - text: "Jogging in the park is a wonderful choice! Enjoy the fresh air and nature as you elevate your heart rate."
+
+  utter_running_on_the_treadmill:
+  - text: "Running on the treadmill offers a controlled environment for a great workout. Keep up the pace!"
+
+  utter_cardio_with_running:
+  - text: "Running is an excellent cardiovascular exercise. It strengthens your heart and lungs while burning calories."
+
+  utter_sprinting_session:
+  - text: "Sprinting is a powerful way to boost your cardio fitness. Short bursts of intense effort can yield impressive results."
+
+  utter_running_for_fitness:
+  - text: "Running is a fantastic choice for overall fitness. It engages multiple muscle groups and enhances cardiovascular health. Keep it up!"
+
+  utter_daily_run:
+  - text: "Incorporating a daily run into your routine is a great habit. It boosts mood, improves stamina, and contributes to long-term health."
+
+  utter_long_distance_running:
+  - text: "Long-distance running is a rewarding challenge. It builds endurance and mental resilience. Remember to stay hydrated and enjoy the journey."
+
+#_________________________________________________________skipping___________________________
+
+  utter_skipping_rope_exercise:
+  - text: "Skipping rope is a fun and effective exercise. It enhances coordination, burns calories, and is an excellent addition to your workout routine."
+
+  utter_jump_rope_workout:
+  - text: "A jump rope workout is a versatile and efficient way to stay fit. It's great for both cardiovascular health and improving agility."
+
+  utter_rope_jumping_session:
+  - text: "Planning a rope jumping session? Get ready to elevate your heart rate and work on your coordination. It's a fantastic full-body exercise!"
+
+  utter_skipping_for_cardio:
+  - text: "Skipping for cardio is a smart . It's time-efficient and offers an effective way to get your heart pumping and burn calories."
+
+  utter_rope_jumping_as_fitness:
+  - text: "Rope jumping is not just cardio; it's a full-body workout. It targets various muscle groups and helps improve overall fitness."
+
+  utter_double_unders_practice:
+  - text: "Double unders can be challenging but are incredibly rewarding. Practice regularly to master the technique and enhance your jump rope skills."
+
+  utter_jump_rope_training:
+  - text: "Jump rope training is an excellent way to enhance your agility and coordination. It's a versatile exercise that offers both cardio and strength benefits."
+
+#_________________________________________________________star jumps___________________________
+
+  utter_star_jumps_exercise:
+  - text: "Star jumps are a dynamic full-body exercise. They elevate your heart rate, engage multiple muscle groups, and contribute to an effective workout routine."
+
+  utter_jumping_jacks:
+  - text: "Jumping jacks are a classic and effective exercise. They're great for warming up, improving cardiovascular health, and adding variety to your workouts."
+
+  utter_star_jump_workout:
+  - text: "Incorporating star jumps into your workout routine adds an element of fun and intensity. Enjoy the burst of energy and benefits for your entire body."
+
+  utter_jumping_out_and_in:
+  - text: "Jumping out and in exercises are fantastic for cardiovascular fitness. They work on your lower body strength and contribute to a well-rounded workout."
+
+  utter_side_straddle_hop:
+  - text: "Side-straddle hop, also known as jumping jacks, is a classic exercise that enhances cardiovascular endurance. It's a great addition to any workout routine."
+
+  utter_star_jumps_as_cardio:
+  - text: "Using star jumps for cardio is an excellent choice. They get your heart pumping, improve stamina, and can be easily incorporated into high-intensity workouts."
+
+  utter_full_body_jumping_exercise:
+  - text: "Star jumps as a full-body exercise are highly effective. They engage your legs, core, and arms simultaneously, providing a comprehensive workout."
+
+  utter_calisthenics_jumping_jacks:
+  - text: "Combining calisthenics with jumping jacks adds a bodyweight challenge to your routine. It's a great way to improve strength and endurance."
+
+  utter_jumping_jacks_for_fitness:
+  - text: "Jumping jacks are not just for warming up; they're a fantastic fitness exercise. They improve cardiovascular health and can be adapted to various fitness levels."
+
+  utter_star_jump_training:
+  - text: "Star jump training involves refining your technique and incorporating them into your regular routine. Consistency is key to mastering this dynamic exercise."
+
+#_________________________________________________________climbing___________________________
+
+  utter_mountain_hikers_exercise:
+  - text: "Mountain hikers are an effective core and cardio exercise. They mimic the motion of climbing and engage multiple muscle groups for a challenging workout."
+
+  utter_mimicking_mountain_hikers:
+  - text: "Mimicking mountain hikers adds intensity to your workout. It's a dynamic exercise that targets your core, legs, and cardiovascular system."
+
+  utter_mountain_hikers_workout:
+  - text: "Incorporating mountain hikers into your workout routine is a smart choice. They offer a full-body workout and help improve endurance over time."
+
+  utter_mountain_hikers_routine:
+  - text: "Creating a routine with mountain hikers involves structuring your workouts to include this challenging exercise regularly. It's beneficial for overall fitness."
+
+  utter_mountain_hikers_as_cardio:
+  - text: "Mountain hikers are effective for cardio, offering a high-intensity workout that gets your heart rate up. Include them for a cardio boost in your routine."
+
+  utter_full_body_mountain_hikers:
+  - text: "Full-body mountain hikers are an excellent choice for a comprehensive workout. They engage your core, legs, and upper body, providing a total-body challenge."
+
+  utter_calisthenics_mountain_hikers:
+  - text: "Incorporating calisthenics into mountain hikers adds a bodyweight element to your routine. It enhances strength and endurance, making your workouts more dynamic."
+
+  utter_mountain_hikers_for_fitness:
+  - text: "Mountain hikers are highly effective for overall fitness. They target multiple muscle groups and elevate your heart rate, contributing to a well-rounded workout."
+
+  utter_mountain_hiker_training:
+  - text: "Mountain hiker training involves mastering the technique and gradually increasing intensity. Consistent training will lead to improved endurance and strength."
+
+#_________________________________________________________burpees___________________________
+
+  utter_burpees_exercise:
+  - text: "Burpees are a fantastic full-body exercise. They combine strength and cardio, making them an efficient addition to any workout routine."
+
+  utter_burpees_as_cardio:
+  - text: "Using burpees as a cardio exercise is a great choice. They get your heart rate up, improve cardiovascular health, and contribute to calorie burning during workouts."
+
+  utter_burpees_full_body_workout:
+  - text: "Burpees offer a complete full-body workout. They engage your legs, core, arms, and chest, providing a challenging and efficient exercise for overall fitness."
+
+  utter_high_intensity_burpees:
+  - text: "High-intensity burpees take your workout to the next level. Adding speed and explosive movements enhances the challenge and maximizes the benefits."
+
+  utter_burpees_routine:
+  - text: "Incorporating burpees into your workout routine adds a dynamic element. Create a routine that includes burpees for improved strength, endurance, and agility."
+
+  utter_burpees_with_cardio:
+  - text: "Combining burpees with cardio boosts the intensity of your workouts. It's a powerful way to enhance both cardiovascular fitness and muscular endurance."
+
+  utter_adding_burpees_to_workout:
+  - text: "Consider adding burpees to your workout for a versatile and effective exercise. They can be adapted to various fitness levels and contribute to overall fitness."
+
+  utter_intense_burpee_training:
+  - text: "Intense burpee training involves challenging yourself with variations and maintaining a consistent workout schedule. It's a rewarding exercise for fitness enthusiasts."
+
+  utter_burpees_for_fitness:
+  - text: "Burpees are not just a workout; they're a fitness tool. Regular practice improves strength, endurance, and overall fitness, making them a valuable exercise."
+
+  utter_burpees_variations:
+  - text: "Exploring different burpee variations adds diversity to your workouts. Try incorporating variations to target specific muscle groups and keep your routine exciting."
+
+  utter_incorporating_burpees:
+  - text: "Incorporating burpees into your fitness routine is a smart choice. They provide a full-body challenge and contribute to improved cardiovascular health."
+
+  utter_burpees_benefits:
+  - text: "Burpees offer numerous benefits, including improved strength, endurance, and cardiovascular health. Make them a regular part of your routine for a well-rounded workout."
+
+#_________________________________________________________box jumps___________________________
+
+  utter_box_jumps_exercise:
+  - text: "Box jumps are an excellent plyometric exercise. They enhance lower body strength, power, and explosiveness. Make sure to maintain proper form for optimal results."
+
+  utter_box_jumps_as_workout:
+  - text: "Incorporating box jumps into your workout is a fantastic way to boost intensity. They target your legs and help improve overall athletic performance."
+
+  utter_box_jumps_incorporation:
+  - text: "Consider incorporating box jumps into your fitness routine for added challenge. They elevate your heart rate and engage multiple muscle groups for a comprehensive workout."
+
+  utter_box_jumps_routine:
+  - text: "Including box jumps in your workout routine adds a dynamic element. Create a routine that gradually increases the height and intensity of your jumps for progression."
+
+  utter_explosive_box_jumps:
+  - text: "Explosive box jumps involve a quick and powerful jump onto the box. This plyometric exercise enhances your ability to generate force and improves athleticism."
+
+  utter_box_jumps_variations:
+  - text: "Exploring different box jump variations can keep your workouts interesting. Try variations like lateral box jumps or single-leg box jumps to target different muscles."
+
+  utter_box_jumps_benefits:
+  - text: "Box jumps offer numerous benefits, including improved leg strength, explosive power, and cardiovascular fitness. They are a versatile and effective exercise."
+
+  utter_adding_box_jumps_to_exercise:
+  - text: "Adding box jumps to your exercise routine is a great way to challenge yourself. Start with a comfortable height and gradually increase it as your strength improves."
+
+  utter_box_jumps_technique:
+  - text: "Mastering the technique is crucial for safe and effective box jumps. Focus on proper landing mechanics and ensure a soft landing to protect your joints."
+
+  utter_improving_box_jumps:
+  - text: "Improving your box jump performance involves consistent practice and gradual progression. Track your progress and celebrate achievements along the way."
+
+  utter_box_jumps_tips:
+  - text: "For successful box jumps, maintain a strong core, bend your knees when landing, and use your arms for momentum. Start at a manageable height and progress cautiously."
+
+#_________________________________________________________high knees__________________________
+
+  utter_high_knees_exercise:
+  - text: "High knees are an effective cardio exercise that engages your core and elevates your heart rate. Incorporate them into your routine for improved endurance."
+
+  utter_high_knees_as_cardio:
+  - text: "Using high knees as a cardio exercise is a fantastic way to warm up or add intensity to your workout. Lift your knees as high as possible for maximum impact."
+
+  utter_high_knees_in_workout:
+  - text: "Include high knees in your workout to activate your leg muscles and boost cardiovascular fitness. It's a dynamic exercise that adds energy to your routine."
+
+  utter_high_knees_routine:
+  - text: "Creating a high knees routine adds a dynamic element to your workouts. Increase the pace for a more intense cardio workout or incorporate them into circuit training."
+
+  utter_high_knees_variations:
+  - text: "Explore variations of high knees to keep your workouts exciting. You can add twists, incorporate side steps, or increase the speed for a challenging routine."
+
+  utter_high_knees_benefits:
+  - text: "High knees offer benefits such as improved cardiovascular health, leg strength, and agility. They are a versatile exercise suitable for various fitness levels."
+
+  utter_adding_high_knees_to_exercise:
+  - text: "Adding high knees to your exercise routine is a great way to enhance your cardiovascular fitness. Start at a moderate pace and gradually increase intensity."
+
+  utter_high_knees_technique:
+  - text: "Maintain proper high knees technique by lifting your knees towards your chest and landing softly on the balls of your feet. Engage your core for maximum effectiveness."
+
+  utter_improving_high_knees:
+  - text: "Improving high knees involves consistent practice and focusing on form. Gradually increase the duration and intensity to challenge yourself and see progress."
+
+  utter_high_knees_tips:
+  - text: "For successful high knees, maintain an upright posture, engage your core, and lift your knees as high as comfortable. Incorporate them into your warm-up or cardio routine."
+
+#_________________________________________________________cycling___________________________
+
+  utter_cycling_as_cardio:
+  - text: "Cycling is an excellent cardio exercise that improves cardiovascular health and strengthens your lower body. It's a low-impact option suitable for all fitness levels."
+
+  utter_cycling_as_workout:
+  - text: "Incorporate cycling into your workout routine for a fun and effective way to stay active. Whether indoors or outdoors, cycling offers a full-body workout."
+
+  utter_cycling_benefits:
+  - text: "Cycling provides numerous benefits, including improved cardiovascular fitness, leg strength, and endurance. It's a low-impact exercise that's easy on the joints."
+
+  utter_cycling_routines:
+  - text: "Creating cycling routines adds structure to your workouts. Vary the intensity, duration, and terrain to keep your cycling sessions challenging and enjoyable."
+
+  utter_cycling_tips:
+  - text: "For an optimal cycling experience, ensure proper bike setup, maintain a consistent cadence, and stay hydrated. Adjust the resistance to match your fitness goals."
+
+  utter_cycling_speed_improvement:
+  - text: "Improving cycling speed involves consistent training and interval workouts. Gradually increase your pace and challenge yourself with sprints for better performance."
+
+  utter_indoor_cycling:
+  - text: "Indoor cycling is a convenient option for year-round workouts. Join a virtual class or create your routine to enjoy the benefits of cycling from the comfort of your home."
+
+  utter_outdoor_cycling:
+  - text: "Outdoor cycling offers a refreshing way to stay active. Explore scenic routes, vary your terrain, and enjoy the outdoor benefits of cycling."
+
+  utter_cycling_for_beginners:
+  - text: "If you're new to cycling, start with shorter rides and gradually increase duration. Focus on proper form and enjoy the journey as you build your cycling endurance."
+
+  utter_cycling_gear_recommendations:
+  - text: "Investing in proper cycling gear enhances your comfort and performance. Consider essentials like a well-fitted helmet, padded shorts, and breathable clothing for an enjoyable ride."
+
+#_________________________________________________________swimming___________________________
+
+  utter_swimming_technique:
+  - text: "Mastering proper swimming technique is crucial for efficiency and safety. Focus on body positioning, breathing, and stroke mechanics to enhance your swimming skills."
+
+  utter_swimming_advantages:
+  - text: "Swimming offers numerous advantages, including a full-body workout, improved cardiovascular health, and low-impact exercise. It's a versatile activity suitable for all fitness levels."
+
+  utter_swimming_speed_improvement:
+  - text: "Improving swimming speed involves refining your stroke technique, building endurance, and incorporating interval training. Consistent practice and drills contribute to speed enhancement."
+
+  utter_indoor_swimming:
+  - text: "Indoor swimming provides a controlled environment for year-round swimming. Whether for fitness or recreation, indoor pools offer a convenient and comfortable experience."
+
+  utter_outdoor_swimming:
+  - text: "Outdoor swimming offers a refreshing and natural setting for your swims. Explore lakes, rivers, or the ocean for a unique swimming experience and connection with nature."
+
+  utter_swimming_workouts:
+  - text: "Designing swimming workouts adds structure to your routine. Include a mix of strokes, drills, and intervals to target different muscle groups and enhance overall fitness."
+
+  utter_swimming_health_benefits:
+  - text: "Swimming contributes to various health benefits, such as improved cardiovascular fitness, muscle tone, and flexibility. It's also a great stress-reliever and promotes mental well-being."
+
+  utter_swimming_for_cardio:
+  - text: "Swimming is an excellent cardiovascular exercise that elevates your heart rate and improves lung capacity. Whether you prefer freestyle or other strokes, it's a great way to stay fit."
+
+#_________________________________________________________cardio___________________________
+
+  utter_ask_cardio_benefits:
+    - text: "Cardio has numerous benefits! It helps improve cardiovascular health, boost metabolism, burn calories, and enhance overall endurance. Regular cardio also contributes to stress reduction and improved mood."
+
+  utter_ask_cardio_exercises:
+    - text: "There are many effective cardio exercises. Some popular options include running, cycling, swimming, jumping rope, and high-intensity interval training (HIIT). Choose activities you enjoy to make your workouts more enjoyable."
+
+  utter_ask_cardio_frequency:
+    - text: "The recommended frequency for cardio workouts is at least 150 minutes of moderate-intensity exercise per week or 75 minutes of vigorous-intensity exercise. You can spread this throughout the week for optimal health benefits."
+
+  utter_ask_cardio_duration:
+    - text: "The ideal duration for a cardio session depends on your fitness level and goals. Aiming for 30 minutes per session is a good starting point. As you progress, consider extending the duration to 45 minutes or more."
+
+  utter_ask_cardio_intensity:
+    - text: "The intensity of your cardio workouts depends on your fitness goals. High-intensity cardio, like HIIT, is efficient for burning calories, while moderate-intensity cardio offers steady endurance benefits. Choose based on your preferences and goals."
+
+  utter_ask_cardio_equipments:
+    - text: "There are various cardio equipment options, including treadmills, stationary bikes, elliptical trainers, and rowing machines. You can also engage in cardio without equipment through activities like running, cycling, and jumping rope."
+
+  utter_ask_cardio_beginners:
+    - text: "For beginners, start with low-impact activities like walking, swimming, or cycling. Gradually increase intensity and duration as your fitness improves. Consistency is key, and it's essential to find activities you enjoy."
+
+  utter_ask_cardio_weight_loss:
+    - text: "Cardio is effective for weight loss as it burns calories and contributes to a calorie deficit. Combine cardio with a balanced diet for optimal results. It's important to find a sustainable routine that fits your lifestyle."
+
+  utter_ask_cardio_health_conditions:
+    - text: "Before starting cardio with pre-existing health conditions, consult with a healthcare professional. They can provide guidance on safe exercises and any necessary precautions. Always prioritize your health and well-being."
 
 actions:
   - action_generate_weight_loss_plan
