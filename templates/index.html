@@ -68,6 +68,7 @@
         }
     </style>
 </head>
+
 <body>
     <div id="chatbox">
         <div id="messages"></div>
@@ -89,7 +90,7 @@
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ "message": userMessage, "sender": "user" }),
+                body: JSON.stringify({ "message": text, "sender": "user" }),
             })
             .then(response => response.json())
             .then(data => {
@@ -99,17 +100,41 @@
             })
             .catch((error) => {
                 console.error('Error:', error);
+                document.getElementById('userInput').value = ''; // Clear the input field
             });
-
-            document.getElementById('userInput').value = ''; // Clear input field
         }
 
-        // Event listener for the Enter key on the input field
-        document.getElementById('userInput').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                sendMessage();
+        function startDictation() {
+            if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+                var recognition = new webkitSpeechRecognition();
+
+                recognition.continuous = false;
+                recognition.interimResults = false;
+
+                recognition.lang = "en-US";
+                recognition.start();
+
+                recognition.onresult = function(e) {
+                    document.getElementById('userInput').value = e.results[0][0].transcript;
+                    recognition.stop();
+                    sendMessage(e.results[0][0].transcript);
+                };
+
+                recognition.onerror = function(e) {
+                    recognition.stop();
+                }
+            }
+        }
+
+        // Allow pressing "Enter" to send a message
+        document.getElementById('userInput').addEventListener('keypress', function(event) {
+            if (event.keyCode === 13) { // 13 is the enter key
+                event.preventDefault();
+                document.getElementById('sendButton').click();
             }
         });
     </script>
 </body>
 </html>
+

@@ -162,10 +162,8 @@ stories:
 - story: Customized Meal Plan for Weight Loss
   steps:
   - intent: express_goal
-    entities:
-    - goal: weight loss
-  - action: utter_acknowledge_goal
-  - action: utter_ask_diet_preference
+  - action: utter_acknowledge_goal_askdp
+  # - action: utter_ask_diet_preference
   - intent: inform_diet_preference
     entities:
     - diet: vegan
@@ -185,7 +183,7 @@ stories:
 #   - intent: express_goal
 #     entities:
 #     - goal: muscle gain
-#   - action: utter_acknowledge_goal
+#   - action: utter_acknowledge_mg_goal
 #   - action: utter_ask_diet_preference
 #   - intent: inform_diet_preference
 #     entities:
@@ -204,7 +202,7 @@ stories:
 #   - intent: express_goal
 #     entities:
 #     - goal: general fitness
-#   - action: utter_acknowledge_goal
+#   - action: utter_acknowledge_gf_goal
 #   - action: utter_ask_diet_preference
 #   - intent: inform_diet_preference
 #     entities:

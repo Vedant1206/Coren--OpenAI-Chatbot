@@ -25,10 +25,15 @@ To set up the project on your local machine, follow these steps:
    ```bash
    pip install rasa-sdk==3.6.2
    ```
-4. **Install flask**
+   
+## Dependencies
+   Download these dependencies for smooth running of the bot:
+
+   Flask:
    ```bash
    pip install Flask
    ```
+
 ## Configuration
 Describe any necessary configuration steps, such as setting up environment variables or external services.
 

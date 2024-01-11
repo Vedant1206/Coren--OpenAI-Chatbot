@@ -1,5 +1,18 @@
 version: "3.1"
 
+slots:
+  goal:
+    type: categorical
+    values:
+      - lose weight
+      - gain muscle
+      - improve fitness
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: goal
+
+
 entities:
   - goal
   - diet
@@ -201,12 +214,28 @@ responses:
   - text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
 
 
-  #Meal plan focused
-  utter_acknowledge_goal:
-    - text: "Great! Let's work on your goal to [lose weight](goal)."
+  #--------------------------Meal plan focused------------------------------
+
+
+  utter_acknowledge_goal_askdp:
+    - condition:
+        - type: slot
+          name: goal
+          value: lose weight
+      text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+    - condition:
+        - type: slot
+          name: goal
+          value: gain muscle
+      text: "Great! Let's work on your goal to gain muscle.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+    - condition:
+        - type: slot
+          name: goal
+          value: improve fitness
+      text: "Great! Let's work on your goal to improve fitness.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
   
-  utter_ask_diet_preference:
-    - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
+#   utter_ask_diet_preference:
+#     - text: ""
 
   utter_ask_allergies:
     - text: "Do you have any allergies or food intolerances I should be aware of?"
@@ -845,6 +874,9 @@ responses:
 actions:
   - action_generate_weight_loss_plan
   - action_adjust_meal_plan
+  - action_generate_muscle_gain_plan
+  - action_generate_general_fitness_plan
+
 
 
 session_config:
