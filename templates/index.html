@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Chatbot</title>
+    <title>Coren</title>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/mic.css' rel='stylesheet'>
     <style>
         /* Basic reset */
@@ -74,16 +74,17 @@
         <div id="messages"></div>
         <div id="input-area">
             <input type="text" id="userInput" placeholder="Type a message..." autocomplete="off">
-            <button onclick="sendMessage()">Send</button>
-            <button><i class="gg-mic"></i></button>
+            <button id= "sendButton" onclick="sendMessage()">Send</button>
+            <button id= "speakButton" onclick = "startDictation()"><i class="gg-mic"></i></button>
         </div>
     </div>
 
     <script>
-        function sendMessage() {
-            var userMessage = document.getElementById('userInput').value;
+        function sendMessage(text) {
+            //var userMessage = document.getElementById('userInput').value;
+            text = text || document.getElementById('userInput').value;
             if(userMessage.trim() === '') return; // Ignore empty messages
-            document.getElementById('messages').innerHTML += '<div class="message user"><b>You:</b> ' + userMessage + '<br></div>';
+            document.getElementById('messages').innerHTML += '<div class="message user"><b>You:</b> ' + text + '<br></div>';
             
             fetch('http://localhost:5005/webhooks/rest/webhook', {
                 method: 'POST',
@@ -96,7 +97,8 @@
             .then(data => {
                 var botMessage = data[0].text;
                 document.getElementById('messages').innerHTML += '<div class="message bot"><b>Bot:</b> ' + botMessage + '<br></div>';
-                document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Scroll to the bottom
+                //document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Scroll to the bottom
+                document.getElementById('userInput').value = ''; // Clear the input field
             })
             .catch((error) => {
                 console.error('Error:', error);
