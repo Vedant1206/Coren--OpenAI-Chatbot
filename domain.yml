@@ -1,5 +1,18 @@
 version: "3.1"
 
+slots:
+  goal:
+    type: categorical
+    values:
+      - lose weight
+      - gain muscle
+      - improve fitness
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: goal
+
+
 entities:
   - goal
   - diet
@@ -160,14 +173,22 @@ responses:
   #--------------------------Meal plan focused------------------------------
 
 
-  utter_acknowledge_lw_goal:
-    - text: "Great! Let's work on your goal to lose weight."
-
-  utter_acknowledge_mg_goal:
-    - text: "Alright, let's talk about how to gain muscle?"
-
-  utter_acknowledge_gf_goal:
-    - text: ""
+  utter_acknowledge_goal:
+    - condition:
+        - type: slot
+          name: goal
+          value: lose weight
+      text: "Great! Let's work on your goal to lose weight."
+    - condition:
+        - type: slot
+          name: goal
+          value: gain muscle
+      text: "Great! Let's work on your goal to gain muscle."
+    - condition:
+        - type: slot
+          name: goal
+          value: improve fitness
+      text: "Great! Let's work on your goal to improve fitness."
   
   utter_ask_diet_preference:
     - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
