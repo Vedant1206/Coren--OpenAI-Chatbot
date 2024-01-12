@@ -30,8 +30,7 @@ intents:
   - bot_challenge
   - ask_about_bulking
   - ask_about_cutting
-  - ask_about_maintenance
-  - ask_about_diet_planning
+  - ask_about_maintenance #- ask_about_diet_planning
   - ask_about_nutrition
   - ask_about_nutrition_bulk
   - ask_about_nutrition_cut
@@ -40,6 +39,27 @@ intents:
   - inform_diet_preference
   - inform_allergies
   - give_feedback
+
+  - best_time_for_weightlifting
+  - training_session_duration
+  - eating_before_strength_training
+  - supplements_for_strength_training
+  - weekly_strength_training_frequency
+  - difference_between_strength_training_and_bodybuilding
+  - strength_training_for_weight_loss
+  - need_for_personal_trainer
+  - warm_up_before_weightlifting
+  - choosing_right_weight_for_lifting
+  - muscle_soreness_post_training
+  - tracking_strength_training_progress
+  - common_mistakes_in_strength_training
+  - importance_of_rest_and_recovery
+  - strength_training_for_sports_performance
+  - choosing_between_machines_and_free_weights
+  - balancing_strength_training_with_other_exercise
+  - risks_of_overtraining
+  - overall_health_benefits_of_strength_training
+  - strength_training_without_heavy_weights
 
   - ask_strength_training
   - ask_for_beginner_tips
@@ -68,6 +88,14 @@ intents:
   - ask_lat_pull
   - ask_seated_cable_row
   - ask_face_pulls
+
+  - upper_body_exercises
+  - lower_body_exercises
+  - upper_body_care
+  - lower_body_care
+  - upper_body_training_tips
+  - lower_body_training_tips
+
 
   - chest_exercises_overview
   - benefits_of_chest_training
@@ -124,6 +152,14 @@ intents:
   - ask_dumbbell_shrug
   - ask_overhead_tricep_extension
   - ask_zottman_curl
+  - ask_bicep_exercises
+  - ask_tricep_exercises
+  - bicep_importance
+  - tricep_importance
+  - general_bicep_care
+  - general_tricep_care
+  - bicep_training_tips
+  - tricep_training_tips
 
   - core_anatomy
   - core_stretching_benefits
@@ -206,8 +242,23 @@ responses:
   utter_bulking_meal_planning_tips:
   - text: "Great! For effective bulking, it's important to have a meal plan that incorporates a balance of macronutrients. Start your day with a protein-rich breakfast like eggs with whole-grain toast. For lunch and dinner, include lean protein sources, such as grilled chicken or fish, with a side of brown rice or quinoa and plenty of vegetables. Snacking on nuts, yogurt, or fruit can help keep your energy up throughout the day. Don't forget to include post-workout meals that combine protein and carbs to aid muscle recovery."
 
- 
+  utter_upper_body_exercises:
+  - text: "Some effective upper body exercises include push-ups, pull-ups, and bench presses."
 
+  utter_lower_body_exercises:
+  - text: "Great lower body exercises are squats, lunges, and deadlifts."
+
+  utter_upper_body_care:
+  - text: "To maintain a healthy upper body, focus on balanced workouts, regular stretching, and proper posture."
+
+  utter_lower_body_care:
+  - text: "For lower body care, incorporate stretching, avoid overexertion, and ensure proper form during exercises."
+
+  utter_upper_body_training_tips:
+  - text: "For upper body training, vary your workouts, focus on form, and progressively increase intensity."
+
+  utter_lower_body_training_tips:
+  - text: "Effective lower body training involves consistency, a mix of exercises for different muscle groups, and adequate rest."
 
   #Cut focused
   utter_ask_about_cutting:
@@ -240,38 +291,42 @@ responses:
 
 
   #Nutrition focused
-  utter_ask_about_diet_planning:
-  - text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
+  #utter_ask_about_diet_planning:
+  #- text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
 
   utter_ask_about_nutrition:
   - text: "Good nutrition is key to a healthy life. It involves getting the right balance of macronutrients (proteins, fats, and carbohydrates) and micronutrients (vitamins and minerals) from your diet. Do you need more in-depth detail about nutrition based on whether you are on a cut or bulk?"
 
-  utter_ask_about_vegan_diet:
-  - text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
+  #utter_ask_about_vegan_diet:
+  #- text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
 
 
   #--------------------------Meal plan focused------------------------------
 
 
-  utter_acknowledge_goal_askdp:
-    - condition:
-        - type: slot
-          name: goal
-          value: lose weight
-      text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
-    - condition:
-        - type: slot
-          name: goal
-          value: gain muscle
-      text: "Great! Let's work on your goal to gain muscle.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
-    - condition:
-        - type: slot
-          name: goal
-          value: improve fitness
-      text: "Great! Let's work on your goal to improve fitness.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+#   utter_acknowledge_goal_askdp:
+#     - condition:
+#         - type: slot
+#           name: goal
+#           value: lose weight
+#       text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+#     - condition:
+#         - type: slot
+#           name: goal
+#           value: gain muscle
+#       text: "Great! Let's work on your goal to gain muscle.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+#     - condition:
+#         - type: slot
+#           name: goal
+#           value: improve fitness
+#       text: "Great! Let's work on your goal to improve fitness.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
   
 #   utter_ask_diet_preference:
 #     - text: ""
+
+  utter_acknowledge_wlgoal_askdp:
+    - text: "Great! Let's work on your goal to lose weight. What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+
 
   utter_ask_allergies:
     - text: "Do you have any allergies or food intolerances I should be aware of?"
@@ -308,119 +363,179 @@ responses:
 
   utter_ask_for_beginner_tips:
   - text: |
-      Starting your fitness journey can be exciting! Here are some tips:
-      1. Set Realistic Goals: Begin with achievable targets to keep motivated.
-      2. Learn Proper Form: Focus on learning the correct way to do each exercise.
-      3. Start Slow: Begin with light workouts and gradually increase intensity.
-      4. Consistency is Key: Try to exercise regularly, even if it's for a short duration.
-      5. Mix It Up: Include a variety of exercises to keep the routine interesting and balanced.
+      Starting your fitness journey can be exciting! Here are some tips:<br>
+      1. Set Realistic Goals: Begin with achievable targets to keep motivated.<br>
+      2. Learn Proper Form: Focus on learning the correct way to do each exercise.<br>
+      3. Start Slow: Begin with light workouts and gradually increase intensity.<br>
+      4. Consistency is Key: Try to exercise regularly, even if it's for a short duration.<br>
+      5. Mix It Up: Include a variety of exercises to keep the routine interesting and balanced.<br>
       6. Listen to Your Body: Don't push too hard and take rest days when needed.
-      7. Stay Hydrated and Eat Healthily: Proper nutrition and hydration are crucial for fitness.
+      7. Stay Hydrated and Eat Healthily: Proper nutrition and hydration are crucial for fitness.<br>
 
   utter_start_strength_training:
   - text: |
-      Starting with strength training is a great step towards fitness! Here's how you can begin:
-      1. Understand the Basics: Learn about different strength training exercises and how they benefit your body.
-      2. Begin with Body Weight Exercises: Start with push-ups, squats, and lunges, which don't require equipment.
-      3. Progress to Free Weights: Once comfortable, incorporate dumbbells and barbells.
-      4. Focus on Major Muscle Groups: Ensure your routine includes exercises for all major muscle groups.
-      5. Form Over Weight: Prioritize proper form over lifting heavier weights to prevent injuries.
-      6. Gradual Progression: Slowly increase the weight and intensity of your workouts.
+      Starting with strength training is a great step towards fitness! Here's how you can begin:<br>
+      1. Understand the Basics: Learn about different strength training exercises and how they benefit your body.<br>
+      2. Begin with Body Weight Exercises: Start with push-ups, squats, and lunges, which don't require equipment.<br>
+      3. Progress to Free Weights: Once comfortable, incorporate dumbbells and barbells.<br>
+      4. Focus on Major Muscle Groups: Ensure your routine includes exercises for all major muscle groups.<br>
+      5. Form Over Weight: Prioritize proper form over lifting heavier weights to prevent injuries.<br>
+      6. Gradual Progression: Slowly increase the weight and intensity of your workouts.<br>
 
   utter_benefits_of_strength_training:
   - text: |
-      Strength training offers numerous benefits, including:
-      1. Increases Muscle Mass: Helps in building and maintaining muscle.
-      2. Boosts Metabolism: Enhances metabolic rate which aids in weight management.
-      3. Improves Bone Density: Essential for bone health, especially as you age.
-      4. Enhances Overall Strength: Increases your strength for daily activities.
-      5. Improves Posture and Balance: Strengthens the core and stabilizing muscles.
-      6. Reduces Risk of Chronic Disease: Beneficial for heart health and diabetes management.
-      7. Mental Health Benefits: Helps in reducing stress and improving mood.
+      Strength training offers numerous benefits, including:<br>
+      1. Increases Muscle Mass: Helps in building and maintaining muscle.<br>
+      2. Boosts Metabolism: Enhances metabolic rate which aids in weight management.<br>
+      3. Improves Bone Density: Essential for bone health, especially as you age.<br>
+      4. Enhances Overall Strength: Increases your strength for daily activities.<br>
+      5. Improves Posture and Balance: Strengthens the core and stabilizing muscles.<br>
+      6. Reduces Risk of Chronic Disease: Beneficial for heart health and diabetes management.<br>
+      7. Mental Health Benefits: Helps in reducing stress and improving mood.<br>
 
   utter_strength_training_routine:
   - text: |
-      A well-rounded strength training routine might include:
-      1. Frequency: Aim for 2-4 sessions per week.
-      2. Duration: Each session should last 45-60 minutes.
-      3. Exercise Selection: Combine compound exercises (like squats, deadlifts) with isolation exercises (like bicep curls).
-      4. Sets and Repetitions: Start with 2-3 sets of 8-12 reps for each exercise.
-      5. Rest Periods: Allow 1-2 minutes of rest between sets.
-      6. Progressive Overload: Gradually increase the weight or resistance to challenge your muscles.
-      7. Recovery: Ensure adequate rest days for muscle recovery.
+      A well-rounded strength training routine might include:<br>
+      1. Frequency: Aim for 2-4 sessions per week.<br>
+      2. Duration: Each session should last 45-60 minutes.<br>
+      3. Exercise Selection: Combine compound exercises (like squats, deadlifts) with isolation exercises (like bicep curls).<br>
+      4. Sets and Repetitions: Start with 2-3 sets of 8-12 reps for each exercise.<br>
+      5. Rest Periods: Allow 1-2 minutes of rest between sets.<br>
+      6. Progressive Overload: Gradually increase the weight or resistance to challenge your muscles.<br>
+      7. Recovery: Ensure adequate rest days for muscle recovery.<br>
 
   utter_different_strength_training_exercises:
   - text: |
-      There are various strength training exercises you can include in your routine:
-      1. Compound Movements: Such as squats, deadlifts, bench presses, and pull-ups.
-      2. Isolation Movements: Like bicep curls, tricep extensions, calf raises, and leg curls.
-      3. Bodyweight Exercises: Push-ups, planks, and lunges are great for beginners.
-      4. Free Weight Exercises: Incorporate dumbbells and barbells for added resistance.
-      5. Machine Exercises: Leg press, chest press, and cable machines offer guided motion.
+      There are various strength training exercises you can include in your routine:<br>
+      1. Compound Movements: Such as squats, deadlifts, bench presses, and pull-ups.<br>
+      2. Isolation Movements: Like bicep curls, tricep extensions, calf raises, and leg curls.<br>
+      3. Bodyweight Exercises: Push-ups, planks, and lunges are great for beginners.<br>
+      4. Free Weight Exercises: Incorporate dumbbells and barbells for added resistance.<br>
+      5. Machine Exercises: Leg press, chest press, and cable machines offer guided motion.<br>
 
   utter_importance_of_strength_training:
   - text: |
       Strength training is vital for several reasons:
-      1. Muscular Health: Essential for maintaining muscle mass and function.
-      2. Bone Health: Helps in preventing bone loss and osteoporosis.
-      3. Weight Management: Aids in burning calories and maintaining a healthy weight.
-      4. Balance and Coordination: Improves overall body coordination and reduces fall risk.
-      5. Chronic Disease Prevention: Beneficial in managing conditions like diabetes, heart disease, and arthritis.
-      6. Mental Health: Boosts self-esteem and can help in managing depression and anxiety.
+      1. Muscular Health: Essential for maintaining muscle mass and function.<br>
+      2. Bone Health: Helps in preventing bone loss and osteoporosis.<br>
+      3. Weight Management: Aids in burning calories and maintaining a healthy weight.<br>
+      4. Balance and Coordination: Improves overall body coordination and reduces fall risk.<br>
+      5. Chronic Disease Prevention: Beneficial in managing conditions like diabetes, heart disease, and arthritis.<br>
+      6. Mental Health: Boosts self-esteem and can help in managing depression and anxiety.<br>
 
   utter_building_muscle_strength:
   - text: |
       Building muscle strength involves:
-      1. Progressive Overload: Gradually increasing the weight, frequency, or number of repetitions in your training.
-      2. Consistent Training: Regular exercise sessions are key to building strength.
-      3. Balanced Diet: Eating protein-rich foods aids in muscle repair and growth.
-      4. Adequate Rest: Muscles need time to recover and grow stronger after workouts.
-      5. Variety in Exercises: Switching up your routine to challenge different muscle groups.
-      6. Proper Form: Ensuring correct technique to maximize efficiency and prevent injuries.
+      1. Progressive Overload: Gradually increasing the weight, frequency, or number of repetitions in your training.<br>
+      2. Consistent Training: Regular exercise sessions are key to building strength.<br>
+      3. Balanced Diet: Eating protein-rich foods aids in muscle repair and growth.<br>
+      4. Adequate Rest: Muscles need time to recover and grow stronger after workouts.<br>
+      5. Variety in Exercises: Switching up your routine to challenge different muscle groups.<br>
+      6. Proper Form: Ensuring correct technique to maximize efficiency and prevent injuries.<br>
 
   utter_resistance_training:
   - text: |
-      Resistance training, an integral part of strength training, involves:
-      1. Using Resistance: This can be body weight, free weights, bands, or machines.
-      2. Building Muscle: Helps in increasing muscle strength and endurance.
-      3. Versatility: Can be adapted for any fitness level and goal.
-      4. Improving Joint Stability: Strengthens the muscles around joints, reducing injury risk.
-      5. Increasing Bone Density: Beneficial for bone health.
-      6. Enhancing Metabolic Rate: Aids in burning more calories even at rest.
+      Resistance training, an integral part of strength training, involves:<br>
+      1. Using Resistance: This can be body weight, free weights, bands, or machines.<br>
+      2. Building Muscle: Helps in increasing muscle strength and endurance.<br>
+      3. Versatility: Can be adapted for any fitness level and goal.<br>
+      4. Improving Joint Stability: Strengthens the muscles around joints, reducing injury risk.<br>
+      5. Increasing Bone Density: Beneficial for bone health.<br>
+      6. Enhancing Metabolic Rate: Aids in burning more calories even at rest.<br>
 
   utter_strength_training_frequency:
   - text: |
-      The ideal frequency for strength training depends on various factors:
-      1. Beginners: 2-3 times per week, targeting all major muscle groups.
-      2. Intermediate/Advanced: May train 4-6 times per week, with split routines.
-      3. Rest Days: Include at least 48 hours of rest between sessions for the same muscle group.
-      4. Listening to Your Body: Adjust the frequency based on recovery and comfort.
-      5. Consistency Over Frequency: Regular, sustainable routine is more important than high frequency.
+      The ideal frequency for strength training depends on various factors:<br>
+      1. Beginners: 2-3 times per week, targeting all major muscle groups.<br>
+      2. Intermediate/Advanced: May train 4-6 times per week, with split routines.<br>
+      3. Rest Days: Include at least 48 hours of rest between sessions for the same muscle group.<br>
+      4. Listening to Your Body: Adjust the frequency based on recovery and comfort.<br>
+      5. Consistency Over Frequency: Regular, sustainable routine is more important than high frequency.<br>
 
   utter_effective_strength_workout_tips:
   - text: |
-      Tips for an effective strength workout include:
-      1. Warm-Up: Start with a light cardio or dynamic stretching.
-      2. Proper Form: Focus on technique to maximize gains and reduce injury risk.
-      3. Balanced Routine: Target all major muscle groups in a balanced manner.
-      4. Mind-Muscle Connection: Focus on the muscle you are working out to enhance muscle engagement.
-      5. Avoid Overtraining: Overdoing it can lead to injuries and hinder progress.
-      6. Hydration and Nutrition: Fuel your body with the right nutrients and stay hydrated.
-      7. Track Progress: Keep a record of your workouts to monitor improvement and stay motivated.
+      Tips for an effective strength workout include:<br>
+      1. Warm-Up: Start with a light cardio or dynamic stretching.<br>
+      2. Proper Form: Focus on technique to maximize gains and reduce injury risk.<br>
+      3. Balanced Routine: Target all major muscle groups in a balanced manner.<br>
+      4. Mind-Muscle Connection: Focus on the muscle you are working out to enhance muscle engagement.<br>
+      5. Avoid Overtraining: Overdoing it can lead to injuries and hinder progress.<br>
+      6. Hydration and Nutrition: Fuel your body with the right nutrients and stay hydrated.<br>
+      7. Track Progress: Keep a record of your workouts to monitor improvement and stay motivated.<br>
 
   utter_equipment_needed_for_strength_training:
   - text: |
-      The essential equipment for strength training includes:
-      1. Dumbbells: Versatile and can be used for a wide range of exercises.
-      2. Barbells: Great for compound movements like squats and deadlifts.
-      3. Weight Plates: For use with barbells and adjustable dumbbells.
-      4. Resistance Bands: Useful for adding resistance to exercises without heavy weights.
-      5. Bench: Provides support for various exercises.
-      6. Squat Rack: Essential for safe squatting and pressing.
-      7. Pull-Up Bar: For upper body exercises like pull-ups and chin-ups.
-      8. Gym Mat: For floor exercises and stretching.
-      9. Stability Ball: Useful for core exercises and stability work.
+      The essential equipment for strength training includes:<br>
+      1. Dumbbells: Versatile and can be used for a wide range of exercises.<br>
+      2. Barbells: Great for compound movements like squats and deadlifts.<br>
+      3. Weight Plates: For use with barbells and adjustable dumbbells.<br>
+      4. Resistance Bands: Useful for adding resistance to exercises without heavy weights.<br>
+      5. Bench: Provides support for various exercises.<br>
+      6. Squat Rack: Essential for safe squatting and pressing.<br>
+      7. Pull-Up Bar: For upper body exercises like pull-ups and chin-ups.<br>
+      8. Gym Mat: For floor exercises and stretching.<br>
+      9. Stability Ball: Useful for core exercises and stability work.<br>
 #________________________________________________________ Back__________________________________
+
+  utter_best_time_for_weightlifting:
+  - text: "The optimal time for weightlifting varies for each person. Some prefer mornings for increased energy, while others find evenings more suitable when they feel strongest."
+
+  utter_training_session_duration:
+  - text: "For beginners, a strength training session should last about 45 to 60 minutes. It's important to focus on the quality of your workout rather than just the duration."
+
+  utter_eating_before_strength_training:
+  - text: "Eating a light meal 1-2 hours before strength training can provide energy. Opt for a balance of carbs and protein for optimal performance."
+
+  utter_supplements_for_strength_training:
+  - text: "While not mandatory, supplements like whey protein, creatine, and BCAAs can be beneficial in conjunction with a balanced diet, particularly for muscle recovery and growth."
+
+  utter_weekly_strength_training_frequency:
+  - text: "As a beginner, aim for 2-3 strength training sessions per week, allowing your muscles time to recover and grow between workouts."
+
+  utter_difference_between_strength_training_and_bodybuilding:
+  - text: "Strength training focuses on improving muscle strength and endurance, while bodybuilding is aimed more at increasing muscle size and enhancing physique."
+
+  utter_strength_training_for_weight_loss:
+  - text: "Strength training can be effective for weight loss as it builds muscle, which in turn increases metabolism and burns more calories, even at rest."
+
+  utter_need_for_personal_trainer:
+  - text: "A personal trainer can be helpful when starting out to ensure you're using proper form and technique, but it's not essential. Many find success with self-guided programs."
+
+  utter_warm_up_before_weightlifting:
+  - text: "A proper warm-up, including dynamic stretches and light cardio, is crucial before weightlifting to increase blood flow to muscles and prevent injury."
+
+  utter_choosing_right_weight_for_lifting:
+  - text: "Choose a weight that challenges you but allows you to maintain proper form. A good rule is picking a weight where the last 2 reps of a set are difficult but still doable."
+
+  utter_muscle_soreness_post_training:
+  - text: "Muscle soreness after training, known as DOMS, is normal, especially for beginners. It typically lessens as your body adapts to new physical demands."
+
+  utter_tracking_strength_training_progress:
+  - text: "Track your progress by keeping a workout log, noting weights, sets, and reps. Also, track changes in strength, endurance, and physical changes over time."
+
+  utter_common_mistakes_in_strength_training:
+  - text: "Common mistakes include ignoring proper form, neglecting certain muscle groups, not allowing enough recovery time, and unrealistic expectations."
+
+  utter_importance_of_rest_and_recovery:
+  - text: "Rest and recovery are as important as the workout itself. They allow your muscles to repair and grow stronger. Ensure to have at least one full rest day per week."
+
+  utter_strength_training_for_sports_performance:
+  - text: "Strength training enhances sports performance by improving muscle strength, endurance, and overall physical conditioning, leading to better athletic capabilities."
+
+  utter_choosing_between_machines_and_free_weights:
+  - text: "Machines are great for beginners for learning proper form, while free weights activate more muscle groups and improve balance and coordination."
+
+  utter_balancing_strength_training_with_other_exercise:
+  - text: "Balance strength training with cardio and flexibility exercises for overall fitness. It's about finding a routine that fits your goals and lifestyle."
+
+  utter_risks_of_overtraining:
+  - text: "Overtraining can lead to fatigue, decreased performance, and increased risk of injury. Listen to your body and ensure adequate rest and nutrition."
+
+  utter_overall_health_benefits_of_strength_training:
+  - text: "Strength training improves muscle and bone health, enhances metabolic rate, reduces the risk of chronic diseases, and boosts mental health."
+
+  utter_strength_training_without_heavy_weights:
+  - text: "You can effectively strength train without heavy weights using bodyweight exercises, resistance bands, or lighter weights with higher repetitions."
 
   utter_ask_strength_training:
   - text: "Strength training involves exercises that improve muscular strength and endurance. It can include weightlifting, resistance training, and bodyweight exercises."
@@ -445,68 +560,68 @@ responses:
   
   utter_ask_pull_ups:
   - text: |
-      Pull-Ups are a great exercise for upper body strength, focusing on your back, shoulders, and arms. Here's how to do them:
-      1. **Grip**: Hold the bar with palms facing away, slightly wider than shoulder-width.
-      2. **Starting Position**: Hang with arms fully extended, keeping your legs off the ground.
-      3. **Pulling Up**: Pull yourself up until your chin is over the bar, focusing on using your back muscles.
-      4. **Lowering Down**: Lower yourself slowly to the starting position.
-      5. **Tips**: Keep your core engaged, avoid swinging, and focus on controlled movements.
+      Pull-Ups are a great exercise for upper body strength, focusing on your back, shoulders, and arms. Here's how to do them:<br>
+      1. <strong>Grip</strong>: Hold the bar with palms facing away, slightly wider than shoulder-width.<br>
+      2. <strong>Starting Position</strong>: Hang with arms fully extended, keeping your legs off the ground.<br>
+      3. <strong>Pulling Up</strong>: Pull yourself up until your chin is over the bar, focusing on using your back muscles.<br>
+      4. <strong>Lowering Down</strong>: Lower yourself slowly to the starting position.<br>
+      5. <strong>Tips</strong>: Keep your core engaged, avoid swinging, and focus on controlled movements.<br>
 
   utter_ask_rows:
   - text: |
-      Rows are excellent for strengthening the back and arms. Here are some key points:
-      1. **Types**: There are various types like Barbell Rows, Dumbbell Rows, and T-Bar Rows.
-      2. **Technique**: Keep your back straight, bend slightly at the knees, and pull the weight towards your torso.
-      3. **Barbell vs. Dumbbell Rows**: Barbell Rows engage both sides simultaneously, while Dumbbell Rows allow a greater range of motion.
-      4. **Benefits**: Rows strengthen the upper back, improve posture, and aid in overall back development.
+      Rows are excellent for strengthening the back and arms. Here are some key points:<br>
+      1. <strong>Types</strong>: There are various types like Barbell Rows, Dumbbell Rows, and T-Bar Rows.<br>
+      2. <strong>Technique</strong>: Keep your back straight, bend slightly at the knees, and pull the weight towards your torso.<br>
+      3. <strong>Barbell vs. Dumbbell Rows</strong>: Barbell Rows engage both sides simultaneously, while Dumbbell Rows allow a greater range of motion.<br>
+      4. <strong>Benefits</strong>: Rows strengthen the upper back, improve posture, and aid in overall back development.<br>
 
   utter_ask_lat_pulldowns:
   - text: |
-      Lat Pulldowns are effective for targeting the latissimus dorsi in the back. Here's how to do them:
-      1. **Technique**: Sit with a straight back, grab the bar wider than shoulder-width, and pull down to your chest.
-      2. **Grip Variations**: Wide grip targets the lats more, while a close grip focuses on the lower lats and biceps.
-      3. **Benefits**: They improve back strength, posture, and shoulder health.
-      4. **Pull-Ups vs. Lat Pulldowns**: Pull-Ups require body strength, while Lat Pulldowns are good for beginners to build strength.
+      Lat Pulldowns are effective for targeting the latissimus dorsi in the back. Here's how to do them:<br>
+      1. <strong>Technique</strong>: Sit with a straight back, grab the bar wider than shoulder-width, and pull down to your chest.<br>
+      2. <strong>Grip Variations</strong>: Wide grip targets the lats more, while a close grip focuses on the lower lats and biceps.<br>
+      3. <strong>Benefits</strong>: They improve back strength, posture, and shoulder health.<br>
+      4. <strong>Pull-Ups vs. Lat Pulldowns</strong>: Pull-Ups require body strength, while Lat Pulldowns are good for beginners to build strength.<br>
 
   utter_ask_deadlifts:
   - text: |
-      Deadlifts are a powerful exercise for overall strength. Here's how to perform them:
-      1. **Technique**: Stand with feet hip-width apart, grip the barbell with hands just outside your legs, and lift by pushing the hips forward.
-      2. **Benefits**: They work the entire body, focusing on the back, glutes, and hamstrings.
-      3. **Variations**: Traditional deadlifts focus on overall strength, while variations like sumo target different muscles.
-      4. **Warm-Up**: Always start with a lighter weight to prepare your muscles and prevent injuries.
+      Deadlifts are a powerful exercise for overall strength. Here's how to perform them:<br>
+      1. <strong>Technique</strong>: Stand with feet hip-width apart, grip the barbell with hands just outside your legs, and lift by pushing the hips forward.<br>
+      2. <strong>Benefits</strong>: They work the entire body, focusing on the back, glutes, and hamstrings.<br>
+      3. <strong>Variations</strong>: Traditional deadlifts focus on overall strength, while variations like sumo target different muscles.<br>
+      4. <strong>Warm-Up</strong>: Always start with a lighter weight to prepare your muscles and prevent injuries.<br>
 
   utter_ask_tbar_row:
   - text: |
-      T-Bar Rows are great for targeting the middle back. Here's how to perform them:
-      1. **Technique**: Stand over the bar, bend your knees slightly, keep your back straight, and pull the weight towards your chest.
-      2. **Grip**: A wider grip targets the upper back more, while a narrow grip focuses on the lower back.
-      3. **Benefits**: It strengthens the back and improves muscular thickness.
-      4. **T-Bar vs. Bent-Over Rows**: T-Bar Rows allow for a greater range of motion and target the back differently compared to Bent-Over Rows.
+      T-Bar Rows are great for targeting the middle back. Here's how to perform them:<br>
+      1. <strong>Technique</strong>: Stand over the bar, bend your knees slightly, keep your back straight, and pull the weight towards your chest.<br>
+      2. <strong>Grip</strong>: A wider grip targets the upper back more, while a narrow grip focuses on the lower back.<br>
+      3. <strong>Benefits</strong>: It strengthens the back and improves muscular thickness.<br>
+      4. <strong>T-Bar vs. Bent-Over Rows</strong>: T-Bar Rows allow for a greater range of motion and target the back differently compared to Bent-Over Rows.<br>
 
   utter_ask_lat_pull:
   - text: |
-      Lat Pulls are similar to Lat Pulldowns but done with different equipment. Here's how to do them:
-      1. **Technique**: Use a cable machine, keep your back straight, pull the bar towards your waist.
-      2. **Benefits**: They target the lats, improving back width and strength.
-      3. **Grip**: A wider grip works on the upper lats, while a narrow grip focuses more on the lower lats.
-      4. **Lat Pulls vs. Lat Pulldowns**: Lat Pulls offer more variation in terms of equipment and grip, while Lat Pulldowns are more traditional.
+      Lat Pulls are similar to Lat Pulldowns but done with different equipment. Here's how to do them:<br>
+      1. <strong>Technique</strong>: Use a cable machine, keep your back straight, pull the bar towards your waist.<br>
+      2. <strong>Benefits</strong>: They target the lats, improving back width and strength.<br>
+      3. <strong>Grip</strong>: A wider grip works on the upper lats, while a narrow grip focuses more on the lower lats.<br>
+      4. <strong>Lat Pulls vs. Lat Pulldowns</strong>: Lat Pulls offer more variation in terms of equipment and grip, while Lat Pulldowns are more traditional.<br>
 
   utter_ask_seated_cable_row:
   - text: |
-      Seated Cable Rows are excellent for back strength. Here's how to perform them:
-      1. **Technique**: Sit on the machine, grab the handle, pull towards your torso, and then extend your arms back.
-      2. **Benefits**: They target the entire back, especially the middle and lower traps.
-      3. **Variations**: You can use different attachments like a wide grip or narrow grip.
-      4. **Seated Cable Rows vs. Bent-Over Rows**: Seated Cable Rows provide continuous tension on the back, while Bent-Over Rows focus more on raw strength.
+      Seated Cable Rows are excellent for back strength. Here's how to perform them:<br>
+      1. <strong>Technique</strong>: Sit on the machine, grab the handle, pull towards your torso, and then extend your arms back.<br>
+      2. <strong>Benefits</strong>: They target the entire back, especially the middle and lower traps.<br>
+      3. <strong>Variations</strong>: You can use different attachments like a wide grip or narrow grip.<br>
+      4. <strong>Seated Cable Rows vs. Bent-Over Rows</strong>: Seated Cable Rows provide continuous tension on the back, while Bent-Over Rows focus more on raw strength.<br>
 
   utter_ask_face_pulls:
   - text: |
-      Face Pulls are essential for shoulder health and upper back strength. Here's how to do them:
-      1. **Technique**: Use a cable machine with a rope attachment, pull towards your face while keeping your upper arms parallel to the ground.
-      2. **Benefits**: They target the rear deltoids and improve posture.
-      3. **Rope vs. Band**: A rope allows for a more consistent tension, while bands offer more portability.
-      4. **Face Pulls vs. Lat Pulls**: Face Pulls focus more on the shoulders and upper back, while Lat Pulls target the lats.
+      Face Pulls are essential for shoulder health and upper back strength. Here's how to do them:<br>
+      1. <strong>Technique</strong>: Use a cable machine with a rope attachment, pull towards your face while keeping your upper arms parallel to the ground.<br>
+      2. <strong>Benefits</strong>: They target the rear deltoids and improve posture.<br>
+      3. <strong>Rope vs. Band</strong>: A rope allows for a more consistent tension, while bands offer more portability.<br>
+      4. <strong>Face Pulls vs. Lat Pulls</strong>: Face Pulls focus more on the shoulders and upper back, while Lat Pulls target the lats.<br>
 #_______________________________________________________chest______________________________________________________
 
   utter_chest_exercises_overview:
@@ -523,81 +638,81 @@ responses:
 
   utter_ask_bench_press:
   - text: |
-      The Bench Press is a fundamental chest exercise. Here's how to do it:
-      1. **Form**: Lie on the bench, feet flat on the ground. Grip the bar slightly wider than shoulder-width.
-      2. **Movement**: Lower the bar to the middle of your chest, then press back up.
-      3. **Frequency**: Include it 1-2 times a week in your routine.
-      4. **Variations**: Try incline or decline bench press for targeting different chest areas.
-      5. **Safety**: Always have a spotter and avoid locking your elbows.
+      The Bench Press is a fundamental chest exercise. Here's how to do it:<br>
+      1. <strong>Form</strong>: Lie on the bench, feet flat on the ground. Grip the bar slightly wider than shoulder-width.<br>
+      2. <strong>Movement</strong>: Lower the bar to the middle of your chest, then press back up.<br>
+      3. <strong>Frequency</strong>: Include it 1-2 times a week in your routine.<br>
+      4. <strong>Variations</strong>: Try incline or decline bench press for targeting different chest areas.<br>
+      5. <strong>Safety</strong>: Always have a spotter and avoid locking your elbows.<br>
 
   utter_ask_incline_dumbbell_press:
   - text: |
-      Incline Dumbbell Press targets the upper chest. Here's how to perform it:
-      1. **Technique**: Sit on an incline bench, hold dumbbells at shoulder height, press them upwards.
-      2. **Incline Angle**: Start with a low to medium incline to target upper chest muscles.
-      3. **Advantages**: Provides a greater range of motion than flat bench press.
-      4. **Incline vs. Flat**: Incline press focuses more on the upper chest, while flat bench is more comprehensive.
+      Incline Dumbbell Press targets the upper chest. Here's how to perform it:<br>
+      1. <strong>Technique</strong>: Sit on an incline bench, hold dumbbells at shoulder height, press them upwards.<br>
+      2. <strong>Incline Angle</strong>: Start with a low to medium incline to target upper chest muscles.<br>
+      3. <strong>Advantages</strong>: Provides a greater range of motion than flat bench press.<br>
+      4. <strong>Incline vs. Flat</strong>: Incline press focuses more on the upper chest, while flat bench is more comprehensive.<br>
 
   utter_ask_push_ups:
   - text: |
-      Push-Ups are versatile and effective for chest development. Here's more:
-      1. **Types**: Standard, wide grip, diamond, and incline push-ups, each targeting different muscles.
-      2. **Technique**: Keep your body straight, lower until your chest is near the floor, then push back up.
-      3. **Muscle Groups**: Works the chest, shoulders, and triceps.
-      4. **Push-Ups vs. Bench Press**: Push-ups are more convenient and work more stabilizing muscles.
+      Push-Ups are versatile and effective for chest development. Here's more:<br>
+      1. <strong>Types</strong>: Standard, wide grip, diamond, and incline push-ups, each targeting different muscles.<br>
+      2. <strong>Technique</strong>: Keep your body straight, lower until your chest is near the floor, then push back up.<br>
+      3. <strong>Muscle Groups</strong>: Works the chest, shoulders, and triceps.<br>
+      4. <strong>Push-Ups vs. Bench Press</strong>: Push-ups are more convenient and work more stabilizing muscles.<br>
 
   utter_ask_chest_flyes:
   - text: |
-      Chest Flyes are great for chest definition. Here's the correct technique:
-      1. **Form**: Lie on a bench, dumbbells in hand, palms facing each other. Keep a slight bend in your elbows.
-      2. **Movement**: Bring the weights together above your chest, then lower back down.
-      3. **Flyes vs. Bench Press**: Flyes focus more on chest isolation, while bench press is for overall chest strength.
-      4. **Equipment**: Can be done with dumbbells, cables, or a machine.
+      Chest Flyes are great for chest definition. Here's the correct technique:<br>
+      1. <strong>Form</strong>: Lie on a bench, dumbbells in hand, palms facing each other. Keep a slight bend in your elbows.<br>
+      2. <strong>Movement</strong>: Bring the weights together above your chest, then lower back down.<br>
+      3. <strong>Flyes vs. Bench Press</strong>: Flyes focus more on chest isolation, while bench press is for overall chest strength.<br>
+      4. <strong>Equipment</strong>: Can be done with dumbbells, cables, or a machine.<br>
 
   utter_ask_dips:
   - text: |
-      Dips are effective for chest and triceps. Here's how to do them:
-      1. **Technique**: Use parallel bars, lean forward slightly, lower your body until your shoulders are below your elbows, then push up.
-      2. **Variations**: Bench dips for beginners, weighted dips for advanced.
-      3. **Dips vs. Push-Ups**: Dips target the lower chest and triceps more intensely.
+      Dips are effective for chest and triceps. Here's how to do them:<br>
+      1. <strong>Technique</strong>: Use parallel bars, lean forward slightly, lower your body until your shoulders are below your elbows, then push up.<br>
+      2. <strong>Variations</strong>: Bench dips for beginners, weighted dips for advanced.<br>
+      3. <strong>Dips vs. Push-Ups</strong>: Dips target the lower chest and triceps more intensely.<br>
 
   utter_ask_close_grip_bench_press:
   - text: |
-      Close-Grip Bench Press focuses on the triceps. Here's the proper form:
-      1. **Grip**: Hands should be shoulder-width apart.
-      2. **Movement**: Lower the bar towards the lower part of your chest, then press up.
-      3. **Tricep Engagement**: This variation emphasizes triceps more than the standard bench press.
-      4. **Equipment**: Use a standard barbell or an EZ curl bar for variation.
+      Close-Grip Bench Press focuses on the triceps. Here's the proper form:<br>
+      1. <strong>Grip</strong>: Hands should be shoulder-width apart.<br>
+      2. <strong>Movement</strong>: Lower the bar towards the lower part of your chest, then press up.<br>
+      3. <strong>Tricep Engagement</strong>: This variation emphasizes triceps more than the standard bench press.<br>
+      4. <strong>Equipment</strong>: Use a standard barbell or an EZ curl bar for variation.<br>
 
   utter_ask_decline_bench_press:
   - text: |
-      Decline Bench Press targets the lower chest. Here's how to do it:
-      1. **Form**: Lie on a decline bench, grip the bar slightly wider than shoulder-width.
-      2. **Angle**: A slight decline is sufficient, too much can put strain on the shoulders.
-      3. **Decline vs. Flat**: Decline press specifically targets the lower chest muscles.
+      Decline Bench Press targets the lower chest. Here's how to do it:<br>
+      1. <strong>Form</strong>: Lie on a decline bench, grip the bar slightly wider than shoulder-width.<br>
+      2. <strong>Angle</strong>: A slight decline is sufficient, too much can put strain on the shoulders.<br>
+      3. <strong>Decline vs. Flat</strong>: Decline press specifically targets the lower chest muscles.<br>
 
   utter_ask_chest_dumbbell_pullovers:
   - text: |
-      Chest Dumbbell Pullovers work on chest and lats. Here's the technique:
-      1. **Form**: Lie on your back, a dumbbell in both hands above your chest.
-      2. **Movement**: Lower the dumbbell behind your head, then bring it back up.
-      3. **Muscle Engagement**: Focuses on the chest and ribcage expansion.
-      4. **Shoulder Safety**: Keep a slight bend in your elbows to protect your shoulders.
+      Chest Dumbbell Pullovers work on chest and lats. Here's the technique:<br>
+      1. <strong>Form</strong>: Lie on your back, a dumbbell in both hands above your chest.<br>
+      2. <strong>Movement</strong>: Lower the dumbbell behind your head, then bring it back up.<br>
+      3. <strong>Muscle Engagement</strong>: Focuses on the chest and ribcage expansion.<br>
+      4. <strong>Shoulder Safety</strong>: Keep a slight bend in your elbows to protect your shoulders.<br>
 
   utter_ask_machine_chest_press:
   - text: |
-      Machine Chest Press is a safe way to work on the chest. Here's how to use it:
-      1. **Technique**: Adjust the seat so the handles are at chest level. Push the handles away from you and then slowly return.
-      2. **Advantages**: Safer for beginners, provides consistent resistance.
-      3. **Machine vs. Free Weight**: Machines offer more stability and focus on the chest muscles.
+      Machine Chest Press is a safe way to work on the chest. Here's how to use it:<br>
+      1. <strong>Technique</strong>: Adjust the seat so the handles are at chest level. Push the handles away from you and then slowly return.<br>
+      2. <strong>Advantages</strong>: Safer for beginners, provides consistent resistance.<br>
+      3. <strong>Machine vs. Free Weight</strong>: Machines offer more stability and focus on the chest muscles.<br>
 
   utter_ask_chest_cable_crossovers:
   - text: |
-      Chest Cable Crossovers are great for chest isolation. Here's the correct method:
-      1. **Form**: Stand in the middle of a cable station, arms extended out to the sides.
-      2. **Movement**: Bring your hands together in front of you, then slowly return.
-      3. **Cable Settings**: Adjust the height for different angles to target various parts of the chest.
-      4. **Crossovers vs. Flyes**: Crossovers provide continuous tension on the chest muscles.
+      Chest Cable Crossovers are great for chest isolation. Here's the correct method:<br>
+      1. <strong>Form</strong>: Stand in the middle of a cable station, arms extended out to the sides.<br>
+      2. <strong>Movement</strong>: Bring your hands together in front of you, then slowly return.<br>
+      3. <strong>Cable Settings</strong>: Adjust the height for different angles to target various parts of the chest.<br>
+      4. <strong>Crossovers vs. Flyes</strong>: Crossovers provide continuous tension on the chest muscles.<br>
 #______________________________________________legs__________________________-
   
   utter_leg_anatomy:
@@ -623,62 +738,62 @@ responses:
 
   utter_ask_squats:
   - text: |
-      Squats are fundamental for leg strength and flexibility. Here's how to do them:
-      1. **Form**: Stand with feet shoulder-width apart, back straight.
-      2. **Movement**: Lower down as if sitting back, keeping knees in line with feet.
-      3. **Back vs. Front Squats**: Back Squats target glutes and hamstrings more, while Front Squats focus on the quads.
-      4. **Squats vs. Leg Press**: Squats provide a more functional exercise involving more stabilizing muscles.
+      Squats are fundamental for leg strength and flexibility. Here's how to do them:<br>
+      1. <strong>Form</strong>: Stand with feet shoulder-width apart, back straight.<br>
+      2. <strong>Movement</strong>: Lower down as if sitting back, keeping knees in line with feet.<br>
+      3. <strong>Back vs. Front Squats</strong>: Back Squats target glutes and hamstrings more, while Front Squats focus on the quads.<br>
+      4. <strong>Squats vs. Leg Press</strong>: Squats provide a more functional exercise involving more stabilizing muscles.<br>
 
   utter_ask_lunges:
   - text: |
-      Lunges are excellent for leg strength and balance. Here's the correct technique:
-      1. **Form**: Step forward into a split stance, lower your body until the back knee nearly touches the floor.
-      2. **Variations**: Walking Lunges, Reverse Lunges, and Lateral Lunges.
-      3. **Lunges vs. Squats**: Lunges offer more unilateral leg development, targeting each leg independently.
+      Lunges are excellent for leg strength and balance. Here's the correct technique:<br>
+      1. <strong>Form</strong>: Step forward into a split stance, lower your body until the back knee nearly touches the floor.<br>
+      2. <strong>Variations</strong>: Walking Lunges, Reverse Lunges, and Lateral Lunges.<br>
+      3. <strong>Lunges vs. Squats</strong>: Lunges offer more unilateral leg development, targeting each leg independently.<br>
 
   utter_ask_leg_press:
   - text: |
-      Leg Press is a great machine exercise for leg strength. Here's how to use it:
-      1. **Technique**: Sit in the machine, place your feet on the platform, and push upward.
-      2. **Leg Press vs. Squats**: Leg Press is easier on the lower back and focuses more on the quads.
+      Leg Press is a great machine exercise for leg strength. Here's how to use it:<br>
+      1. <strong>Technique</strong>: Sit in the machine, place your feet on the platform, and push upward.<br>
+      2. <strong>Leg Press vs. Squats</strong>: Leg Press is easier on the lower back and focuses more on the quads.<br>
 
   utter_ask_calf_raises:
   - text: |
-      Calf Raises are essential for developing calf muscles. Here's the technique:
-      1. **Form**: Stand upright, lift your heels off the ground, and then lower them.
-      2. **Standing vs. Seated**: Standing Calf Raises target the gastrocnemius, while Seated focus on the soleus muscle.
+      Calf Raises are essential for developing calf muscles. Here's the technique:<br>
+      1. <strong>Form</strong>: Stand upright, lift your heels off the ground, and then lower them.<br>
+      2. <strong>Standing vs. Seated</strong>: Standing Calf Raises target the gastrocnemius, while Seated focus on the soleus muscle.<br>
 
   utter_ask_leg_curls:
   - text: |
-      Leg Curls are excellent for targeting hamstrings. Here's how to do them:
-      1. **Technique**: Lie face down on the leg curl machine, curl the weight towards your buttocks.
-      2. **Leg Curls vs. Romanian Deadlifts**: Leg Curls isolate the hamstrings, while Deadlifts work multiple muscle groups.
+      Leg Curls are excellent for targeting hamstrings. Here's how to do them:<br>
+      1. <strong>Technique</strong>: Lie face down on the leg curl machine, curl the weight towards your buttocks.<br>
+      2. <strong>Leg Curls vs. Romanian Deadlifts</strong>: Leg Curls isolate the hamstrings, while Deadlifts work multiple muscle groups.<br>
 
   utter_ask_leg_extensions:
   - text: |
-      Leg Extensions are great for quadriceps development. Here's the correct method:
-      1. **Technique**: Sit in the leg extension machine, lift the weight using your quads.
-      2. **Leg Extensions vs. Squats**: Extensions isolate the quads, whereas squats are a compound exercise.
+      Leg Extensions are great for quadriceps development. Here's the correct method:<br>
+      1. <strong>Technique</strong>: Sit in the leg extension machine, lift the weight using your quads.<br>
+      2. <strong>Leg Extensions vs. Squats</strong>: Extensions isolate the quads, whereas squats are a compound exercise.<br>
 
   utter_ask_sumo_deadlift:
   - text: |
-      Sumo Deadlifts are a variation of the conventional deadlift. Here's the technique:
-      1. **Form**: Stand with feet wider than shoulder-width, grip the bar inside your legs.
-      2. **Sumo vs. Conventional Deadlifts**: Sumo targets the glutes and inner thighs more.
+      Sumo Deadlifts are a variation of the conventional deadlift. Here's the technique:<br>
+      1. <strong>Form</strong>: Stand with feet wider than shoulder-width, grip the bar inside your legs.<br>
+      2. <strong>Sumo vs. Conventional Deadlifts</strong>: Sumo targets the glutes and inner thighs more.<br>
 
   utter_ask_leg_workout_tips:
   - text: |
-      For strong and toned legs, consider these tips:
-      1. **Variety**: Include squats, lunges, leg presses, and calf raises.
-      2. **Balance**: Focus on both the front and back of the legs.
-      3. **Nutrition and Recovery**: Eat protein-rich food and allow time for recovery.
+      For strong and toned legs, consider these tips:<br>
+      1. <strong>Variety</strong>: Include squats, lunges, leg presses, and calf raises.<br>
+      2. <strong>Balance</strong>: Focus on both the front and back of the legs.<br>
+      3. <strong>Nutrition and Recovery</strong>: Eat protein-rich food and allow time for recovery.<br>
 
   utter_ask_leg_strength_training:
   - text: |
       To increase leg strength, focus on:
-      1. **Exercises**: Squats, deadlifts, lunges, and leg presses.
-      2. **Explosive Training**: Include jump squats or box jumps.
-      3. **Flexibility**: Stretch regularly to improve range of motion.
+      1. <strong>Exercises</strong>: Squats, deadlifts, lunges, and leg presses.<br>
+      2. <strong>Explosive Training</strong>: Include jump squats or box jumps.<br>
+      3. <strong>Flexibility</strong>: Stretch regularly to improve range of motion.<br>
 
   utter_ask_glute_bridge:
   - text: "Glute Bridges are an essential exercise for building stronger glutes and engaging the entire posterior chain. To perform Glute Bridges effectively, lie on your back with your knees bent and feet flat on the floor. Place your arms by your sides with your palms facing down. Push through your heels, lift your hips off the ground, and squeeze your glutes at the top of the movement. Maintain a straight line from your shoulders to your knees. Lower your hips back down and repeat. For added challenge, you can use resistance bands or weights. Include Glute Bridges in your routine to develop well-defined glutes, enhance hip mobility, and reduce lower back discomfort."
@@ -700,6 +815,30 @@ responses:
 
 #________________________________________arms__________________________
 
+  utter_ask_bicep_exercises:
+  - text: "Some effective bicep exercises include bicep curls, hammer curls, and concentration curls."
+  
+  utter_ask_tricep_exercises:
+  - text: "Great tricep exercises are tricep dips, overhead tricep extensions, and skull crushers."
+  
+  utter_bicep_importance:
+  - text: "Training biceps is important for arm strength, function, and contributes to overall fitness."
+  
+  utter_tricep_importance:
+  - text: "Focusing on triceps training is crucial for upper arm strength, functionality, and muscle balance."
+  
+  utter_general_bicep_care:
+  - text: "To maintain healthy biceps, regularly stretch, avoid overstraining, and follow a balanced workout routine."
+  
+  utter_general_tricep_care:
+  - text: "For healthy triceps, ensure proper stretching, prevent overuse injuries, and maintain a consistent exercise regimen."
+  
+  utter_bicep_training_tips:
+  - text: "For effective bicep training, focus on controlled movements, vary your exercises, and ensure proper form."
+  
+  utter_tricep_training_tips:
+  - text: "Effective tricep training includes maintaining proper form, incorporating a variety of exercises, and focusing on the full range of motion."
+  
   utter_arm_anatomy:
   - text: "The arms consist of various muscles, including the biceps, triceps, and forearm muscles. Understanding arm anatomy is important for effective workouts and injury prevention."
 
@@ -723,68 +862,68 @@ responses:
   
   utter_ask_bicep_curls:
   - text: |
-      Bicep Curls are key for arm development. Here's how to do them:
-      1. **Form**: Keep your elbows close to your torso, curl the weights while keeping your upper arms stationary.
-      2. **Bicep Curls vs. Hammer Curls**: Bicep Curls target the biceps brachii, while Hammer Curls engage the brachialis and brachioradialis.
+      Bicep Curls are key for arm development. Here's how to do them:<br>
+      1. <strong>Form</strong>: Keep your elbows close to your torso, curl the weights while keeping your upper arms stationary.<br>
+      2. <strong>Bicep Curls vs. Hammer Curls</strong>: Bicep Curls target the biceps brachii, while Hammer Curls engage the brachialis and brachioradialis.<br>
 
   utter_ask_tricep_dips:
   - text: |
-      Tricep Dips target the triceps muscles. Here's the technique:
-      1. **Form**: Use parallel bars, keep your elbows close to your body, and lower yourself down.
-      2. **Tricep Dips vs. Pushdowns**: Dips engage more stabilizing muscles than pushdowns.
+      Tricep Dips target the triceps muscles. Here's the technique:<br>
+      1. <strong>Form</strong>: Use parallel bars, keep your elbows close to your body, and lower yourself down.<br>
+      2. <strong>Tricep Dips vs. Pushdowns</strong>: Dips engage more stabilizing muscles than pushdowns.<br>
 
   utter_ask_barbell_shrugs:
   - text: |
-      Barbell Shrugs strengthen the trapezius muscles. Here's how to perform them:
-      1. **Technique**: Hold a barbell in front, lift your shoulders up towards your ears, and lower.
-      2. **Barbell vs. Dumbbell Shrugs**: Barbell Shrugs allow for heavier weight, while Dumbbell Shrugs offer a greater range of motion.
+      Barbell Shrugs strengthen the trapezius muscles. Here's how to perform them:<br>
+      1. <strong>Technique</strong>: Hold a barbell in front, lift your shoulders up towards your ears, and lower.<br>
+      2. <strong>Barbell vs. Dumbbell Shrugs</strong>: Barbell Shrugs allow for heavier weight, while Dumbbell Shrugs offer a greater range of motion.<br>
 
   utter_ask_forearm_curls:
   - text: |
-      Forearm Curls improve grip and forearm strength. Here's the correct method:
-      1. **Technique**: Hold a weight with your palms up, curl your wrist upward.
-      2. **Forearm Curls vs. Wrist Rollers**: Curls isolate the muscles, while rollers engage them dynamically.
+      Forearm Curls improve grip and forearm strength. Here's the correct method:<br>
+      1. <strong>Technique</strong>: Hold a weight with your palms up, curl your wrist upward.<br>
+      2. <strong>Forearm Curls vs. Wrist Rollers</strong>: Curls isolate the muscles, while rollers engage them dynamically.<br>
 
   utter_ask_skull_crushers:
   - text: |
-      Skull Crushers are excellent for tricep development. Here's the technique:
-      1. **Form**: Lie on a bench, extend your arms with weights over your head.
-      2. **Movement**: Bend your elbows, lowering the weights beside your head, then extend back up.
-      3. **Variations**: You can use a barbell, dumbbells, or EZ bar.
-      4. **Skull Crushers vs. Close-Grip Bench Press**: Skull Crushers isolate the triceps more directly.
+      Skull Crushers are excellent for tricep development. Here's the technique:<br>
+      1. <strong>Form</strong>: Lie on a bench, extend your arms with weights over your head.<br>
+      2. <strong>Movement</strong>: Bend your elbows, lowering the weights beside your head, then extend back up.<br>
+      3. <strong>Variations</strong>: You can use a barbell, dumbbells, or EZ bar.<br>
+      4. <strong>Skull Crushers vs. Close-Grip Bench Press</strong>: Skull Crushers isolate the triceps more directly.<br>
 
   utter_ask_hammer_curl:
   - text: |
-      Hammer Curls are key for bicep and forearm development. Here's how to do them:
-      1. **Form**: Stand with weights in each hand, palms facing your body.
-      2. **Movement**: Curl the weights up while keeping your palms facing in.
-      3. **Variations**: Include alternating arms, seated Hammer Curls, or using resistance bands.
+      Hammer Curls are key for bicep and forearm development. Here's how to do them:<br>
+      1. <strong>Form</strong>: Stand with weights in each hand, palms facing your body.<br>
+      2. <strong>Movement</strong>: Curl the weights up while keeping your palms facing in.<br>
+      3. <strong>Variations</strong>: Include alternating arms, seated Hammer Curls, or using resistance bands.<br>
 
   utter_ask_forearm_exercises:
   - text: |
-      Forearm exercises enhance grip strength and arm stability. Some effective exercises include:
-      1. **Wrist Curls**: Using a dumbbell, flex your wrist upwards.
-      2. **Reverse Wrist Curls**: Similar to wrist curls, but with palms facing down.
-      3. **Grip Strengtheners**: Hand grippers are excellent for improving grip.
+      Forearm exercises enhance grip strength and arm stability. Some effective exercises include:<br>
+      1. <strong>Wrist Curls</strong>: Using a dumbbell, flex your wrist upwards.<br>
+      2. <strong>Reverse Wrist Curls</strong>: Similar to wrist curls, but with palms facing down.<br>
+      3. <strong>Grip Strengtheners</strong>: Hand grippers are excellent for improving grip.<br>
 
   utter_ask_dumbbell_shrug:
   - text: |
-      Dumbbell Shrugs target your trapezius muscles. Here's the correct form:
-      1. **Technique**: Stand with weights in both hands, shrug your shoulders upwards and slightly back.
-      2. **Dumbbell vs. Barbell Shrugs**: Dumbbell Shrugs allow for a greater range of motion.
+      Dumbbell Shrugs target your trapezius muscles. Here's the correct form:<br>
+      1. <strong>Technique</strong>: Stand with weights in both hands, shrug your shoulders upwards and slightly back.<br>
+      2. <strong>Dumbbell vs. Barbell Shrugs</strong>: Dumbbell Shrugs allow for a greater range of motion.<br>
 
   utter_ask_overhead_tricep_extension:
   - text: |
-      Overhead Tricep Extensions are great for targeting the triceps. Here's how to perform them:
-      1. **Form**: Stand or sit, extend your arms above your head with a weight in your hands.
-      2. **Movement**: Bend your elbows, lowering the weight behind your head, then extend back up.
-      3. **Variations**: You can use a dumbbell, a barbell, or a cable machine.
+      Overhead Tricep Extensions are great for targeting the triceps. Here's how to perform them:<br>
+      1. <strong>Form</strong>: Stand or sit, extend your arms above your head with a weight in your hands.<br>
+      2. <strong>Movement</strong>: Bend your elbows, lowering the weight behind your head, then extend back up.<br>
+      3. <strong>Variations</strong>: You can use a dumbbell, a barbell, or a cable machine.<br>
 
   utter_ask_zottman_curl:
   - text: |
-      Zottman Curls are effective for both biceps and forearms. Here's the technique:
-      1. **Form**: Perform a regular curl, but at the top, rotate your hands so your palms face downwards.
-      2. **Movement**: Lower the weights with this reverse grip, then rotate back to start.
+      Zottman Curls are effective for both biceps and forearms. Here's the technique:<br>
+      1. <strong>Form</strong>: Perform a regular curl, but at the top, rotate your hands so your palms face downwards.<br>
+      2. <strong>Movement</strong>: Lower the weights with this reverse grip, then rotate back to start.<br>
 #____________________________________core
 
   utter_core_anatomy:
@@ -810,34 +949,34 @@ responses:
 
   utter_ask_plank_technique:
   - text: |
-      The Plank is a fundamental core exercise. Here's the proper technique:
-      1. **Form**: Lie face down, elbows under your shoulders, and toes on the ground.
-      2. **Position**: Lift your body into a straight line, engaging your core and glutes.
-      3. **Duration**: Aim to hold the position for 30 seconds to a minute as you progress.
+      The Plank is a fundamental core exercise. Here's the proper technique:<br>
+      1. <strong>Form</strong>: Lie face down, elbows under your shoulders, and toes on the ground.<br>
+      2. <strong>Position</strong>: Lift your body into a straight line, engaging your core and glutes.<br>
+      3. <strong>Duration</strong>: Aim to hold the position for 30 seconds to a minute as you progress.<br>
 
   utter_ask_russian_twists_variations:
   - text: |
-      Russian Twists are excellent for obliques. Variations include:
-      1. **With Weights**: Holding a weight plate or dumbbell for added resistance.
-      2. **Leg Position**: Elevate your legs to increase core engagement.
+      Russian Twists are excellent for obliques. Variations include:<br>
+      1. <strong>With Weights</strong>: Holding a weight plate or dumbbell for added resistance.<br>
+      2. <strong>Leg Position</strong>: Elevate your legs to increase core engagement.<br>
 
   utter_ask_ab_rollouts_technique:
   - text: |
-      Ab Rollouts are challenging but effective for core strength. Here's the technique:
-      1. **Form**: Kneel with the ab wheel beneath your shoulders, roll forward slowly.
-      2. **Movement**: Extend your body as far as possible without arching your back, then pull back.
+      Ab Rollouts are challenging but effective for core strength. Here's the technique:<br>
+      1. <strong>Form</strong>: Kneel with the ab wheel beneath your shoulders, roll forward slowly.<br>
+      2. <strong>Movement</strong>: Extend your body as far as possible without arching your back, then pull back.<br>
 
   utter_ask_twisting_leg_raises:
   - text: |
-      Twisting Leg Raises are great for core and obliques. Here's how to do them:
-      1. **Technique**: Hang from a bar, raise your legs, then twist them to each side alternately.
-      2. **Variation**: Bent knees for beginners, straight legs for advanced.
+      Twisting Leg Raises are great for core and obliques. Here's how to do them:<br>
+      1. <strong>Technique</strong>: Hang from a bar, raise your legs, then twist them to each side alternately.<br>
+      2. <strong>Variation</strong>: Bent knees for beginners, straight legs for advanced.<br>
 
   utter_ask_mountain_climbers_technique:
   - text: |
-      Mountain Climbers combine cardio and core strengthening. Here's the technique:
-      1. **Starting Position**: Begin in a plank position.
-      2. **Movement**: Bring one knee towards your chest, then switch to the other leg quickly.
+      Mountain Climbers combine cardio and core strengthening. Here's the technique:<br>
+      1. <strong>Starting Position</strong>: Begin in a plank position.<br>
+      2. <strong>Movement</strong>: Bring one knee towards your chest, then switch to the other leg quickly.<br>
 
 #_________________________________________________________shoulder___________________________
 
@@ -864,48 +1003,48 @@ responses:
   
   utter_ask_military_press_technique:
   - text: |
-      Military Press is a fundamental shoulder exercise. Here's the technique:
-      1. **Form**: Stand with feet shoulder-width apart, grip the barbell at shoulder level.
-      2. **Movement**: Press the bar overhead until your arms are fully extended, then lower it back down.
-      3. **Comparison**: Military Press engages more stabilizing muscles compared to Dumbbell Shoulder Press.
-      4. **Shoulder Health**: Keep your core engaged and avoid arching your back excessively.
+      Military Press is a fundamental shoulder exercise. Here's the technique:<br>
+      1. <strong>Form</strong>: Stand with feet shoulder-width apart, grip the barbell at shoulder level.<br>
+      2. <strong>Movement</strong>: Press the bar overhead until your arms are fully extended, then lower it back down.<br>
+      3. <strong>Comparison</strong>: Military Press engages more stabilizing muscles compared to Dumbbell Shoulder Press.<br>
+      4. <strong>Shoulder Health</strong>: Keep your core engaged and avoid arching your back excessively.<br>
 
   utter_ask_lateral_raises:
   - text: |
-      Lateral Raises are great for shoulder development. Here's the correct form:
-      1. **Technique**: Stand with dumbbells at your sides, palms facing inward. Raise the weights out to the side until shoulder height.
-      2. **Variations**: Include bent-over lateral raises or cable lateral raises for variation.
-      3. **Weight Selection**: Choose a weight that allows for good form without swinging.
+      Lateral Raises are great for shoulder development. Here's the correct form:<br>
+      1. <strong>Technique</strong>: Stand with dumbbells at your sides, palms facing inward. Raise the weights out to the side until shoulder height.<br>
+      2. <strong>Variations</strong>: Include bent-over lateral raises or cable lateral raises for variation.<br>
+      3. <strong>Weight Selection</strong>: Choose a weight that allows for good form without swinging.<br>
 
   utter_ask_face_pulls_variations:
   - text: |
-      Face Pulls are excellent for shoulder health. Variations include:
-      1. **Resistance Bands**: Great for home workouts, offering variable resistance.
-      2. **Cable Machines**: Provide consistent tension throughout the movement.
-      3. **Rope Attachment**: Allows for a natural hand rotation during the exercise.
+      Face Pulls are excellent for shoulder health. Variations include:<br>
+      1. <strong>Resistance Bands</strong>: Great for home workouts, offering variable resistance.<br>
+      2. <strong>Cable Machines</strong>: Provide consistent tension throughout the movement.<br>
+      3. <strong>Rope Attachment</strong>: Allows for a natural hand rotation during the exercise.<br>
 
   utter_ask_arnold_press:
   - text: |
-      Arnold Press combines a curl and press for comprehensive shoulder development. Here's the technique:
-      1. **Form**: Start with dumbbells in front of your shoulders, palms facing you.
-      2. **Movement**: Rotate your arms outwards as you press the dumbbells overhead.
-      3. **Comparison**: Arnold Press involves more rotation and range of motion compared to Military Press.
+      Arnold Press combines a curl and press for comprehensive shoulder development. Here's the technique:<br>
+      1. <strong>Form</strong>: Start with dumbbells in front of your shoulders, palms facing you.<br>
+      2. <strong>Movement</strong>: Rotate your arms outwards as you press the dumbbells overhead.<br>
+      3. <strong>Comparison</strong>: Arnold Press involves more rotation and range of motion compared to Military Press.<br>
 
   utter_ask_shrugs_technique:
   - text: |
-      Shrugs target the trapezius muscles. Here's the correct technique:
-      1. **Form**: Stand with weights in your hands, palms facing your body.
-      2. **Movement**: Raise your shoulders towards your ears, then lower them back down.
-      3. **Barbell vs. Dumbbells**: Barbell allows for heavier weight, while dumbbells provide a greater range of motion.
+      Shrugs target the trapezius muscles. Here's the correct technique:<br>
+      1. <strong>Form</strong>: Stand with weights in your hands, palms facing your body.<br>
+      2. <strong>Movement</strong>: Raise your shoulders towards your ears, then lower them back down.<br>
+      3. <strong>Barbell vs. Dumbbells</strong>: Barbell allows for heavier weight, while dumbbells provide a greater range of motion.<br>
 
   utter_ask_shoulder_benefits:
   - text: |
-      Shoulder exercises offer several benefits:
-      1. **Lateral Raises**: Enhance shoulder width and deltoid definition.
-      2. **Face Pulls**: Improve shoulder posture and rear deltoid strength.
-      3. **Arnold Press**: Targets multiple shoulder muscles for overall development.
-      4. **Shrugs**: Strengthen the trapezius muscles, essential for neck and shoulder stability.
-      5. **Military Press**: Develops shoulder power and stability, engaging the entire deltoid region.
+      Shoulder exercises offer several benefits:<br>
+      1. <strong>Lateral Raises</strong>: Enhance shoulder width and deltoid definition.<br>
+      2. <strong>Face Pulls</strong>: Improve shoulder posture and rear deltoid strength.<br>
+      3. <strong>Arnold Press</strong>: Targets multiple shoulder muscles for overall development.<br>
+      4. <strong>Shrugs</strong>: Strengthen the trapezius muscles, essential for neck and shoulder stability.<br>
+      5. <strong>Military Press</strong>: Develops shoulder power and stability, engaging the entire deltoid region.<br>
 
 
 #___________________________________________________cardio___________________________
