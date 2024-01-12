@@ -1,18 +1,5 @@
 version: "3.1"
 
-slots:
-  goal:
-    type: categorical
-    values:
-      - lose weight
-      - gain muscle
-      - improve fitness
-    influence_conversation: true
-    mappings:
-      - type: from_entity
-        entity: goal
-
-
 entities:
   - goal
   - diet
@@ -30,7 +17,8 @@ intents:
   - bot_challenge
   - ask_about_bulking
   - ask_about_cutting
-  - ask_about_maintenance #- ask_about_diet_planning
+  - ask_about_maintenance
+  - ask_about_diet_planning
   - ask_about_nutrition
   - ask_about_nutrition_bulk
   - ask_about_nutrition_cut
@@ -307,42 +295,30 @@ responses:
 
 
   #Nutrition focused
-  #utter_ask_about_diet_planning:
-  #- text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
+  utter_ask_about_diet_planning:
+  - text: "A good diet plan considers your nutritional needs, lifestyle, and fitness goals. Start by determining your calorie needs, balance your macros, and plan meals that you enjoy and can stick to."
 
   utter_ask_about_nutrition:
   - text: "Good nutrition is key to a healthy life. It involves getting the right balance of macronutrients (proteins, fats, and carbohydrates) and micronutrients (vitamins and minerals) from your diet. Do you need more in-depth detail about nutrition based on whether you are on a cut or bulk?"
 
-  #utter_ask_about_vegan_diet:
-  #- text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
+  utter_ask_about_vegan_diet:
+  - text: "A vegan diet excludes all animal products. It's rich in fruits, vegetables, legumes, and whole grains. To get enough protein, focus on foods like tofu, lentils, and quinoa. Make sure to supplement for nutrients typically found in animal products, like Vitamin B12."
 
 
   #--------------------------Meal plan focused------------------------------
 
 
-#   utter_acknowledge_goal_askdp:
-#     - condition:
-#         - type: slot
-#           name: goal
-#           value: lose weight
-#       text: "Great! Let's work on your goal to lose weight.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
-#     - condition:
-#         - type: slot
-#           name: goal
-#           value: gain muscle
-#       text: "Great! Let's work on your goal to gain muscle.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
-#     - condition:
-#         - type: slot
-#           name: goal
-#           value: improve fitness
-#       text: "Great! Let's work on your goal to improve fitness.\n What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
+  utter_acknowledge_lw_goal:
+    - text: "Great! Let's work on your goal to lose weight."
+
+  utter_acknowledge_mg_goal:
+    - text: "Alright, let's talk about how to gain muscle?"
+
+  utter_acknowledge_gf_goal:
+    - text: ""
   
-#   utter_ask_diet_preference:
-#     - text: ""
-
-  utter_acknowledge_wlgoal_askdp:
-    - text: "Great! Let's work on your goal to lose weight. What's your dietary preference? For example, vegan, vegetarian, or high-protein?"
-
+  utter_ask_diet_preference:
+    - text: "What's your dietary preference? For example, vegan, vegetarian, or something else?"
 
   utter_ask_allergies:
     - text: "Do you have any allergies or food intolerances I should be aware of?"
@@ -355,6 +331,7 @@ responses:
   utter_anything_else:
   - text: "No problem! If you have any other questions about different diet plans, workouts, or anything else, feel free to ask. I'm here to help!"
   #---------------------------------------#
+
 
   utter_greet:
   - text: "Hey! How are you?"

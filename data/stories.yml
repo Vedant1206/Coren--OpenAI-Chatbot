@@ -162,7 +162,10 @@ stories:
 - story: Customized Meal Plan for Weight Loss
   steps:
   - intent: express_goal
-  - action: utter_acknowledge_wlgoal_askdp # - action: utter_ask_diet_preference
+    entities:
+    - goal: weight loss
+  - action: utter_acknowledge_lw_goal
+  - action: utter_ask_diet_preference
   - intent: inform_diet_preference
     entities:
     - diet: vegan
@@ -177,43 +180,46 @@ stories:
 
 
 
-# - story: Customized Meal Plan for Muscle Gain
-#   steps:
-#   - intent: express_goal
-#     entities:
-#     - goal: muscle gain
-#   - action: utter_acknowledge_mg_goal
-#   - action: utter_ask_diet_preference
-#   - intent: inform_diet_preference
-#     entities:
-#     - diet: high protein
-#   - action: utter_ask_allergies
-#   - intent: inform_allergies
-#     entities:
-#     - allergy: gluten
-#   - action: action_generate_muscle_gain_plan
-#   - action: utter_present_meal_plan
-#   - intent: give_feedback
-#   - action: action_adjust_meal_plan
+- story: Customized Meal Plan for Muscle Gain
+  steps:
+  - intent: express_goal
+    entities:
+    - goal: muscle gain
+  - action: utter_acknowledge_mg_goal
+  - action: utter_ask_diet_preference
+  - intent: inform_diet_preference
+    entities:
+    - diet: high protein
+  - action: utter_ask_allergies
+  - intent: inform_allergies
+    entities:
+    - allergy: gluten
+  - action: action_generate_muscle_gain_plan
+  - action: utter_present_meal_plan
+  - intent: give_feedback
+  - action: action_adjust_meal_plan
 
-# - story: Customized Meal Plan for General Fitness
-#   steps:
-#   - intent: express_goal
-#     entities:
-#     - goal: general fitness
-#   - action: utter_acknowledge_gf_goal
-#   - action: utter_ask_diet_preference
-#   - intent: inform_diet_preference
-#     entities:
-#     - diet: balanced
-#   - action: utter_ask_allergies
-#   - intent: inform_allergies
-#     entities:
-#     - allergy: lactose
-#   - action: action_generate_general_fitness_plan
-#   - action: utter_present_meal_plan
-#   - intent: give_feedback
-#   - action: action_adjust_meal_plan
+- story: Customized Meal Plan for General Fitness
+  steps:
+  - intent: express_goal
+    entities:
+    - goal: general fitness
+  - action: utter_acknowledge_gf_goal
+  - action: utter_ask_diet_preference
+  - intent: inform_diet_preference
+    entities:
+    - diet: balanced
+  - action: utter_ask_allergies
+  - intent: inform_allergies
+    entities:
+    - allergy: lactose
+  - action: action_generate_general_fitness_plan
+  - action: utter_present_meal_plan
+  - intent: give_feedback
+  - action: action_adjust_meal_plan
+
+
+
 
 
 
