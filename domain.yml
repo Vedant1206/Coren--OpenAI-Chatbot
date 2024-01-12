@@ -193,110 +193,35 @@ intents:
   - ask_arnold_press
   - ask_shrugs_technique
   - ask_shoulder_benefits
+
+  - cardio_what
+  - cardio_why
+  - cardio_how
+  - cycle_what
+  - cycle_why
+  - cycle_how
+  - run_what
+  - run_why
+  - run_how
+  - sprint_what
+  - sprint_why
+  - sprint_how
+  - treadmill_what
+  - treadmill_why
+  - treadmill_how
+  - burpees_what
+  - burpees_why
+  - burpees_how
+  - walking_what
+  - walking_why
+  - walking_how
+  - skipping_what
+  - skipping_why
+  - skipping_how
+  - swimming_what
+  - swimming_why
+  - swimming_how
   
-  - going_for_a_run
-  - jogging_in_the_park
-  - running_on_the_treadmill
-  - cardio_with_running
-  - sprinting_session
-  - running_for_fitness
-  - daily_run
-  - long_distance_running
-
-  - skipping_rope_exercise
-  - jump_rope_workout
-  - rope_jumping_session
-  - skipping_for_cardio
-  - rope_jumping_as_fitness
-  - double_unders_practice
-  - jump_rope_training
-
-  - star_jumps_exercise
-  - jumping_jacks
-  - star_jump_workout
-  - jumping_out_and_in
-  - side_straddle_hop
-  - star_jumps_as_cardio
-  - full_body_jumping_exercise
-  - calisthenics_jumping_jacks
-  - jumping_jacks_for_fitness
-  - star_jump_training
-
-  - mountain_hikers_exercise
-  - mimicking_mountain_hikers
-  - mountain_hikers_workout
-  - mountain_hikers_routine
-  - mountain_hikers_as_cardio
-  - full_body_mountain_hikers
-  - calisthenics_mountain_hikers
-  - mountain_hikers_for_fitness
-  - mountain_hiker_training
-
-  - burpees_exercise
-  - burpees_as_cardio
-  - burpees_full_body_workout
-  - high_intensity_burpees
-  - burpees_routine
-  - burpees_with_cardio
-  - adding_burpees_to_workout
-  - intense_burpee_training
-  - burpees_for_fitness
-  - burpees_variations
-  - incorporating_burpees
-  - burpees_benefits
-
-  - box_jumps_exercise
-  - box_jumps_as_workout
-  - box_jumps_incorporation
-  - box_jumps_routine
-  - explosive_box_jumps
-  - box_jumps_variations
-  - box_jumps_benefits
-  - adding_box_jumps_to_exercise
-  - box_jumps_technique
-  - improving_box_jumps
-  - box_jumps_tips
-
-  - high_knees_exercise
-  - high_knees_as_cardio
-  - high_knees_in_workout
-  - high_knees_routine
-  - high_knees_variations
-  - high_knees_benefits
-  - adding_high_knees_to_exercise
-  - high_knees_technique
-  - improving_high_knees
-  - high_knees_tips
-
-  - cycling_as_cardio
-  - cycling_as_workout
-  - cycling_benefits
-  - cycling_routines
-  - cycling_tips
-  - cycling_speed_improvement
-  - indoor_cycling
-  - outdoor_cycling
-  - cycling_for_beginners
-  - cycling_gear_recommendations
-
-  - swimming_technique
-  - swimming_advantages
-  - swimming_speed_improvement
-  - indoor_swimming
-  - outdoor_swimming
-  - swimming_workouts
-  - swimming_health_benefits
-  - swimming_for_cardio
-
-  - ask_cardio_benefits
-  - ask_cardio_exercises
-  - ask_cardio_frequency
-  - ask_cardio_duration
-  - ask_cardio_intensity
-  - ask_cardio_equipments
-  - ask_cardio_beginners
-  - ask_cardio_weight_loss
-  - ask_cardio_health_conditions
 
 responses:
 
@@ -1139,167 +1064,166 @@ responses:
 #___________________________________________________cardio___________________________
   utter_cardio_what:
   - text: |
-    Cardio, short for cardiovascular exercise, involves activities that 
-    elevate your heart rate and enhance your cardiovascular system's efficiency.
+      Cardio, short for cardiovascular exercise, involves activities that 
+      elevate your heart rate and enhance your cardiovascular system's efficiency.
 
   utter_cardio_why:
   - text: |
-    Cardio is beneficial for heart health, weight management, 
-    and overall endurance. It reduces the risk of chronic diseases and 
-    contributes to better mental well-being.
+      Cardio is beneficial for heart health, weight management, 
+      and overall endurance. It reduces the risk of chronic diseases and 
+      contributes to better mental well-being.
 
   utter_cardio_how:
   - text: |
-    To do cardio, engage in activities like running, swimming, or cycling. 
-    Maintain a consistent pace to elevate your heart rate and aim 
-    for at least 150 minutes of moderate-intensity cardio per week."
+      To do cardio, engage in activities like running, swimming, or cycling. 
+      Maintain a consistent pace to elevate your heart rate and aim 
+      for at least 150 minutes of moderate-intensity cardio per week."
 
   utter_cycle_what:
   - text: |
-    Cycling is a form of exercise that involves riding a bicycle.
+      Cycling is a form of exercise that involves riding a bicycle.
 
   utter_cycle_why:
   - text: |
-    People choose cycling for various reasons, including improved 
-    cardiovascular health, weight management, and a low-impact workout.
+      People choose cycling for various reasons, including improved 
+      cardiovascular health, weight management, and a low-impact workout.
 
   utter_cycle_how:
   - text: |
-    To start cycling, get a suitable bicycle, wear protective gear, 
-    and choose routes that match your fitness level. Adjust your 
-    bike for comfort and gradually increase intensity for better results.
+      To start cycling, get a suitable bicycle, wear protective gear, 
+      and choose routes that match your fitness level. Adjust your 
+      bike for comfort and gradually increase intensity for better results.
 
   utter_run_what:
   - text: |
-    Running is a type of aerobic exercise that involves moving
-    at a faster pace than walking, typically with both feet 
-    off the ground simultaneously.
+      Running is a type of aerobic exercise that involves moving
+      at a faster pace than walking, typically with both feet 
+      off the ground simultaneously.
 
   utter_run_why:
   - text: |
-    People engage in running for reasons such as cardiovascular 
-    fitness, weight loss, and stress relief. It's an accessible 
-    and effective form of exercise.
+      People engage in running for reasons such as cardiovascular 
+      fitness, weight loss, and stress relief. It's an accessible 
+      and effective form of exercise.
 
   utter_run_how:
   - text: |
-    To start running, invest in proper footwear, warm up before 
-    each session, and gradually increase your pace and distance. 
-    Pay attention to your form and listen to your body to avoid injuries.
+      To start running, invest in proper footwear, warm up before 
+      each session, and gradually increase your pace and distance. 
+      Pay attention to your form and listen to your body to avoid injuries.
 
   utter_sprint_what:
   - text: |
-    Sprinting is a high-intensity form of running where individuals 
-    exert maximum effort over short distances at top speeds.
+      Sprinting is a high-intensity form of running where individuals 
+      exert maximum effort over short distances at top speeds.
 
   utter_sprint_why:
   - text: |
-    People incorporate sprinting into their workouts for its 
-    efficiency in burning calories, enhancing cardiovascular 
-    health, and improving explosive power.
+      People incorporate sprinting into their workouts for its 
+      efficiency in burning calories, enhancing cardiovascular 
+      health, and improving explosive power.
 
   utter_sprint_how:
   - text: |
-    To sprint effectively, warm up thoroughly, maintain proper form, 
-    and start with short bursts of maximum effort followed by 
-    adequate rest. As you progress, gradually increase sprinting 
-    durations and intensity.
+      To sprint effectively, warm up thoroughly, maintain proper form, 
+      and start with short bursts of maximum effort followed by 
+      adequate rest. As you progress, gradually increase sprinting 
+      durations and intensity.
 
   utter_treadmill_what:
   - text: |
-    A treadmill is a stationary exercise machine that 
-    allows individuals to walk, jog, or run in place 
-    on a moving surface.
+      A treadmill is a stationary exercise machine that 
+      allows individuals to walk, jog, or run in place 
+      on a moving surface.
 
   utter_treadmill_why:
   - text: |
-    Many opt for treadmill workouts for the convenience 
-    of indoor exercise, control over speed and incline, 
-    and the ability to monitor and adjust workout parameters.
+      Many opt for treadmill workouts for the convenience 
+      of indoor exercise, control over speed and incline, 
+      and the ability to monitor and adjust workout parameters.
 
   utter_treadmill_how:
   - text: |
-    To use a treadmill, start with a proper warm-up, choose
-    your desired speed and incline, and maintain good posture. 
-    Gradually increase intensity over time for a challenging workout.
+      To use a treadmill, start with a proper warm-up, choose
+      your desired speed and incline, and maintain good posture. 
+      Gradually increase intensity over time for a challenging workout.
 
   utter_burpees_what:
   - text: |
-    Burpees are a full-body exercise that involves a 
-    combination of movements, including a squat, push-up, and jump.
+      Burpees are a full-body exercise that involves a 
+      combination of movements, including a squat, push-up, and jump.
 
   utter_burpees_why:
   - text: |
-    People include burpees in their workouts for their 
-    effectiveness in building strength, improving cardiovascular 
-    fitness, and burning calories.
+      People include burpees in their workouts for their effectiveness in building strength, improving cardiovascular 
+      fitness, and burning calories.
 
   utter_burpees_how:
   - text: |
-    To perform a burpee, start in a standing position, move into
-    a squat, place your hands on the ground, kick your feet 
-    back into a plank position, perform a push-up, 
-    jump your feet back to the squat position, 
-    and explosively jump upward. 
-    Repeat the sequence for a challenging workout.
+      To perform a burpee, start in a standing position, move into
+      a squat, place your hands on the ground, kick your feet 
+      back into a plank position, perform a push-up, 
+      jump your feet back to the squat position, 
+      and explosively jump upward. 
+      Repeat the sequence for a challenging workout.
 
   utter_walking_what:
   - text: |
-    Walking is a low-impact form of exercise that involves 
-    the rhythmic movement of the legs, typically at a 
-    slower pace than running.
+      Walking is a low-impact form of exercise that involves 
+      the rhythmic movement of the legs, typically at a 
+      slower pace than running.
 
   utter_walking_why:
   - text: |
-    Many choose walking for its accessibility, simplicity, 
-    and benefits such as improved cardiovascular health, 
-    weight management, and stress reduction.
+      Many choose walking for its accessibility, simplicity, 
+      and benefits such as improved cardiovascular health, 
+      weight management, and stress reduction.
 
   utter_walking_how:
   - text: |
-    To incorporate walking into your routine, simply find a 
-    comfortable pair of shoes, set a brisk pace, and aim for 
-    at least 150 minutes of moderate-intensity walking per week. 
-    It's a versatile and enjoyable form of exercise 
-    for people of various fitness levels.
+      To incorporate walking into your routine, simply find a 
+      comfortable pair of shoes, set a brisk pace, and aim for 
+      at least 150 minutes of moderate-intensity walking per week. 
+      It's a versatile and enjoyable form of exercise 
+      for people of various fitness levels.
 
   utter_skipping_what:
   - text: |
-    Skipping, also known as jump rope, is a cardiovascular 
-    exercise involving the continuous rotation of a rope 
-    while jumping over it.
+      Skipping, also known as jump rope, is a cardiovascular 
+      exercise involving the continuous rotation of a rope 
+      while jumping over it.
 
   utter_skipping_why:
   - text: |
-    Individuals incorporate skipping into their workouts 
-    for its efficiency in burning calories, improving coordination, 
-    and enhancing cardiovascular health.
+      Individuals incorporate skipping into their workouts 
+      for its efficiency in burning calories, improving coordination, 
+      and enhancing cardiovascular health.
 
   utter_skipping_how:
   - text: |
-    To skip effectively, choose an appropriate rope length, 
-    maintain proper form with a straight back and relaxed shoulders, 
-    and start with a comfortable pace. 
-    Gradually increase intensity by incorporating different 
-    skipping techniques and increasing speed for a more challenging workout.
+      To skip effectively, choose an appropriate rope length, 
+      maintain proper form with a straight back and relaxed shoulders, 
+      and start with a comfortable pace. 
+      Gradually increase intensity by incorporating different 
+      skipping techniques and increasing speed for a more challenging workout.
 
   utter_swimming_what:
   - text: |
-    Swimming is a full-body exercise performed in the water, 
-    involving various strokes like freestyle, breaststroke, backstroke, and butterfly.
+      Swimming is a full-body exercise performed in the water, 
+      involving various strokes like freestyle, breaststroke, backstroke, and butterfly.
 
   utter_swimming_why:
   - text: |
-    People opt for swimming due to its low-impact nature, 
-    effectiveness in building cardiovascular fitness, and 
-    benefits for muscle tone and flexibility.
+      People opt for swimming due to its low-impact nature, 
+      effectiveness in building cardiovascular fitness, and 
+      benefits for muscle tone and flexibility.
 
   utter_swimming_how:
   - text: |
-    To swim, learn different strokes, practice proper breathing 
-    techniques, and gradually increase the intensity 
-    and duration of your sessions. Swimming is a versatile and 
-    enjoyable exercise suitable for people of all fitness levels.
+      To swim, learn different strokes, practice proper breathing 
+      techniques, and gradually increase the intensity 
+      and duration of your sessions. Swimming is a versatile and 
+      enjoyable exercise suitable for people of all fitness levels.
 
 actions:
   - action_generate_weight_loss_plan

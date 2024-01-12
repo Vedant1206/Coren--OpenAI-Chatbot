@@ -3159,359 +3159,359 @@ nlu:
 
 #*******************************Cardio Section Ended********************************
 
-- intent: cardio_what 
+  - intent: cardio_what 
     examples: |
-    - What's cardio  Can you explain it to me 
-    - Hey     tell me about cardio.
-    - I keep hearing about cardio. What is it exactly 
-    - Explain cardio to me  please.
-    - What's the deal with cardio    
-    - people talk about cardio so much  What is it 
-    -    can you tell me what cardio means 
-    - Mom/Dad     what does cardio mean  Is it like a superhero or something 
-    -    I'm confused about this cardio thing. Can you help me understand 
-    - Teacher said we should do cardio.    what's that  Is it fun 
-    - What is cardio    
-    - Define cardio   .
-    - What's cardio  explain briefly 
-    - Cardio     what's that 
-    - cardio
-    - what is cardio
+      - What's cardio  Can you explain it to me 
+      - Hey     tell me about cardio.
+      - I keep hearing about cardio. What is it exactly 
+      - Explain cardio to me  please.
+      - What's the deal with cardio    
+      - people talk about cardio so much  What is it 
+      -    can you tell me what cardio means 
+      - Mom/Dad     what does cardio mean  Is it like a superhero or something 
+      -    I'm confused about this cardio thing. Can you help me understand 
+      - Teacher said we should do cardio.    what's that  Is it fun 
+      - What is cardio    
+      - Define cardio   .
+      - What's cardio  explain briefly 
+      - Cardio     what's that 
+      - cardio
+      - what is cardio
 
 
   - intent: cardio_why 
     examples: |
-    - Why do cardio    
-    - Convince me     cardio 
-    - Reasons for cardio    
-    -    why cardio matters 
-    - Explain benefits     cardio.
-    - What makes cardio necessary    
-    -    justify cardio for me.
-    -    reasons behind cardio 
-    - What's point of cardio    
-    - Tell me     why cardio 
-    - advantages of cardio
-    - why people do cardio
+      - Why do cardio    
+      - Convince me     cardio 
+      - Reasons for cardio    
+      -    why cardio matters 
+      - Explain benefits     cardio.
+      - What makes cardio necessary    
+      -    justify cardio for me.
+      -    reasons behind cardio 
+      - What's point of cardio    
+      - Tell me     why cardio 
+      - advantages of cardio
+      - why people do cardio
     
 
   - intent: cardio_how 
     examples: |
-    - How do cardio    
-    - Explain cardio     process 
-    -    how to cardio 
-    - Teach me     cardio.
-    - Instruct cardio     please.
-    -    guide cardio method 
-    - How is cardio done    
-    -    steps for cardio 
-    - Share cardio process   .
-    - How to do cardio    
+      - How do cardio    
+      - Explain cardio     process 
+      -    how to cardio 
+      - Teach me     cardio.
+      - Instruct cardio     please.
+      -    guide cardio method 
+      - How is cardio done    
+      -    steps for cardio 
+      - Share cardio process   .
+      - How to do cardio    
 
   - intent: cycle_what 
     examples: |
-    - Explain cycling
-    - Define cycling
-    - What is cycling
-    - Cycling meaning
-    - Describe cycling
-    - Share about cycling
-    - What is cycling
-    - Elaborate on cycling
-    - Details on cycling
-    - Break down cycling
+      - Explain cycling
+      - Define cycling
+      - What is cycling
+      - Cycling meaning
+      - Describe cycling
+      - Share about cycling
+      - What is cycling
+      - Elaborate on cycling
+      - Details on cycling
+      - Break down cycling
 
   - intent: cycle_why 
     examples: |
-    - Reasons for cycling
-    - Why choose cycling
-    - Benefits of cycling
-    - Cycling advantages
-    - Explain cycling purpose
-    - Share cycling motivations
-    - Purpose of cycling
-    - Why opt for cycling
-    - Cycling why do
+      - Reasons for cycling
+      - Why choose cycling
+      - Benefits of cycling
+      - Cycling advantages
+      - Explain cycling purpose
+      - Share cycling motivations
+      - Purpose of cycling
+      - Why opt for cycling
+      - Cycling why do
 
   - intent: cycle_how 
     examples: |
-    - How to cycle
-    - Cycling method
-    - Steps for cycling
-    - Engage in cycling
-    - Process of cycling
-    - Learn cycling
-    - Technique for cycling
-    - Cycling guide
-    - How to start cycling
-    - Method for cycling
+      - How to cycle
+      - Cycling method
+      - Steps for cycling
+      - Engage in cycling
+      - Process of cycling
+      - Learn cycling
+      - Technique for cycling
+      - Cycling guide
+      - How to start cycling
+      - Method for cycling
 
   - intent: run_what
     examples: |
-    - Explain running jogging
-    - Define running jogging
-    - What is running jogging
-    - Running meaning jogging
-    - Describe running jogging
-    - Share about running jogging
-    - What is running jogging
-    - Elaborate on running jogging
-    - Details on running jogging
-    - Break down running jogging
+      - Explain running jogging
+      - Define running jogging
+      - What is running jogging
+      - Running meaning jogging
+      - Describe running jogging
+      - Share about running jogging
+      - What is running jogging
+      - Elaborate on running jogging
+      - Details on running jogging
+      - Break down running jogging
 
   - intent: run_why 
     examples: |
-    - Reasons for running jogging
-    - Why choose running jogging
-    - Benefits of running jogging
-    - Running advantages jogging
-    - Explain running purpose jogging
-    - Share running motivations jogging
-    - Purpose of running jogging
-    - Why opt for running jogging
-    - Running why do jogging
+      - Reasons for running jogging
+      - Why choose running jogging
+      - Benefits of running jogging
+      - Running advantages jogging
+      - Explain running purpose jogging
+      - Share running motivations jogging
+      - Purpose of running jogging
+      - Why opt for running jogging
+      - Running why do jogging
 
   - intent: run_how 
     examples: |
-    - How to run jog
-    - Running method jogging
-    - Steps for running jogging
-    - Engage in running jogging
-    - Process of running jogging
-    - Learn running jogging
-    - Technique for running jogging
-    - Running guide jogging
-    - How to start running jogging
-    - Method for running jogging
+      - How to run jog
+      - Running method jogging
+      - Steps for running jogging
+      - Engage in running jogging
+      - Process of running jogging
+      - Learn running jogging
+      - Technique for running jogging
+      - Running guide jogging
+      - How to start running jogging
+      - Method for running jogging
 
 
   - intent: sprint_what 
     examples: |
-    - Explain sprinting
-    - Define sprinting
-    - What is sprinting
-    - Sprinting meaning
-    - Describe sprinting
-    - Share about sprinting
-    - What is sprinting
-    - Elaborate on sprinting
-    - Details on sprinting
-    - Break down sprinting
+      - Explain sprinting
+      - Define sprinting
+      - What is sprinting
+      - Sprinting meaning
+      - Describe sprinting
+      - Share about sprinting
+      - What is sprinting
+      - Elaborate on sprinting
+      - Details on sprinting
+      - Break down sprinting
 
   - intent: sprint_why 
     examples: |
-    - Reasons for sprinting
-    - Why choose sprinting
-    - Benefits of sprinting
-    - Sprinting advantages
-    - Explain sprinting purpose
-    - Share sprinting motivations
-    - Purpose of sprinting
-    - Why opt for sprinting
-    - Sprinting why do
+      - Reasons for sprinting
+      - Why choose sprinting
+      - Benefits of sprinting
+      - Sprinting advantages
+      - Explain sprinting purpose
+      - Share sprinting motivations
+      - Purpose of sprinting
+      - Why opt for sprinting
+      - Sprinting why do
 
   - intent: sprint_how 
     examples: |
-    - How to sprint
-    - Sprinting method
-    - Steps for sprinting
-    - Engage in sprinting
-    - Process of sprinting
-    - Learn sprinting
-    - Technique for sprinting
-    - Sprinting guide
-    - How to start sprinting
-    - Method for sprinting
+      - How to sprint
+      - Sprinting method
+      - Steps for sprinting
+      - Engage in sprinting
+      - Process of sprinting
+      - Learn sprinting
+      - Technique for sprinting
+      - Sprinting guide
+      - How to start sprinting
+      - Method for sprinting
 
   - intent: treadmill_what 
     examples: |
-    - Explain treadmill
-    - Define treadmill
-    - What is treadmill
-    - Treadmill meaning
-    - Describe treadmill
-    - Share about treadmill
-    - What is treadmill
-    - Elaborate on treadmill
-    - Details on treadmill
-    - Break down treadmill
+      - Explain treadmill
+      - Define treadmill
+      - What is treadmill
+      - Treadmill meaning
+      - Describe treadmill
+      - Share about treadmill
+      - What is treadmill
+      - Elaborate on treadmill
+      - Details on treadmill
+      - Break down treadmill
 
   - intent: treadmill_why 
     examples: |
-    - Reasons for treadmill
-    - Why choose treadmill
-    - Benefits of treadmill
-    - Treadmill advantages
-    - Explain treadmill purpose
-    - Share treadmill motivations
-    - Purpose of treadmill
-    - Why opt for treadmill
-    - Treadmill why do
+      - Reasons for treadmill
+      - Why choose treadmill
+      - Benefits of treadmill
+      - Treadmill advantages
+      - Explain treadmill purpose
+      - Share treadmill motivations
+      - Purpose of treadmill
+      - Why opt for treadmill
+      - Treadmill why do
 
   - intent: treadmill_how 
     examples: |
-    - How to treadmill
-    - Treadmill method
-    - Steps for treadmill
-    - Engage in treadmill
-    - Process of treadmill
-    - Learn treadmill
-    - Technique for treadmill
-    - Treadmill guide
-    - How to start treadmill
-    - Method for treadmill
+      - How to treadmill
+      - Treadmill method
+      - Steps for treadmill
+      - Engage in treadmill
+      - Process of treadmill
+      - Learn treadmill
+      - Technique for treadmill
+      - Treadmill guide
+      - How to start treadmill
+      - Method for treadmill
 
   - intent: burpees_what 
     examples: |
-    - Explain burpees
-    - Define burpees
-    - What is burpees
-    - Burpees meaning
-    - Describe burpees
-    - Share about burpees
-    - What are burpees
-    - Elaborate on burpees
-    - Details on burpees
-    - Break down burpees
+      - Explain burpees
+      - Define burpees
+      - What is burpees
+      - Burpees meaning
+      - Describe burpees
+      - Share about burpees
+      - What are burpees
+      - Elaborate on burpees
+      - Details on burpees
+      - Break down burpees
 
   - intent: burpees_why 
     examples: |
-    - Reasons for burpees
-    - Why choose burpees
-    - Benefits of burpees
-    - Burpees advantages
-    - Explain burpees purpose
-    - Share burpees motivations
-    - Purpose of burpees
-    - Why opt for burpees
-    - Burpees why do
+      - Reasons for burpees
+      - Why choose burpees
+      - Benefits of burpees
+      - Burpees advantages
+      - Explain burpees purpose
+      - Share burpees motivations
+      - Purpose of burpees
+      - Why opt for burpees
+      - Burpees why do
 
   - intent: burpees_how 
     examples: |
-    - How to burpees
-    - Burpees method
-    - Steps for burpees
-    - Engage in burpees
-    - Process of burpees
-    - Learn burpees
-    - Technique for burpees
-    - Burpees guide
-    - How to start burpees
-    - Method for burpees
+      - How to burpees
+      - Burpees method
+      - Steps for burpees
+      - Engage in burpees
+      - Process of burpees
+      - Learn burpees
+      - Technique for burpees
+      - Burpees guide
+      - How to start burpees
+      - Method for burpees
 
   - intent: walking_what 
     examples: |
-    - Explain walking
-    - Define walking
-    - What is walking
-    - Walking meaning
-    - Describe walking
-    - Share about walking
-    - What is walking
-    - Elaborate on walking
-    - Details on walking
-    - Break down walking
+      - Explain walking
+      - Define walking
+      - What is walking
+      - Walking meaning
+      - Describe walking
+      - Share about walking
+      - What is walking
+      - Elaborate on walking
+      - Details on walking
+      - Break down walking
 
   - intent: walking_why 
     examples: |
-    - Reasons for walking
-    - Why choose walking
-    - Benefits of walking
-    - Walking advantages
-    - Explain walking purpose
-    - Share walking motivations
-    - Purpose of walking
-    - Why opt for walking
-    - Walking why do
+      - Reasons for walking
+      - Why choose walking
+      - Benefits of walking
+      - Walking advantages
+      - Explain walking purpose
+      - Share walking motivations
+      - Purpose of walking
+      - Why opt for walking
+      - Walking why do
 
   - intent: walking_how 
     examples: |
-    - How to walk
-    - Walking method
-    - Steps for walking
-    - Engage in walking
-    - Process of walking
-    - Learn walking
-    - Technique for walking
-    - Walking guide
-    - How to start walking
-    - Method for walking
+      - How to walk
+      - Walking method
+      - Steps for walking
+      - Engage in walking
+      - Process of walking
+      - Learn walking
+      - Technique for walking
+      - Walking guide
+      - How to start walking
+      - Method for walking
 
   - intent: skipping_what 
     examples: |
-    - Explain skipping
-    - Define skipping
-    - What is skipping
-    - skipping meaning
-    - Describe skipping
-    - Share about skipping
-    - What is skipping
-    - Elaborate on skipping
-    - Details on skipping
-    - Break down skipping
+      - Explain skipping
+      - Define skipping
+      - What is skipping
+      - skipping meaning
+      - Describe skipping
+      - Share about skipping
+      - What is skipping
+      - Elaborate on skipping
+      - Details on skipping
+      - Break down skipping
 
   - intent: skipping_why 
     examples: |
-    - Reasons for skipping
-    - Why choose skipping
-    - Benefits of skipping
-    - skipping advantages
-    - Explain skipping purpose
-    - Share skipping motivations
-    - Purpose of skipping
-    - Why opt for skipping
-    - skipping why do
+      - Reasons for skipping
+      - Why choose skipping
+      - Benefits of skipping
+      - skipping advantages
+      - Explain skipping purpose
+      - Share skipping motivations
+      - Purpose of skipping
+      - Why opt for skipping
+      - skipping why do
 
   - intent: skipping_how 
     examples: |
-    - How to skip
-    - skipping method
-    - Steps for skipping
-    - Engage in skipping
-    - Process of skipping
-    - Learn skipping
-    - Technique for skipping
-    - skipping guide
-    - How to start skipping
-    - Method for skipping
+      - How to skip
+      - skipping method
+      - Steps for skipping
+      - Engage in skipping
+      - Process of skipping
+      - Learn skipping
+      - Technique for skipping
+      - skipping guide
+      - How to start skipping
+      - Method for skipping
 
   - intent: swimming_what 
     examples: |
-    - Explain swimming
-    - Define swimming
-    - What is swimming
-    - swimming meaning
-    - Describe swimming
-    - Share about swimming
-    - What are swimming
-    - Elaborate on swimming
-    - Details on swimming
-    - Break down swimming
+      - Explain swimming
+      - Define swimming
+      - What is swimming
+      - swimming meaning
+      - Describe swimming
+      - Share about swimming
+      - What are swimming
+      - Elaborate on swimming
+      - Details on swimming
+      - Break down swimming
 
   - intent: swimming_why 
     examples: |
-    - Reasons for swimming
-    - Why choose swimming
-    - Benefits of swimming
-    - swimming advantages
-    - Explain swimming purpose
-    - Share swimming motivations
-    - Purpose of swimming
-    - Why opt for swimming
-    - swimming why do
+      - Reasons for swimming
+      - Why choose swimming
+      - Benefits of swimming
+      - swimming advantages
+      - Explain swimming purpose
+      - Share swimming motivations
+      - Purpose of swimming
+      - Why opt for swimming
+      - swimming why do
 
   - intent: swimming_how 
     examples: |
-    - How to swim
-    - swimming method
-    - Steps for swimming
-    - Engage in swimming
-    - Process of swimming
-    - Learn swimming
-    - Technique for swimming
-    - swimming guide
-    - How to start swimming
-    - Method for swimming
+      - How to swim
+      - swimming method
+      - Steps for swimming
+      - Engage in swimming
+      - Process of swimming
+      - Learn swimming
+      - Technique for swimming
+      - swimming guide
+      - How to start swimming
+      - Method for swimming
 #---------------------------------------------------------#
 
 
