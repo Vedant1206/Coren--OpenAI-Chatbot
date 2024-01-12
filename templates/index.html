@@ -137,11 +137,9 @@
                 messageDiv.scrollTop = messageDiv.scrollHeight;
             })
             .catch((error) => {
-                console.error('Error:', error);
-                //document.getElementById('userInput').value = ''; // Clear the input field
-                
+                console.error('Error:', error);                
             });
-            userInputField.value = '';
+            document.getElementById('userInput').value = ''; // Clear the input field
         }
     
         function startDictation() {

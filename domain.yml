@@ -40,6 +40,27 @@ intents:
   - inform_allergies
   - give_feedback
 
+  - best_time_for_weightlifting
+  - training_session_duration
+  - eating_before_strength_training
+  - supplements_for_strength_training
+  - weekly_strength_training_frequency
+  - difference_between_strength_training_and_bodybuilding
+  - strength_training_for_weight_loss
+  - need_for_personal_trainer
+  - warm_up_before_weightlifting
+  - choosing_right_weight_for_lifting
+  - muscle_soreness_post_training
+  - tracking_strength_training_progress
+  - common_mistakes_in_strength_training
+  - importance_of_rest_and_recovery
+  - strength_training_for_sports_performance
+  - choosing_between_machines_and_free_weights
+  - balancing_strength_training_with_other_exercise
+  - risks_of_overtraining
+  - overall_health_benefits_of_strength_training
+  - strength_training_without_heavy_weights
+
   - ask_strength_training
   - ask_for_beginner_tips
   - start_strength_training
@@ -67,6 +88,14 @@ intents:
   - ask_lat_pull
   - ask_seated_cable_row
   - ask_face_pulls
+
+  - upper_body_exercises
+  - lower_body_exercises
+  - upper_body_care
+  - lower_body_care
+  - upper_body_training_tips
+  - lower_body_training_tips
+
 
   - chest_exercises_overview
   - benefits_of_chest_training
@@ -123,6 +152,14 @@ intents:
   - ask_dumbbell_shrug
   - ask_overhead_tricep_extension
   - ask_zottman_curl
+  - ask_bicep_exercises
+  - ask_tricep_exercises
+  - bicep_importance
+  - tricep_importance
+  - general_bicep_care
+  - general_tricep_care
+  - bicep_training_tips
+  - tricep_training_tips
 
   - core_anatomy
   - core_stretching_benefits
@@ -273,8 +310,23 @@ responses:
   utter_bulking_meal_planning_tips:
   - text: "Great! For effective bulking, it's important to have a meal plan that incorporates a balance of macronutrients. Start your day with a protein-rich breakfast like eggs with whole-grain toast. For lunch and dinner, include lean protein sources, such as grilled chicken or fish, with a side of brown rice or quinoa and plenty of vegetables. Snacking on nuts, yogurt, or fruit can help keep your energy up throughout the day. Don't forget to include post-workout meals that combine protein and carbs to aid muscle recovery."
 
- 
+  utter_upper_body_exercises:
+  - text: "Some effective upper body exercises include push-ups, pull-ups, and bench presses."
 
+  utter_lower_body_exercises:
+  - text: "Great lower body exercises are squats, lunges, and deadlifts."
+
+  utter_upper_body_care:
+  - text: "To maintain a healthy upper body, focus on balanced workouts, regular stretching, and proper posture."
+
+  utter_lower_body_care:
+  - text: "For lower body care, incorporate stretching, avoid overexertion, and ensure proper form during exercises."
+
+  utter_upper_body_training_tips:
+  - text: "For upper body training, vary your workouts, focus on form, and progressively increase intensity."
+
+  utter_lower_body_training_tips:
+  - text: "Effective lower body training involves consistency, a mix of exercises for different muscle groups, and adequate rest."
 
   #Cut focused
   utter_ask_about_cutting:
@@ -492,6 +544,66 @@ responses:
       8. Gym Mat: For floor exercises and stretching.<br>
       9. Stability Ball: Useful for core exercises and stability work.<br>
 #________________________________________________________ Back__________________________________
+
+  utter_best_time_for_weightlifting:
+  - text: "The optimal time for weightlifting varies for each person. Some prefer mornings for increased energy, while others find evenings more suitable when they feel strongest."
+
+  utter_training_session_duration:
+  - text: "For beginners, a strength training session should last about 45 to 60 minutes. It's important to focus on the quality of your workout rather than just the duration."
+
+  utter_eating_before_strength_training:
+  - text: "Eating a light meal 1-2 hours before strength training can provide energy. Opt for a balance of carbs and protein for optimal performance."
+
+  utter_supplements_for_strength_training:
+  - text: "While not mandatory, supplements like whey protein, creatine, and BCAAs can be beneficial in conjunction with a balanced diet, particularly for muscle recovery and growth."
+
+  utter_weekly_strength_training_frequency:
+  - text: "As a beginner, aim for 2-3 strength training sessions per week, allowing your muscles time to recover and grow between workouts."
+
+  utter_difference_between_strength_training_and_bodybuilding:
+  - text: "Strength training focuses on improving muscle strength and endurance, while bodybuilding is aimed more at increasing muscle size and enhancing physique."
+
+  utter_strength_training_for_weight_loss:
+  - text: "Strength training can be effective for weight loss as it builds muscle, which in turn increases metabolism and burns more calories, even at rest."
+
+  utter_need_for_personal_trainer:
+  - text: "A personal trainer can be helpful when starting out to ensure you're using proper form and technique, but it's not essential. Many find success with self-guided programs."
+
+  utter_warm_up_before_weightlifting:
+  - text: "A proper warm-up, including dynamic stretches and light cardio, is crucial before weightlifting to increase blood flow to muscles and prevent injury."
+
+  utter_choosing_right_weight_for_lifting:
+  - text: "Choose a weight that challenges you but allows you to maintain proper form. A good rule is picking a weight where the last 2 reps of a set are difficult but still doable."
+
+  utter_muscle_soreness_post_training:
+  - text: "Muscle soreness after training, known as DOMS, is normal, especially for beginners. It typically lessens as your body adapts to new physical demands."
+
+  utter_tracking_strength_training_progress:
+  - text: "Track your progress by keeping a workout log, noting weights, sets, and reps. Also, track changes in strength, endurance, and physical changes over time."
+
+  utter_common_mistakes_in_strength_training:
+  - text: "Common mistakes include ignoring proper form, neglecting certain muscle groups, not allowing enough recovery time, and unrealistic expectations."
+
+  utter_importance_of_rest_and_recovery:
+  - text: "Rest and recovery are as important as the workout itself. They allow your muscles to repair and grow stronger. Ensure to have at least one full rest day per week."
+
+  utter_strength_training_for_sports_performance:
+  - text: "Strength training enhances sports performance by improving muscle strength, endurance, and overall physical conditioning, leading to better athletic capabilities."
+
+  utter_choosing_between_machines_and_free_weights:
+  - text: "Machines are great for beginners for learning proper form, while free weights activate more muscle groups and improve balance and coordination."
+
+  utter_balancing_strength_training_with_other_exercise:
+  - text: "Balance strength training with cardio and flexibility exercises for overall fitness. It's about finding a routine that fits your goals and lifestyle."
+
+  utter_risks_of_overtraining:
+  - text: "Overtraining can lead to fatigue, decreased performance, and increased risk of injury. Listen to your body and ensure adequate rest and nutrition."
+
+  utter_overall_health_benefits_of_strength_training:
+  - text: "Strength training improves muscle and bone health, enhances metabolic rate, reduces the risk of chronic diseases, and boosts mental health."
+
+  utter_strength_training_without_heavy_weights:
+  - text: "You can effectively strength train without heavy weights using bodyweight exercises, resistance bands, or lighter weights with higher repetitions."
 
   utter_ask_strength_training:
   - text: "Strength training involves exercises that improve muscular strength and endurance. It can include weightlifting, resistance training, and bodyweight exercises."
@@ -771,6 +883,30 @@ responses:
 
 #________________________________________arms__________________________
 
+  utter_ask_bicep_exercises:
+  - text: "Some effective bicep exercises include bicep curls, hammer curls, and concentration curls."
+  
+  utter_ask_tricep_exercises:
+  - text: "Great tricep exercises are tricep dips, overhead tricep extensions, and skull crushers."
+  
+  utter_bicep_importance:
+  - text: "Training biceps is important for arm strength, function, and contributes to overall fitness."
+  
+  utter_tricep_importance:
+  - text: "Focusing on triceps training is crucial for upper arm strength, functionality, and muscle balance."
+  
+  utter_general_bicep_care:
+  - text: "To maintain healthy biceps, regularly stretch, avoid overstraining, and follow a balanced workout routine."
+  
+  utter_general_tricep_care:
+  - text: "For healthy triceps, ensure proper stretching, prevent overuse injuries, and maintain a consistent exercise regimen."
+  
+  utter_bicep_training_tips:
+  - text: "For effective bicep training, focus on controlled movements, vary your exercises, and ensure proper form."
+  
+  utter_tricep_training_tips:
+  - text: "Effective tricep training includes maintaining proper form, incorporating a variety of exercises, and focusing on the full range of motion."
+  
   utter_arm_anatomy:
   - text: "The arms consist of various muscles, including the biceps, triceps, and forearm muscles. Understanding arm anatomy is important for effective workouts and injury prevention."
 
