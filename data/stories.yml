@@ -547,6 +547,175 @@ stories:
     - action: utter_ask_hip_thrusts
  
 #_________________strength training - Arms stories______________
+- story: bicep exercise inquiry
+  steps:
+  - intent: ask_bicep_exercises
+  - action: utter_ask_bicep_exercises
+
+- story: tricep exercise inquiry
+  steps:
+  - intent: ask_tricep_exercises
+  - action: utter_ask_tricep_exercises
+
+- story: bicep importance inquiry
+  steps:
+  - intent: bicep_importance
+  - action: utter_bicep_importance
+
+- story: tricep importance inquiry
+  steps:
+  - intent: tricep_importance
+  - action: utter_tricep_importance
+
+- story: general bicep care inquiry
+  steps:
+  - intent: general_bicep_care
+  - action: utter_general_bicep_care
+
+- story: general tricep care inquiry
+  steps:
+  - intent: general_tricep_care
+  - action: utter_general_tricep_care
+
+- story: bicep training tips inquiry
+  steps:
+  - intent: bicep_training_tips
+  - action: utter_bicep_training_tips
+
+- story: tricep training tips inquiry
+  steps:
+  - intent: tricep_training_tips
+  - action: utter_tricep_training_tips
+
+- story: upper body exercise inquiry
+  steps:
+  - intent: upper_body_exercises
+  - action: utter_upper_body_exercises
+
+- story: lower body exercise inquiry
+  steps:
+  - intent: lower_body_exercises
+  - action: utter_lower_body_exercises
+
+- story: upper body care inquiry
+  steps:
+  - intent: upper_body_care
+  - action: utter_upper_body_care
+
+- story: lower body care inquiry
+  steps:
+  - intent: lower_body_care
+  - action: utter_lower_body_care
+
+- story: upper body training tips inquiry
+  steps:
+  - intent: upper_body_training_tips
+  - action: utter_upper_body_training_tips
+
+- story: lower body training tips inquiry
+  steps:
+  - intent: lower_body_training_tips
+  - action: utter_lower_body_training_tips
+  
+- story: best time for weightlifting query
+  steps:
+  - intent: best_time_for_weightlifting
+  - action: utter_best_time_for_weightlifting
+
+- story: training session duration query
+  steps:
+  - intent: training_session_duration
+  - action: utter_training_session_duration
+
+- story: eating before strength training query
+  steps:
+  - intent: eating_before_strength_training
+  - action: utter_eating_before_strength_training
+
+- story: supplements for strength training query
+  steps:
+  - intent: supplements_for_strength_training
+  - action: utter_supplements_for_strength_training
+
+- story: weekly strength training frequency query
+  steps:
+  - intent: weekly_strength_training_frequency
+  - action: utter_weekly_strength_training_frequency
+
+- story: difference between strength training and bodybuilding query
+  steps:
+  - intent: difference_between_strength_training_and_bodybuilding
+  - action: utter_difference_between_strength_training_and_bodybuilding
+
+- story: strength training for weight loss query
+  steps:
+  - intent: strength_training_for_weight_loss
+  - action: utter_strength_training_for_weight_loss
+
+- story: need for personal trainer query
+  steps:
+  - intent: need_for_personal_trainer
+  - action: utter_need_for_personal_trainer
+
+- story: warm-up before weightlifting query
+  steps:
+  - intent: warm_up_before_weightlifting
+  - action: utter_warm_up_before_weightlifting
+
+- story: choosing right weight for lifting query
+  steps:
+  - intent: choosing_right_weight_for_lifting
+  - action: utter_choosing_right_weight_for_lifting
+
+- story: muscle soreness post training query
+  steps:
+  - intent: muscle_soreness_post_training
+  - action: utter_muscle_soreness_post_training
+
+- story: tracking strength training progress query
+  steps:
+  - intent: tracking_strength_training_progress
+  - action: utter_tracking_strength_training_progress
+
+- story: common mistakes in strength training query
+  steps:
+  - intent: common_mistakes_in_strength_training
+  - action: utter_common_mistakes_in_strength_training
+
+- story: importance of rest and recovery query
+  steps:
+  - intent: importance_of_rest_and_recovery
+  - action: utter_importance_of_rest_and_recovery
+
+- story: strength training for sports performance query
+  steps:
+  - intent: strength_training_for_sports_performance
+  - action: utter_strength_training_for_sports_performance
+
+- story: choosing between machines and free weights query
+  steps:
+  - intent: choosing_between_machines_and_free_weights
+  - action: utter_choosing_between_machines_and_free_weights
+
+- story: balancing strength training with other exercise query
+  steps:
+  - intent: balancing_strength_training_with_other_exercise
+  - action: utter_balancing_strength_training_with_other_exercise
+
+- story: risks of overtraining query
+  steps:
+  - intent: risks_of_overtraining
+  - action: utter_risks_of_overtraining
+
+- story: overall health benefits of strength training query
+  steps:
+  - intent: overall_health_benefits_of_strength_training
+  - action: utter_overall_health_benefits_of_strength_training
+
+- story: strength training without heavy weights query
+  steps:
+  - intent: strength_training_without_heavy_weights
+  - action: utter_strength_training_without_heavy_weights
 
 - story: Arm Anatomy Overview
   steps:
