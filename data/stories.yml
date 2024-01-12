@@ -957,6 +957,7 @@ stories:
   - intent: ask_shoulder_benefits
   - action: utter_ask_shoulder_benefits
 
+
 #_________________________________________cardio and cardio types_________________________________________
 - story: User asks about What is Cardio
   steps:
@@ -1093,7 +1094,6 @@ stories:
   - intent: swimming_how
   - action: utter_swimming_how
 
-#__________________________cardio ends____________
 
 - story: goodbye
   steps:

@@ -194,41 +194,109 @@ intents:
   - ask_shrugs_technique
   - ask_shoulder_benefits
   
-  - cardio_what
-  - cardio_why
-  - cardio_how
+  - going_for_a_run
+  - jogging_in_the_park
+  - running_on_the_treadmill
+  - cardio_with_running
+  - sprinting_session
+  - running_for_fitness
+  - daily_run
+  - long_distance_running
 
-  - cycle_what
-  - cycle_why
-  - cycle_how
+  - skipping_rope_exercise
+  - jump_rope_workout
+  - rope_jumping_session
+  - skipping_for_cardio
+  - rope_jumping_as_fitness
+  - double_unders_practice
+  - jump_rope_training
 
-  - run_what
-  - run_why
-  - run_how
+  - star_jumps_exercise
+  - jumping_jacks
+  - star_jump_workout
+  - jumping_out_and_in
+  - side_straddle_hop
+  - star_jumps_as_cardio
+  - full_body_jumping_exercise
+  - calisthenics_jumping_jacks
+  - jumping_jacks_for_fitness
+  - star_jump_training
 
-  - sprint_what
-  - sprint_why
-  - sprint_how
+  - mountain_hikers_exercise
+  - mimicking_mountain_hikers
+  - mountain_hikers_workout
+  - mountain_hikers_routine
+  - mountain_hikers_as_cardio
+  - full_body_mountain_hikers
+  - calisthenics_mountain_hikers
+  - mountain_hikers_for_fitness
+  - mountain_hiker_training
 
-  - treadmill_what
-  - treadmill_why
-  - treadmill_how
+  - burpees_exercise
+  - burpees_as_cardio
+  - burpees_full_body_workout
+  - high_intensity_burpees
+  - burpees_routine
+  - burpees_with_cardio
+  - adding_burpees_to_workout
+  - intense_burpee_training
+  - burpees_for_fitness
+  - burpees_variations
+  - incorporating_burpees
+  - burpees_benefits
 
-  - burpees_what
-  - burpees_why
-  - burpees_how
+  - box_jumps_exercise
+  - box_jumps_as_workout
+  - box_jumps_incorporation
+  - box_jumps_routine
+  - explosive_box_jumps
+  - box_jumps_variations
+  - box_jumps_benefits
+  - adding_box_jumps_to_exercise
+  - box_jumps_technique
+  - improving_box_jumps
+  - box_jumps_tips
 
-  - walking_what
-  - walking_why
-  - walking_how
+  - high_knees_exercise
+  - high_knees_as_cardio
+  - high_knees_in_workout
+  - high_knees_routine
+  - high_knees_variations
+  - high_knees_benefits
+  - adding_high_knees_to_exercise
+  - high_knees_technique
+  - improving_high_knees
+  - high_knees_tips
 
-  - skipping_what
-  - skipping_why
-  - skipping_how
+  - cycling_as_cardio
+  - cycling_as_workout
+  - cycling_benefits
+  - cycling_routines
+  - cycling_tips
+  - cycling_speed_improvement
+  - indoor_cycling
+  - outdoor_cycling
+  - cycling_for_beginners
+  - cycling_gear_recommendations
 
-  - swimming_what
-  - swimming_why
-  - swimming_how
+  - swimming_technique
+  - swimming_advantages
+  - swimming_speed_improvement
+  - indoor_swimming
+  - outdoor_swimming
+  - swimming_workouts
+  - swimming_health_benefits
+  - swimming_for_cardio
+
+  - ask_cardio_benefits
+  - ask_cardio_exercises
+  - ask_cardio_frequency
+  - ask_cardio_duration
+  - ask_cardio_intensity
+  - ask_cardio_equipments
+  - ask_cardio_beginners
+  - ask_cardio_weight_loss
+  - ask_cardio_health_conditions
 
 responses:
 
