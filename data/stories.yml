@@ -5,6 +5,31 @@ stories:
 
 #--------------------DIET---------------#
 
+- story: why exercise path
+  steps:
+  - intent: why_exercise
+  - action: utter_why_exercise
+
+- story: benefits of exercise path
+  steps:
+  - intent: benefits_of_exercise
+  - action: utter_benefits_of_exercise
+
+- story: disadvantages of exercise path
+  steps:
+  - intent: disadvantages_of_exercise
+  - action: utter_disadvantages_of_exercise
+
+- story: how to start exercising path
+  steps:
+  - intent: how_to_start_exercising
+  - action: utter_how_to_start_exercising
+
+- story: exercise recommendations path
+  steps:
+  - intent: exercise_recommendations
+  - action: utter_exercise_recommendations
+
 - story: user asks about bulking diet
   steps:
   - intent: ask_about_bulking

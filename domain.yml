@@ -39,6 +39,11 @@ intents:
   - inform_diet_preference
   - inform_allergies
   - give_feedback
+  - why_exercise
+  - benefits_of_exercise
+  - disadvantages_of_exercise
+  - how_to_start_exercising
+  - exercise_recommendations
 
   - best_time_for_weightlifting
   - training_session_duration
@@ -295,6 +300,7 @@ intents:
 
 responses:
 
+
   #-------------------DIET-----------------#
 
   #Bulk focused
@@ -327,6 +333,21 @@ responses:
 
   utter_lower_body_training_tips:
   - text: "Effective lower body training involves consistency, a mix of exercises for different muscle groups, and adequate rest."
+
+  utter_why_exercise:
+  - text: "Exercising is important for maintaining good health, both physically and mentally."
+
+  utter_benefits_of_exercise:
+  - text: "Exercise can improve your mood, increase your energy levels, and help you sleep better."
+
+  utter_disadvantages_of_exercise:
+  - text: "Over-exercising can lead to injuries and burnout. It's important to find a balance."
+
+  utter_how_to_start_exercising:
+  - text: "Start small with activities you enjoy and gradually increase the intensity and duration."
+
+  utter_exercise_recommendations:
+  - text: "Some great starter exercises include walking, cycling, yoga, and light weight training."
 
   #Cut focused
   utter_ask_about_cutting:
@@ -409,7 +430,7 @@ responses:
   #---------------------------------------#
 
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! How can i help you today?"
 
   utter_cheer_up:
   - text: "Lol here is something that could cheer you up, call your friend and gossip"

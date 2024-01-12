@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-allergy",
+      "2": "I-allergy",
+      "3": "L-allergy",
+      "4": "U-allergy",
+      "5": "B-diet",
+      "6": "I-diet",
+      "7": "L-diet",
+      "8": "U-diet",
+      "9": "B-goal",
+      "10": "I-goal",
+      "11": "L-goal",
+      "12": "U-goal",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-allergy": 1,
+      "I-allergy": 2,
+      "L-allergy": 3,
+      "U-allergy": 4,
+      "B-diet": 5,
+      "I-diet": 6,
+      "L-diet": 7,
+      "U-diet": 8,
+      "B-goal": 9,
+      "I-goal": 10,
+      "L-goal": 11,
+      "U-goal": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
